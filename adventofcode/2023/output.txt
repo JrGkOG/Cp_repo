@@ -1,0 +1,5000 @@
+Line: eightqrssm9httwogqshfxninepnfrppfzhsc
+First Digit: 8
+Last Digit: 9
+Calibration Value: 89
+------------------------
+Line: one111jxlmc7tvklrmhdpsix
+First Digit: 1
+Last Digit: 7
+Calibration Value: 17
+------------------------
+Line: bptwone4sixzzppg
+First Digit: 2
+Last Digit: 4
+Calibration Value: 24
+------------------------
+Line: ninezfzseveneight5kjrjvtfjqt5nineone
+First Digit: 9
+Last Digit: 5
+Calibration Value: 95
+------------------------
+Line: 58kk
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: 5b32
+First Digit: 5
+Last Digit: 2
+Calibration Value: 52
+------------------------
+Line: 1dtwo
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: six7two7sixtwo78
+First Digit: 6
+Last Digit: 8
+Calibration Value: 68
+------------------------
+Line: mvhsixpptztjh13sixthree2
+First Digit: 6
+Last Digit: 2
+Calibration Value: 62
+------------------------
+Line: six1bqqvrxndt
+First Digit: 6
+Last Digit: 1
+Calibration Value: 61
+------------------------
+Line: fourmk5grmqone944nbvtj
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: twofiveqxfivezpkvfvxt5eightjhnpl
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: fpfqp7three7
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: scmlf76ninegjzjkj97two
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: fivetkhfnnx22
+First Digit: 5
+Last Digit: 2
+Calibration Value: 52
+------------------------
+Line: sevenxvbcbsvxr7eighttwo
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: 1hvhqqmrs1bgttshthg6
+First Digit: 1
+Last Digit: 6
+Calibration Value: 16
+------------------------
+Line: 4bvnccbdh4onefztdrpq62vvbnvpxxvgrngnfjgfk
+First Digit: 4
+Last Digit: 2
+Calibration Value: 42
+------------------------
+Line: 653spgrvd
+First Digit: 6
+Last Digit: 3
+Calibration Value: 63
+------------------------
+Line: sixctlhkjmmxh2fourfivenine37
+First Digit: 6
+Last Digit: 7
+Calibration Value: 67
+------------------------
+Line: 229mjp3txmqsxxqdbnnnbrtrcctgzseven
+First Digit: 2
+Last Digit: 3
+Calibration Value: 23
+------------------------
+Line: jfourdbpcjc39bhglgnine
+First Digit: 4
+Last Digit: 9
+Calibration Value: 49
+------------------------
+Line: bvnltxdmsp7twoxzpdjdvkxeight4twothree
+First Digit: 7
+Last Digit: 4
+Calibration Value: 74
+------------------------
+Line: jlvcdrkhzh8seven3
+First Digit: 8
+Last Digit: 3
+Calibration Value: 83
+------------------------
+Line: 418oneeight
+First Digit: 4
+Last Digit: 8
+Calibration Value: 48
+------------------------
+Line: 53flcrlvqdeight84frmdcsixchcbc
+First Digit: 5
+Last Digit: 4
+Calibration Value: 54
+------------------------
+Line: 114sixone1eight2
+First Digit: 1
+Last Digit: 2
+Calibration Value: 12
+------------------------
+Line: xrbtzbklqsl11
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: bhfhszrhzgrhsfd2threeseventwosevenoneseven
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: four9one
+First Digit: 4
+Last Digit: 9
+Calibration Value: 49
+------------------------
+Line: 5p
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: twovhjpdxmcxshnhv5vs
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: qkkqeightcxcltnn7one9pmhlmvsxnine
+First Digit: 8
+Last Digit: 9
+Calibration Value: 89
+------------------------
+Line: 4cbptmvp1
+First Digit: 4
+Last Digit: 1
+Calibration Value: 41
+------------------------
+Line: 84xgm
+First Digit: 8
+Last Digit: 4
+Calibration Value: 84
+------------------------
+Line: bzsmqhkrdtdmhhjgrjsdfour1ninetwo61
+First Digit: 4
+Last Digit: 1
+Calibration Value: 41
+------------------------
+Line: onetwoeightgflhlgksevennine7two6
+First Digit: 1
+Last Digit: 6
+Calibration Value: 16
+------------------------
+Line: mbjhkhfour6
+First Digit: 4
+Last Digit: 6
+Calibration Value: 46
+------------------------
+Line: 8cvqk6eightonethree1
+First Digit: 8
+Last Digit: 1
+Calibration Value: 81
+------------------------
+Line: qhbllbnlkr3rcsmjvztgd
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: 18eight4
+First Digit: 1
+Last Digit: 4
+Calibration Value: 14
+------------------------
+Line: hhc6onegvkgkqs5mvsone
+First Digit: 6
+Last Digit: 5
+Calibration Value: 65
+------------------------
+Line: 66bnfj
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: one99xvrhninefive
+First Digit: 1
+Last Digit: 9
+Calibration Value: 19
+------------------------
+Line: eight96nxcjjddmseightxvgsixfiverrzpvmgnl
+First Digit: 8
+Last Digit: 6
+Calibration Value: 86
+------------------------
+Line: rpgpczdsxpjgql39
+First Digit: 3
+Last Digit: 9
+Calibration Value: 39
+------------------------
+Line: 855dnthhxld6eight
+First Digit: 8
+Last Digit: 6
+Calibration Value: 86
+------------------------
+Line: four29twosspz1
+First Digit: 4
+Last Digit: 1
+Calibration Value: 41
+------------------------
+Line: sixfiveqvrbcdr9fourlrkpkmxphlsbone
+First Digit: 6
+Last Digit: 9
+Calibration Value: 69
+------------------------
+Line: 341
+First Digit: 3
+Last Digit: 1
+Calibration Value: 31
+------------------------
+Line: mhqjjg9six9nine
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: 7pvjctsgvsix64
+First Digit: 7
+Last Digit: 4
+Calibration Value: 74
+------------------------
+Line: 75twotwothreegcvssgbvhpzcnbgteight
+First Digit: 7
+Last Digit: 5
+Calibration Value: 75
+------------------------
+Line: 7keight8eight
+First Digit: 7
+Last Digit: 8
+Calibration Value: 78
+------------------------
+Line: 52threerhfmklssxcptmnlr4hqc4
+First Digit: 5
+Last Digit: 4
+Calibration Value: 54
+------------------------
+Line: xndfqvgxn3five
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: 974lknineseven
+First Digit: 9
+Last Digit: 4
+Calibration Value: 94
+------------------------
+Line: rlnsix3
+First Digit: 6
+Last Digit: 3
+Calibration Value: 63
+------------------------
+Line: 771m1
+First Digit: 7
+Last Digit: 1
+Calibration Value: 71
+------------------------
+Line: xvtjhq7six64threeeightgspmxgv
+First Digit: 7
+Last Digit: 4
+Calibration Value: 74
+------------------------
+Line: 4sbqdxbmmzj6fiveone
+First Digit: 4
+Last Digit: 6
+Calibration Value: 46
+------------------------
+Line: onesvvch4rvhmvncnk
+First Digit: 1
+Last Digit: 4
+Calibration Value: 14
+------------------------
+Line: mkzsftp69six6
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: fiveptnn7
+First Digit: 5
+Last Digit: 7
+Calibration Value: 57
+------------------------
+Line: 94lsgsjxrrghxxsr4
+First Digit: 9
+Last Digit: 4
+Calibration Value: 94
+------------------------
+Line: 1grnvgpeightjthqmrfnszpfhfninefive9mbtf
+First Digit: 1
+Last Digit: 9
+Calibration Value: 19
+------------------------
+Line: qtsdfour2
+First Digit: 4
+Last Digit: 2
+Calibration Value: 42
+------------------------
+Line: 5mfhmskpcvqbxjzzxt4lq3sevenkv
+First Digit: 5
+Last Digit: 3
+Calibration Value: 53
+------------------------
+Line: rbhjk1cdzjhtzkcbtvmfm
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: nine4eightpmrptkb
+First Digit: 9
+Last Digit: 4
+Calibration Value: 94
+------------------------
+Line: bfiveeight1lxzkzvbtkkgxxs38
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: mxcgbjqvhd1sevensevenrgp7two
+First Digit: 1
+Last Digit: 7
+Calibration Value: 17
+------------------------
+Line: fourxrdzzmjfmtr62one
+First Digit: 4
+Last Digit: 2
+Calibration Value: 42
+------------------------
+Line: sevenppqtlhvtwo7phlrbssxb
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: dhbnjmxg3bsgbhmlfiveseventwo
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: twoonemrbftgtzeightqjmjctmq55
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: ggk2lt586dfzqbjsvj1one
+First Digit: 2
+Last Digit: 1
+Calibration Value: 21
+------------------------
+Line: jtgpzjjtwo86seventwo
+First Digit: 2
+Last Digit: 6
+Calibration Value: 26
+------------------------
+Line: 37nine4onebqvsnmvg277
+First Digit: 3
+Last Digit: 7
+Calibration Value: 37
+------------------------
+Line: hmpnzmqsfour6
+First Digit: 4
+Last Digit: 6
+Calibration Value: 46
+------------------------
+Line: xzfhgzllmcbc56vpbpbbjffmgr3jrc
+First Digit: 5
+Last Digit: 3
+Calibration Value: 53
+------------------------
+Line: 5lclone
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: hjbvkdtmrgvpfive9sevenfive1nlzqlkfrg
+First Digit: 5
+Last Digit: 1
+Calibration Value: 51
+------------------------
+Line: htwonetgxvjdkrvjsfjjbfmcthseven29
+First Digit: 2
+Last Digit: 9
+Calibration Value: 29
+------------------------
+Line: six89bdlssd
+First Digit: 6
+Last Digit: 9
+Calibration Value: 69
+------------------------
+Line: 3eight6one
+First Digit: 3
+Last Digit: 6
+Calibration Value: 36
+------------------------
+Line: vtbsix2twolzrhfr1
+First Digit: 6
+Last Digit: 1
+Calibration Value: 61
+------------------------
+Line: vhdcvtj5
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: 167nsnmgxhtvn54fivedcbgrhm
+First Digit: 1
+Last Digit: 4
+Calibration Value: 14
+------------------------
+Line: 4three1five82four
+First Digit: 4
+Last Digit: 2
+Calibration Value: 42
+------------------------
+Line: 15eightonethreesixthree
+First Digit: 1
+Last Digit: 5
+Calibration Value: 15
+------------------------
+Line: dvhtsccljt51
+First Digit: 5
+Last Digit: 1
+Calibration Value: 51
+------------------------
+Line: pbnfrxblk3sevenxjcmcvhlgrghpbgdnpl8xsr3fiveoneightq
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: 242three8
+First Digit: 2
+Last Digit: 8
+Calibration Value: 28
+------------------------
+Line: 2fivehgqfxgl8kpdknxhmk5bmmsbz
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: fivejvjeight6fsqgtpvcb
+First Digit: 5
+Last Digit: 6
+Calibration Value: 56
+------------------------
+Line: 1threelgkbhlhhlmrbvxqqgf
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: klmqfgfg1gnine253psn8
+First Digit: 1
+Last Digit: 8
+Calibration Value: 18
+------------------------
+Line: 47eight
+First Digit: 4
+Last Digit: 7
+Calibration Value: 47
+------------------------
+Line: eight83mvdtsqppjhgjnsvngfive
+First Digit: 8
+Last Digit: 3
+Calibration Value: 83
+------------------------
+Line: 7mcmzvsv6seven
+First Digit: 7
+Last Digit: 6
+Calibration Value: 76
+------------------------
+Line: 56seven98three4three
+First Digit: 5
+Last Digit: 4
+Calibration Value: 54
+------------------------
+Line: pfnbthreegthreefknjm4five
+First Digit: 3
+Last Digit: 4
+Calibration Value: 34
+------------------------
+Line: 2nqgrdcshfpjfpqdrvnq1twoccpmxpxvv
+First Digit: 2
+Last Digit: 1
+Calibration Value: 21
+------------------------
+Line: xtwo7threemxbtpsvjkgrfivethree2
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: 9pkdfourfour1zjvczkhpbj
+First Digit: 9
+Last Digit: 1
+Calibration Value: 91
+------------------------
+Line: 1three2
+First Digit: 1
+Last Digit: 2
+Calibration Value: 12
+------------------------
+Line: pkkbphkgqfivellrnvnkdxpql3
+First Digit: 5
+Last Digit: 3
+Calibration Value: 53
+------------------------
+Line: ppc62
+First Digit: 6
+Last Digit: 2
+Calibration Value: 62
+------------------------
+Line: one73ptfxsbbpqqgctdjhzjsjc91
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: nine7threefourvvk
+First Digit: 9
+Last Digit: 7
+Calibration Value: 97
+------------------------
+Line: six59542xcxqcbnrvzfbshcxxddz2
+First Digit: 6
+Last Digit: 2
+Calibration Value: 62
+------------------------
+Line: ftsfj2ninesix1hdjsrpkonelklfpltv
+First Digit: 2
+Last Digit: 1
+Calibration Value: 21
+------------------------
+Line: ninehmxgkqbmhvtlvdmdtvpeighttqfour1three
+First Digit: 9
+Last Digit: 1
+Calibration Value: 91
+------------------------
+Line: frbnineeight4168ksmjstpqvzhnn
+First Digit: 9
+Last Digit: 8
+Calibration Value: 98
+------------------------
+Line: rgnrntwohvqhgxxfkonefour4mfdr5ftgtjjv
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: 3ninejbszdvdgznfourxpcxspqxnthlngkncvnineccq
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: threemjglxtp5cqmtwotwo2seventwonerkl
+First Digit: 3
+Last Digit: 2
+Calibration Value: 32
+------------------------
+Line: eightsevensevenlmbjzprggthree1eight
+First Digit: 8
+Last Digit: 1
+Calibration Value: 81
+------------------------
+Line: 57nineninezdcf
+First Digit: 5
+Last Digit: 7
+Calibration Value: 57
+------------------------
+Line: cqoneighteightjnrfkplvninefivemck18mnhszhkv4
+First Digit: 1
+Last Digit: 4
+Calibration Value: 14
+------------------------
+Line: tbvdcsjsvmxtshv3fourseven4kmxvvfour9
+First Digit: 3
+Last Digit: 9
+Calibration Value: 39
+------------------------
+Line: bxcsix19six8dnqsbx
+First Digit: 6
+Last Digit: 8
+Calibration Value: 68
+------------------------
+Line: 7five81ncchkdk
+First Digit: 7
+Last Digit: 1
+Calibration Value: 71
+------------------------
+Line: four4ck7rtjmjpccpeightone
+First Digit: 4
+Last Digit: 7
+Calibration Value: 47
+------------------------
+Line: fivetwo6nine1tdczktmfninelrbnnine
+First Digit: 5
+Last Digit: 1
+Calibration Value: 51
+------------------------
+Line: onetwo9twoeight5sevensix
+First Digit: 1
+Last Digit: 5
+Calibration Value: 15
+------------------------
+Line: cvvtbmninebneightsix1dnnfkgmnm
+First Digit: 9
+Last Digit: 1
+Calibration Value: 91
+------------------------
+Line: h7three3
+First Digit: 7
+Last Digit: 3
+Calibration Value: 73
+------------------------
+Line: tpnzsdm9sixtg5sixqvcqsq3
+First Digit: 9
+Last Digit: 3
+Calibration Value: 93
+------------------------
+Line: 1sevenzmbcpgtfrjvq
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: r8757
+First Digit: 8
+Last Digit: 7
+Calibration Value: 87
+------------------------
+Line: fournineseven6fourfour
+First Digit: 4
+Last Digit: 6
+Calibration Value: 46
+------------------------
+Line: 798dpbrkfourtwoxdrgqkrkmfeight7
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: threebvqqjcldjx4nine5
+First Digit: 3
+Last Digit: 5
+Calibration Value: 35
+------------------------
+Line: 3hbl
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: twodndcfddkvfivermvkrfzsnqthree5
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: mhdcvsixmnqlvmvxmxfour3ct
+First Digit: 6
+Last Digit: 3
+Calibration Value: 63
+------------------------
+Line: 25dpfsrbcllhtwothree2pthreezfhjx
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: dcfggnine1onetwoone
+First Digit: 9
+Last Digit: 1
+Calibration Value: 91
+------------------------
+Line: vtbmbpgffive2hdmzjzqqqc4one
+First Digit: 5
+Last Digit: 4
+Calibration Value: 54
+------------------------
+Line: zg11
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: txrknhvhbv183
+First Digit: 1
+Last Digit: 3
+Calibration Value: 13
+------------------------
+Line: dlvscqszz82nvtpb7tktvtgjbml
+First Digit: 8
+Last Digit: 7
+Calibration Value: 87
+------------------------
+Line: twofour5sevensmqfjrjcndmvcvqdfsrsix
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: 446sixeight6rbrltdzf
+First Digit: 4
+Last Digit: 6
+Calibration Value: 46
+------------------------
+Line: 132ncq1
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: 4ninezdfzgvzf4four7qkzstcq
+First Digit: 4
+Last Digit: 7
+Calibration Value: 47
+------------------------
+Line: 7rx5xntgxfpmvsevenzmzmbjlc3fivefive
+First Digit: 7
+Last Digit: 3
+Calibration Value: 73
+------------------------
+Line: threeseven7tshthree
+First Digit: 3
+Last Digit: 7
+Calibration Value: 37
+------------------------
+Line: gnbqhninecjnhlpcfivenine18
+First Digit: 9
+Last Digit: 8
+Calibration Value: 98
+------------------------
+Line: gjntwonenllmzgqsvq36lc45fourdrtzlctr
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: 3tqgbfrk
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: zldl3zxpfbpveight
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: 2ninetgppcvqrq
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: 7one1sixeighttxcnhltwooneeight
+First Digit: 7
+Last Digit: 1
+Calibration Value: 71
+------------------------
+Line: bsm3hslqcr8xslndqnnvfpzvprlkt
+First Digit: 3
+Last Digit: 8
+Calibration Value: 38
+------------------------
+Line: khvptwo7kkbznndpqsevensevenvlr
+First Digit: 2
+Last Digit: 7
+Calibration Value: 27
+------------------------
+Line: sevenscneight8one4qnkc
+First Digit: 7
+Last Digit: 4
+Calibration Value: 74
+------------------------
+Line: 2v
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: 2threerjnineonev
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: 68qhknonebtxvmqh
+First Digit: 6
+Last Digit: 8
+Calibration Value: 68
+------------------------
+Line: 3btb
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: kcxbqzbjqt3twofourfxdlprsxkzlmflbveight
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: 9bmdcninecjdv7
+First Digit: 9
+Last Digit: 7
+Calibration Value: 97
+------------------------
+Line: ceightwoninelkbbfxgsv9fb5n
+First Digit: 8
+Last Digit: 5
+Calibration Value: 85
+------------------------
+Line: ztwo2
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: 7four9cpkclqxtrmpdgzxgtwo
+First Digit: 7
+Last Digit: 9
+Calibration Value: 79
+------------------------
+Line: 8dghrmgprdjeight8knnb852one
+First Digit: 8
+Last Digit: 2
+Calibration Value: 82
+------------------------
+Line: 2three36eightfournone2
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: 6ztwofkzlhvjdrxtsmlbgczf
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: knine6ninebpmzjbkg9tttkhtgcklbfive
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: sevenv3
+First Digit: 7
+Last Digit: 3
+Calibration Value: 73
+------------------------
+Line: 411one4483
+First Digit: 4
+Last Digit: 3
+Calibration Value: 43
+------------------------
+Line: 88jvjggxqfour3zrbvbxjzmthree
+First Digit: 8
+Last Digit: 3
+Calibration Value: 83
+------------------------
+Line: fivelqcnqfvgp18t
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: fivejceightqlsdrmrnbzfbjskstzrllxrdlcxpjkvf1
+First Digit: 5
+Last Digit: 1
+Calibration Value: 51
+------------------------
+Line: 832
+First Digit: 8
+Last Digit: 2
+Calibration Value: 82
+------------------------
+Line: sixfive77rhkjdhvbpdfjxpkmfdq66qqtfpfs
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: fv6svkbnsgtpznblnvkvk5
+First Digit: 6
+Last Digit: 5
+Calibration Value: 65
+------------------------
+Line: sixsevenfoursixeight486
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: gsbfrjpngshpmlxf2
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: gbmmmvdhffbbcq3
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: 5fivehxx28
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: snjxttwo1zd5sixklfl
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: szsvdzsix3nine32nine
+First Digit: 6
+Last Digit: 2
+Calibration Value: 62
+------------------------
+Line: onervkhknmnsix3four363
+First Digit: 1
+Last Digit: 3
+Calibration Value: 13
+------------------------
+Line: 1btphrrvxdeightonekdhv8
+First Digit: 1
+Last Digit: 8
+Calibration Value: 18
+------------------------
+Line: gkphmq73lfhflk66xpfive2
+First Digit: 7
+Last Digit: 2
+Calibration Value: 72
+------------------------
+Line: 611four3gnjsdkvksjdxfiveeight
+First Digit: 6
+Last Digit: 3
+Calibration Value: 63
+------------------------
+Line: klbvb9zk4eightninetwo
+First Digit: 9
+Last Digit: 4
+Calibration Value: 94
+------------------------
+Line: mreight59sevengqbhnspvhqcj2six
+First Digit: 8
+Last Digit: 2
+Calibration Value: 82
+------------------------
+Line: hnvgkmljlpthsgjrzmsevensix6fcvtxddbnx5
+First Digit: 7
+Last Digit: 5
+Calibration Value: 75
+------------------------
+Line: ckfvkblhvv6gbsnlsevenktblt29three
+First Digit: 6
+Last Digit: 9
+Calibration Value: 69
+------------------------
+Line: eightfoursevendnsghkfsg8fivextnnine
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: 5hrdqmfjq
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: twojcvkkjklzmfive2fourxqgdsdgzrjltwo7
+First Digit: 2
+Last Digit: 7
+Calibration Value: 27
+------------------------
+Line: onetwonvxnxnntxcthree3
+First Digit: 1
+Last Digit: 3
+Calibration Value: 13
+------------------------
+Line: threentwonine6
+First Digit: 3
+Last Digit: 6
+Calibration Value: 36
+------------------------
+Line: sprfmxlqvb9jnbzltskxppqzdscrvhpfvjjcqhxcf
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: sixhfour95
+First Digit: 6
+Last Digit: 5
+Calibration Value: 65
+------------------------
+Line: 41fourqhpjbztknqnfpxvzc
+First Digit: 4
+Last Digit: 1
+Calibration Value: 41
+------------------------
+Line: two23sevenfgmmnszone113
+First Digit: 2
+Last Digit: 3
+Calibration Value: 23
+------------------------
+Line: one41seven57
+First Digit: 1
+Last Digit: 7
+Calibration Value: 17
+------------------------
+Line: oneninebqqklhk6gmdzddbhgzqcmxxfnmrvr
+First Digit: 1
+Last Digit: 6
+Calibration Value: 16
+------------------------
+Line: 4mkpgv87eightckzjjfm
+First Digit: 4
+Last Digit: 7
+Calibration Value: 47
+------------------------
+Line: vhgdmvncxn88ldbt7464
+First Digit: 8
+Last Digit: 4
+Calibration Value: 84
+------------------------
+Line: gcczfprplf7
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: 6eightninesxthreefive99
+First Digit: 6
+Last Digit: 9
+Calibration Value: 69
+------------------------
+Line: two69fivecjxjhgjmgvttl9
+First Digit: 2
+Last Digit: 9
+Calibration Value: 29
+------------------------
+Line: mztbzjmgxnpkfrqnrbgkgfourjjfjtone8eight
+First Digit: 4
+Last Digit: 8
+Calibration Value: 48
+------------------------
+Line: 63mggldkcprlz
+First Digit: 6
+Last Digit: 3
+Calibration Value: 63
+------------------------
+Line: 6sevenfourfive
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: 1zvmrdnpzcsqqmxscn
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: five5tkgb8rrztmcfivebknjd
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: 7pscpfive
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: eight9sixgfvhvlcnineeight
+First Digit: 8
+Last Digit: 9
+Calibration Value: 89
+------------------------
+Line: seven99fourtwojvxfrqmrdlthree
+First Digit: 7
+Last Digit: 9
+Calibration Value: 79
+------------------------
+Line: sppcgnjzeight93j
+First Digit: 8
+Last Digit: 3
+Calibration Value: 83
+------------------------
+Line: fivek7seventhree
+First Digit: 5
+Last Digit: 7
+Calibration Value: 57
+------------------------
+Line: twornbhtrlnznpctrxhqtngzdtnvfb2
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: sevenfivefour63five38nlrxfcjpm
+First Digit: 7
+Last Digit: 8
+Calibration Value: 78
+------------------------
+Line: qvtdcspc4zxmmhpklhcdlznqfg46lct5one
+First Digit: 4
+Last Digit: 5
+Calibration Value: 45
+------------------------
+Line: 1bnndtnsfjdsevenfivetwo3k85
+First Digit: 1
+Last Digit: 5
+Calibration Value: 15
+------------------------
+Line: 8five9six
+First Digit: 8
+Last Digit: 9
+Calibration Value: 89
+------------------------
+Line: 3ltcc7trmmhbbbpjfive
+First Digit: 3
+Last Digit: 7
+Calibration Value: 37
+------------------------
+Line: cmbchhhczmqlp3
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: nctz78twodljcqvplcqg
+First Digit: 7
+Last Digit: 8
+Calibration Value: 78
+------------------------
+Line: nine4sevenpnbbztpvkbgztb
+First Digit: 9
+Last Digit: 4
+Calibration Value: 94
+------------------------
+Line: zseven9eight
+First Digit: 7
+Last Digit: 9
+Calibration Value: 79
+------------------------
+Line: fourktzscmnrvddnnzsqfnfctzpdvtwo9
+First Digit: 4
+Last Digit: 9
+Calibration Value: 49
+------------------------
+Line: nrtbgdjpm2ldcfdm5jjhx9
+First Digit: 2
+Last Digit: 9
+Calibration Value: 29
+------------------------
+Line: jq9two68kjttwo67
+First Digit: 9
+Last Digit: 7
+Calibration Value: 97
+------------------------
+Line: lnneightfourzqz6lgvxnthreeseven7
+First Digit: 8
+Last Digit: 7
+Calibration Value: 87
+------------------------
+Line: fiveglp85
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: ninefouronesix7k1three
+First Digit: 9
+Last Digit: 1
+Calibration Value: 91
+------------------------
+Line: 3five5sevendhtmjhbh2
+First Digit: 3
+Last Digit: 2
+Calibration Value: 32
+------------------------
+Line: rbjhnmmgsvmtk8four
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: vtrvvjsixhnctwocvskgzt3two3
+First Digit: 6
+Last Digit: 3
+Calibration Value: 63
+------------------------
+Line: kxfive5threezgtd2
+First Digit: 5
+Last Digit: 2
+Calibration Value: 52
+------------------------
+Line: 2fivemcnngtzxsgbxmvbl
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: eightlrlztkvhfivefour5
+First Digit: 8
+Last Digit: 5
+Calibration Value: 85
+------------------------
+Line: 2twojcq7qrrbddmpsb
+First Digit: 2
+Last Digit: 7
+Calibration Value: 27
+------------------------
+Line: 3twosixthreebqtoneone2
+First Digit: 3
+Last Digit: 2
+Calibration Value: 32
+------------------------
+Line: nine9six3vlmpqbgjjqdftldpq
+First Digit: 9
+Last Digit: 3
+Calibration Value: 93
+------------------------
+Line: tgrglqfxxc2onetwo76oneonex
+First Digit: 2
+Last Digit: 6
+Calibration Value: 26
+------------------------
+Line: one48one
+First Digit: 1
+Last Digit: 8
+Calibration Value: 18
+------------------------
+Line: fivesgsnrzsms6one
+First Digit: 5
+Last Digit: 6
+Calibration Value: 56
+------------------------
+Line: fiveseven1tzhxdknkseven4
+First Digit: 5
+Last Digit: 4
+Calibration Value: 54
+------------------------
+Line: 3sprtonefivelxg47
+First Digit: 3
+Last Digit: 7
+Calibration Value: 37
+------------------------
+Line: twotwoseven3ninenqdvxgm
+First Digit: 2
+Last Digit: 3
+Calibration Value: 23
+------------------------
+Line: nskjpvvqeightnine93fivecngkjcd3
+First Digit: 8
+Last Digit: 3
+Calibration Value: 83
+------------------------
+Line: ltfxscllxk9pjznpnmhfmrzmqbq
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: 4nineeight6four7
+First Digit: 4
+Last Digit: 7
+Calibration Value: 47
+------------------------
+Line: fjtpj763
+First Digit: 7
+Last Digit: 3
+Calibration Value: 73
+------------------------
+Line: four6six73htbstbbpztwofj
+First Digit: 4
+Last Digit: 3
+Calibration Value: 43
+------------------------
+Line: oneonetwo2five43three
+First Digit: 1
+Last Digit: 3
+Calibration Value: 13
+------------------------
+Line: five8bgcjnlzcgqpfkn
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: 11mcn
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: 9twovhkltdpkqzc65six
+First Digit: 9
+Last Digit: 5
+Calibration Value: 95
+------------------------
+Line: 8fkprfkg9xfjxspqpshlfkqpnrt
+First Digit: 8
+Last Digit: 9
+Calibration Value: 89
+------------------------
+Line: 4sblrf7745
+First Digit: 4
+Last Digit: 5
+Calibration Value: 45
+------------------------
+Line: lblxmbzfour6187tggqllj
+First Digit: 4
+Last Digit: 7
+Calibration Value: 47
+------------------------
+Line: dhdmlx71mbbxtvhszhsvcm
+First Digit: 7
+Last Digit: 1
+Calibration Value: 71
+------------------------
+Line: six1qbqglfsssx
+First Digit: 6
+Last Digit: 1
+Calibration Value: 61
+------------------------
+Line: 164tsthbb2
+First Digit: 1
+Last Digit: 2
+Calibration Value: 12
+------------------------
+Line: 8nineldrtltqfivebqnrthrm
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: sevenlsjbsklhxxfiveclbldxxtrdllxzthree6eight
+First Digit: 7
+Last Digit: 6
+Calibration Value: 76
+------------------------
+Line: 18gnkrxfmnineone
+First Digit: 1
+Last Digit: 8
+Calibration Value: 18
+------------------------
+Line: six4threetwoeightgcn
+First Digit: 6
+Last Digit: 4
+Calibration Value: 64
+------------------------
+Line: vmknclnmnphb2czdbjmcone
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: eightq67
+First Digit: 8
+Last Digit: 7
+Calibration Value: 87
+------------------------
+Line: eighthnzslhbblr85eight3
+First Digit: 8
+Last Digit: 3
+Calibration Value: 83
+------------------------
+Line: 3457kdzhnppqz5four8two
+First Digit: 3
+Last Digit: 8
+Calibration Value: 38
+------------------------
+Line: crcskvmhthree41
+First Digit: 3
+Last Digit: 1
+Calibration Value: 31
+------------------------
+Line: 8pccnsbv8ln3
+First Digit: 8
+Last Digit: 3
+Calibration Value: 83
+------------------------
+Line: 4eightonevd
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: pdz9threenine
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: 3sg5gkrncz
+First Digit: 3
+Last Digit: 5
+Calibration Value: 35
+------------------------
+Line: 6dxnslkl3xqlnm965twonexxn
+First Digit: 6
+Last Digit: 5
+Calibration Value: 65
+------------------------
+Line: 9nlhmmkzsdbpdctd7ninec
+First Digit: 9
+Last Digit: 7
+Calibration Value: 97
+------------------------
+Line: 62eightnine7nine3lrd
+First Digit: 6
+Last Digit: 3
+Calibration Value: 63
+------------------------
+Line: qbprlzczreight7threegqnrshrhc
+First Digit: 8
+Last Digit: 7
+Calibration Value: 87
+------------------------
+Line: 3qlmr
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: three1twojgptkzgxmf
+First Digit: 3
+Last Digit: 1
+Calibration Value: 31
+------------------------
+Line: twosvdsfourone8
+First Digit: 2
+Last Digit: 8
+Calibration Value: 28
+------------------------
+Line: 5sixfourzvjtkpk
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: six418
+First Digit: 6
+Last Digit: 8
+Calibration Value: 68
+------------------------
+Line: five523fivecbs
+First Digit: 5
+Last Digit: 3
+Calibration Value: 53
+------------------------
+Line: nineninesevenztfggvfkgkzfcm2
+First Digit: 9
+Last Digit: 2
+Calibration Value: 92
+------------------------
+Line: qnsix5dnv7three
+First Digit: 6
+Last Digit: 7
+Calibration Value: 67
+------------------------
+Line: three5twofour
+First Digit: 3
+Last Digit: 5
+Calibration Value: 35
+------------------------
+Line: hlmtnzsmlnjxdtwo6
+First Digit: 2
+Last Digit: 6
+Calibration Value: 26
+------------------------
+Line: 9sixnglrctg
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: onecrgfq5hdldpc
+First Digit: 1
+Last Digit: 5
+Calibration Value: 15
+------------------------
+Line: nhzctlx94eight
+First Digit: 9
+Last Digit: 4
+Calibration Value: 94
+------------------------
+Line: 19djvld
+First Digit: 1
+Last Digit: 9
+Calibration Value: 19
+------------------------
+Line: tzp8zzv8six1
+First Digit: 8
+Last Digit: 1
+Calibration Value: 81
+------------------------
+Line: 1nsnine5sixhqxfk
+First Digit: 1
+Last Digit: 5
+Calibration Value: 15
+------------------------
+Line: 33sixtwojrdvksrfsnltglggxdhbsxf
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: bbvtpxptrnvjqzl3rldseventhree6
+First Digit: 3
+Last Digit: 6
+Calibration Value: 36
+------------------------
+Line: 2lcntfphb2lgpjbdeight
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: fivetwo1jjgkt9kltwo1nc
+First Digit: 5
+Last Digit: 1
+Calibration Value: 51
+------------------------
+Line: 7xnmrscpfkthreejqbhlrtf4sixrbfrone
+First Digit: 7
+Last Digit: 4
+Calibration Value: 74
+------------------------
+Line: 3threetqfkv1twofive
+First Digit: 3
+Last Digit: 1
+Calibration Value: 31
+------------------------
+Line: 95ninejlftlxrs1nxxfsqz
+First Digit: 9
+Last Digit: 1
+Calibration Value: 91
+------------------------
+Line: hrsrszgrcl9seven8eightksdnhqsq7eight
+First Digit: 9
+Last Digit: 7
+Calibration Value: 97
+------------------------
+Line: 5436ninefour
+First Digit: 5
+Last Digit: 6
+Calibration Value: 56
+------------------------
+Line: one5five
+First Digit: 1
+Last Digit: 5
+Calibration Value: 15
+------------------------
+Line: prcmxone8lhkblvr714three
+First Digit: 1
+Last Digit: 4
+Calibration Value: 14
+------------------------
+Line: 92btgsllktgf7fivejhgsg2eight5
+First Digit: 9
+Last Digit: 5
+Calibration Value: 95
+------------------------
+Line: fourmm61nine558nine
+First Digit: 4
+Last Digit: 8
+Calibration Value: 48
+------------------------
+Line: bxjx2
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: one6onetwotjxthreefour8
+First Digit: 1
+Last Digit: 8
+Calibration Value: 18
+------------------------
+Line: threedkpnpfvgt1one3nine1
+First Digit: 3
+Last Digit: 1
+Calibration Value: 31
+------------------------
+Line: bxfour3two2sb4twondmfdpsz
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: 11sevennrpxftwooneeightmx6
+First Digit: 1
+Last Digit: 6
+Calibration Value: 16
+------------------------
+Line: 9mqxcrjxnp7hdjgqktxm
+First Digit: 9
+Last Digit: 7
+Calibration Value: 97
+------------------------
+Line: 2rnjlg7mbxstzbdh
+First Digit: 2
+Last Digit: 7
+Calibration Value: 27
+------------------------
+Line: qmsixhckzone1
+First Digit: 6
+Last Digit: 1
+Calibration Value: 61
+------------------------
+Line: qzsnq6sixtwosixtwohhgbsrqgnine3
+First Digit: 6
+Last Digit: 3
+Calibration Value: 63
+------------------------
+Line: foureight7scksqtkmnfiveseven765
+First Digit: 4
+Last Digit: 5
+Calibration Value: 45
+------------------------
+Line: 15oneckvshqd
+First Digit: 1
+Last Digit: 5
+Calibration Value: 15
+------------------------
+Line: 41tzlxsfivebsckffdps
+First Digit: 4
+Last Digit: 1
+Calibration Value: 41
+------------------------
+Line: threefivefournine7
+First Digit: 3
+Last Digit: 7
+Calibration Value: 37
+------------------------
+Line: 5fiveonefour8lhqmltwoeighttwo
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: four5six
+First Digit: 4
+Last Digit: 5
+Calibration Value: 45
+------------------------
+Line: mhnrspfourmflmvkc52cjkvxheightsevendtddjdcnb
+First Digit: 4
+Last Digit: 2
+Calibration Value: 42
+------------------------
+Line: vxrrlfnlqf1twoeightninesixonetwo
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: 8xonetwo2
+First Digit: 8
+Last Digit: 2
+Calibration Value: 82
+------------------------
+Line: rveightwo79three
+First Digit: 8
+Last Digit: 9
+Calibration Value: 89
+------------------------
+Line: onebjlr9sixldqrbtwo4
+First Digit: 1
+Last Digit: 4
+Calibration Value: 14
+------------------------
+Line: f1lhrbsix
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: mbbkv7ffpk
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: 8twofourmxqvkqfcjfoureightplgpmrtxm3
+First Digit: 8
+Last Digit: 3
+Calibration Value: 83
+------------------------
+Line: 2rtrxjzqeighteightqtmsfnpdscpgqvxd7
+First Digit: 2
+Last Digit: 7
+Calibration Value: 27
+------------------------
+Line: nineqggljvzvxltwozsvsfournine9
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: ninexpmnnvqsfhnprqrqlcgfive9mtnflvttwoqlgphhb
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: 11kbpmv1
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: htspdnh1xhbbh3lzcjjx1
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: five6fivefive5six
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: sxtbktj7
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: ncvkgvgbeightfour89ttbrjthree
+First Digit: 8
+Last Digit: 9
+Calibration Value: 89
+------------------------
+Line: xcgxzxbfnkxdqn73eight
+First Digit: 7
+Last Digit: 3
+Calibration Value: 73
+------------------------
+Line: 5nine4fivesixtwotwo1
+First Digit: 5
+Last Digit: 1
+Calibration Value: 51
+------------------------
+Line: ffgzdfhn6
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: fourzvtfcczlxhnnx5three
+First Digit: 4
+Last Digit: 5
+Calibration Value: 45
+------------------------
+Line: threednfntx4eightwovql
+First Digit: 3
+Last Digit: 4
+Calibration Value: 34
+------------------------
+Line: sixtwoveightnine7twonineseven
+First Digit: 6
+Last Digit: 7
+Calibration Value: 67
+------------------------
+Line: seveneightcclmgknrgninemnjsrsqsevenfftmlqkch7
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: pvqnltjs2hghkrphnine3scngkjfcsn
+First Digit: 2
+Last Digit: 3
+Calibration Value: 23
+------------------------
+Line: 62vdnbzrcrjsndqqr2
+First Digit: 6
+Last Digit: 2
+Calibration Value: 62
+------------------------
+Line: 5cxhscqpgdzbrnnq1m9b
+First Digit: 5
+Last Digit: 9
+Calibration Value: 59
+------------------------
+Line: gnkclhmbjfourfivemmxpqx2qlxvsix
+First Digit: 4
+Last Digit: 2
+Calibration Value: 42
+------------------------
+Line: sevenxcp4fourdlqgpxcl
+First Digit: 7
+Last Digit: 4
+Calibration Value: 74
+------------------------
+Line: 8eighttwoone
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: bjslbfrspcnffnine9rvnjjrvcsix2
+First Digit: 9
+Last Digit: 2
+Calibration Value: 92
+------------------------
+Line: six7tfive6hkllf56six
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: km3
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: sixtjt2threefour2vqqcxj84
+First Digit: 6
+Last Digit: 4
+Calibration Value: 64
+------------------------
+Line: 9vflltwo4five
+First Digit: 9
+Last Digit: 4
+Calibration Value: 94
+------------------------
+Line: nineprprrcjt3eightmxfour
+First Digit: 9
+Last Digit: 3
+Calibration Value: 93
+------------------------
+Line: 4twoninehvsbszqr
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: dtdmkcsd41eightfourxppqzkjb
+First Digit: 4
+Last Digit: 1
+Calibration Value: 41
+------------------------
+Line: xmdmghzdp9sevennine94
+First Digit: 9
+Last Digit: 4
+Calibration Value: 94
+------------------------
+Line: 2bbjsdlxoneeight
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: ninefivetwonine8
+First Digit: 9
+Last Digit: 8
+Calibration Value: 98
+------------------------
+Line: 68four
+First Digit: 6
+Last Digit: 8
+Calibration Value: 68
+------------------------
+Line: ninepdjpfmzxthree3dkxgttvncbr
+First Digit: 9
+Last Digit: 3
+Calibration Value: 93
+------------------------
+Line: 52threesevenninefour6lfrlrsgzk
+First Digit: 5
+Last Digit: 6
+Calibration Value: 56
+------------------------
+Line: ghkczjt86bdk3czvhcone
+First Digit: 8
+Last Digit: 3
+Calibration Value: 83
+------------------------
+Line: cdjsd6jhnnnhzbzllqdjgpgnninevmcvbcxxltsix
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: 1mxfsrninegfmgvnine14hbfnshgbprone
+First Digit: 1
+Last Digit: 4
+Calibration Value: 14
+------------------------
+Line: 39four8
+First Digit: 3
+Last Digit: 8
+Calibration Value: 38
+------------------------
+Line: bxnnjqkninetwotwo58txgvrbxvq
+First Digit: 9
+Last Digit: 8
+Calibration Value: 98
+------------------------
+Line: k4bftq68seven4nineseven
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: seven97fivekxjnseven4fourfour
+First Digit: 7
+Last Digit: 4
+Calibration Value: 74
+------------------------
+Line: drgttpqpsevenvrkxdlmvtctsc72seven
+First Digit: 7
+Last Digit: 2
+Calibration Value: 72
+------------------------
+Line: eight298
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: 2zsqmjskp
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: six5bgdkhzqt
+First Digit: 6
+Last Digit: 5
+Calibration Value: 65
+------------------------
+Line: fournlknxg35vqdqmnln6f
+First Digit: 4
+Last Digit: 6
+Calibration Value: 46
+------------------------
+Line: 565rqtzdpqhlldxgnine7oneeight
+First Digit: 5
+Last Digit: 7
+Calibration Value: 57
+------------------------
+Line: 3jfthree7vlkpfour1
+First Digit: 3
+Last Digit: 1
+Calibration Value: 31
+------------------------
+Line: fourgngnqtgd675vgrrjf
+First Digit: 4
+Last Digit: 5
+Calibration Value: 45
+------------------------
+Line: 25nrfive
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: kmlbnrm5dtvqndldh
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: vgbzkpnltxrp5tpvb
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: 5mbzzk3nine7cqkngz1mm
+First Digit: 5
+Last Digit: 1
+Calibration Value: 51
+------------------------
+Line: sevenfive952
+First Digit: 7
+Last Digit: 2
+Calibration Value: 72
+------------------------
+Line: 4pxk8four
+First Digit: 4
+Last Digit: 8
+Calibration Value: 48
+------------------------
+Line: seven87fourlzlnineone
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: zxllsctgqmsevensix72
+First Digit: 7
+Last Digit: 2
+Calibration Value: 72
+------------------------
+Line: 9ggkqvsrhftwobndlt
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: 8sixsfzlfpztjtwofourqvnptkgllxcf
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: 5dvsjvtm
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: 29dsvjrl3pvgjqncbgcxc
+First Digit: 2
+Last Digit: 3
+Calibration Value: 23
+------------------------
+Line: 9mhvrb8fbtppbhm2s
+First Digit: 9
+Last Digit: 2
+Calibration Value: 92
+------------------------
+Line: eightninel5
+First Digit: 8
+Last Digit: 5
+Calibration Value: 85
+------------------------
+Line: jltnzpcdr8one5szgf3nine88
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: 8xzgs4chdkfour
+First Digit: 8
+Last Digit: 4
+Calibration Value: 84
+------------------------
+Line: three7vgnbtqvhthree8sixq
+First Digit: 3
+Last Digit: 8
+Calibration Value: 38
+------------------------
+Line: 2onesix354jj58
+First Digit: 2
+Last Digit: 8
+Calibration Value: 28
+------------------------
+Line: 175rpdmxfeightwos
+First Digit: 1
+Last Digit: 5
+Calibration Value: 15
+------------------------
+Line: gmngst7hpfvgmtfrqbb
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: 9hd2lsxprdvtqxcv55
+First Digit: 9
+Last Digit: 5
+Calibration Value: 95
+------------------------
+Line: four13cjqkvgxvbseven8
+First Digit: 4
+Last Digit: 8
+Calibration Value: 48
+------------------------
+Line: 1kqfrqsevenqgjttjrspd
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: 7seveneight6zfmdbzdj2
+First Digit: 7
+Last Digit: 2
+Calibration Value: 72
+------------------------
+Line: 9sixpfjbnthreedgbhblmr
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: 7hdqqqkone6htzthree
+First Digit: 7
+Last Digit: 6
+Calibration Value: 76
+------------------------
+Line: hmnxstkbzlhqjpdn3three2
+First Digit: 3
+Last Digit: 2
+Calibration Value: 32
+------------------------
+Line: dpbjgmnn1
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: ninefivecznsbttpcvkthreeoneeight1zqtxb
+First Digit: 9
+Last Digit: 1
+Calibration Value: 91
+------------------------
+Line: 6hlxdlpgrl7six
+First Digit: 6
+Last Digit: 7
+Calibration Value: 67
+------------------------
+Line: fourdhczrzd9mmmdthcngsmdqkq9fivetwofkb
+First Digit: 4
+Last Digit: 9
+Calibration Value: 49
+------------------------
+Line: 7fbcrzcxjvxtqbfive168
+First Digit: 7
+Last Digit: 8
+Calibration Value: 78
+------------------------
+Line: sevenhlrkxgrggkqgd12
+First Digit: 7
+Last Digit: 2
+Calibration Value: 72
+------------------------
+Line: vzmpvhqvkpdfmthreetwo9
+First Digit: 3
+Last Digit: 9
+Calibration Value: 39
+------------------------
+Line: 21cqxtjtwoljsixxbf3
+First Digit: 2
+Last Digit: 3
+Calibration Value: 23
+------------------------
+Line: bzzxkxtl3rhsrpnnzseven
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: threevhdqqvtwothreenine48frqsfhgsgptbbn
+First Digit: 3
+Last Digit: 8
+Calibration Value: 38
+------------------------
+Line: foureighteight3pgbcftjdbbsmcqjcrmt21
+First Digit: 4
+Last Digit: 1
+Calibration Value: 41
+------------------------
+Line: twovpfbsd42five
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: 6foureightwofh
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: 5185cbhgvkvpfzk1
+First Digit: 5
+Last Digit: 1
+Calibration Value: 51
+------------------------
+Line: 1one3two5
+First Digit: 1
+Last Digit: 5
+Calibration Value: 15
+------------------------
+Line: seven3mdjks6kctnnchjgpnineeight
+First Digit: 7
+Last Digit: 6
+Calibration Value: 76
+------------------------
+Line: sixfivecjfkx5
+First Digit: 6
+Last Digit: 5
+Calibration Value: 65
+------------------------
+Line: sccbfqfive28bhconexmztpcftrbz
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: qfzhgl1nine5four59nbxhclpk
+First Digit: 1
+Last Digit: 9
+Calibration Value: 19
+------------------------
+Line: mjrvgdz3nine6gkvznv83
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: mfxqslvpzeight2
+First Digit: 8
+Last Digit: 2
+Calibration Value: 82
+------------------------
+Line: ztwoneeightknnjh4nine
+First Digit: 2
+Last Digit: 4
+Calibration Value: 24
+------------------------
+Line: onefivesevenfsmmhkbcplj6seven
+First Digit: 1
+Last Digit: 6
+Calibration Value: 16
+------------------------
+Line: 2lfgzblvdflgxnsqfxtksbb
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: blmvzczjs61fourmtds
+First Digit: 6
+Last Digit: 1
+Calibration Value: 61
+------------------------
+Line: 5two2
+First Digit: 5
+Last Digit: 2
+Calibration Value: 52
+------------------------
+Line: jqppjfxfour2
+First Digit: 4
+Last Digit: 2
+Calibration Value: 42
+------------------------
+Line: 3five2bcrn653
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: 86five6bseven
+First Digit: 8
+Last Digit: 6
+Calibration Value: 86
+------------------------
+Line: rzztlcbvteight135
+First Digit: 8
+Last Digit: 5
+Calibration Value: 85
+------------------------
+Line: 1sjngcngjrsht3ninehninefive
+First Digit: 1
+Last Digit: 3
+Calibration Value: 13
+------------------------
+Line: 81sixkrhvrhxqhn65
+First Digit: 8
+Last Digit: 5
+Calibration Value: 85
+------------------------
+Line: dkrgmnlcbjdjxblbfnp5
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: three85xrckdqtjqphjsjqflmt
+First Digit: 3
+Last Digit: 5
+Calibration Value: 35
+------------------------
+Line: 5fmptvmz19fourmbzrttnxnk
+First Digit: 5
+Last Digit: 9
+Calibration Value: 59
+------------------------
+Line: dptwonefbqhrxtljddtkhh6four23
+First Digit: 2
+Last Digit: 3
+Calibration Value: 23
+------------------------
+Line: xfvgkfive69
+First Digit: 5
+Last Digit: 9
+Calibration Value: 59
+------------------------
+Line: cbtfrbpxphj2sevenmmzrpccnine
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: 5twotwoseven
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: fivetwoeightonefive954
+First Digit: 5
+Last Digit: 4
+Calibration Value: 54
+------------------------
+Line: zxccrkvgdqtklbnhtdtdsghcseventwo6
+First Digit: 7
+Last Digit: 6
+Calibration Value: 76
+------------------------
+Line: three6vqmtchfdjxveightone
+First Digit: 3
+Last Digit: 6
+Calibration Value: 36
+------------------------
+Line: onenine39twodksvrdsxflthree
+First Digit: 1
+Last Digit: 9
+Calibration Value: 19
+------------------------
+Line: threesbpseven5zqtwobtmpgqjg1
+First Digit: 3
+Last Digit: 1
+Calibration Value: 31
+------------------------
+Line: 326dgjmzzfivehkhsjrseven
+First Digit: 3
+Last Digit: 6
+Calibration Value: 36
+------------------------
+Line: dgthreeeightthreefbhbltbdjnineseven3klvx
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: 4xkcqeighttwo2
+First Digit: 4
+Last Digit: 2
+Calibration Value: 42
+------------------------
+Line: eightonerhlnchp17
+First Digit: 8
+Last Digit: 7
+Calibration Value: 87
+------------------------
+Line: 2jcmzbczstsrmbpzxpftkmznzckhv7three
+First Digit: 2
+Last Digit: 7
+Calibration Value: 27
+------------------------
+Line: 7foursixbrcc6twosixgnf
+First Digit: 7
+Last Digit: 6
+Calibration Value: 76
+------------------------
+Line: 4lqxfourtvxhqtlhlx7xcfxhmqzbone
+First Digit: 4
+Last Digit: 7
+Calibration Value: 47
+------------------------
+Line: 2sevenz6sixtwo
+First Digit: 2
+Last Digit: 6
+Calibration Value: 26
+------------------------
+Line: nine1pv
+First Digit: 9
+Last Digit: 1
+Calibration Value: 91
+------------------------
+Line: 95jzlkxn
+First Digit: 9
+Last Digit: 5
+Calibration Value: 95
+------------------------
+Line: onerzfnqhmtjpqff93lrctjgqhseveneight
+First Digit: 1
+Last Digit: 3
+Calibration Value: 13
+------------------------
+Line: 5eightrdjnine3
+First Digit: 5
+Last Digit: 3
+Calibration Value: 53
+------------------------
+Line: threetwo6fourrcrq9dfmbsznshkfqmpvcb
+First Digit: 3
+Last Digit: 9
+Calibration Value: 39
+------------------------
+Line: five3hpjznhbtjonecvfgfsk9n9
+First Digit: 5
+Last Digit: 9
+Calibration Value: 59
+------------------------
+Line: 2gkbqpqn31
+First Digit: 2
+Last Digit: 1
+Calibration Value: 21
+------------------------
+Line: sevenfivefgcvtpsxjprfh8nine
+First Digit: 7
+Last Digit: 8
+Calibration Value: 78
+------------------------
+Line: lvfxml6992
+First Digit: 6
+Last Digit: 2
+Calibration Value: 62
+------------------------
+Line: 5threexmjjgkv8985zzjqdbtwo
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: eight3bkqdnbmrtb5
+First Digit: 8
+Last Digit: 5
+Calibration Value: 85
+------------------------
+Line: 7sevenoneznpx
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: 9hjg4eightrcsvdkbmldjclfqfm
+First Digit: 9
+Last Digit: 4
+Calibration Value: 94
+------------------------
+Line: 9four2one4
+First Digit: 9
+Last Digit: 4
+Calibration Value: 94
+------------------------
+Line: koneightonecdfcrjkqtcsevennlvr8hbrc
+First Digit: 1
+Last Digit: 8
+Calibration Value: 18
+------------------------
+Line: seven3lthbv8
+First Digit: 7
+Last Digit: 8
+Calibration Value: 78
+------------------------
+Line: ninexzznsix5nine
+First Digit: 9
+Last Digit: 5
+Calibration Value: 95
+------------------------
+Line: ninentdd6qvkclninefivenine
+First Digit: 9
+Last Digit: 6
+Calibration Value: 96
+------------------------
+Line: four11pgmxz7pnjfiveeight
+First Digit: 4
+Last Digit: 7
+Calibration Value: 47
+------------------------
+Line: threeninefourpmtmlgllftnvxzn5twonine
+First Digit: 3
+Last Digit: 5
+Calibration Value: 35
+------------------------
+Line: four46eight9sevenfive3three
+First Digit: 4
+Last Digit: 3
+Calibration Value: 43
+------------------------
+Line: blztvfkqggcbshlzxppxgrxsr4three3
+First Digit: 4
+Last Digit: 3
+Calibration Value: 43
+------------------------
+Line: one9pvlnv
+First Digit: 1
+Last Digit: 9
+Calibration Value: 19
+------------------------
+Line: 8l37
+First Digit: 8
+Last Digit: 7
+Calibration Value: 87
+------------------------
+Line: brjvlvjrhbfourxshh1vlclvrz2
+First Digit: 4
+Last Digit: 2
+Calibration Value: 42
+------------------------
+Line: 5flqnkntnxkzhcftmzb9rlfzxlg
+First Digit: 5
+Last Digit: 9
+Calibration Value: 59
+------------------------
+Line: sixfourseven77onekone
+First Digit: 6
+Last Digit: 7
+Calibration Value: 67
+------------------------
+Line: 6xfmdgjfeight4qzrncxdpmb4four
+First Digit: 6
+Last Digit: 4
+Calibration Value: 64
+------------------------
+Line: four28
+First Digit: 4
+Last Digit: 8
+Calibration Value: 48
+------------------------
+Line: seven74zrtpftdldc7fqlseven5
+First Digit: 7
+Last Digit: 5
+Calibration Value: 75
+------------------------
+Line: 6gxjzskpkfvmmd
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: zkoneight99jrrmgsfpsixfiveone
+First Digit: 1
+Last Digit: 9
+Calibration Value: 19
+------------------------
+Line: 9jbbdtdxjsm8szxblgjppx4tpnvqvtlrj
+First Digit: 9
+Last Digit: 4
+Calibration Value: 94
+------------------------
+Line: rsrlrcb32ngsixfourfivenine
+First Digit: 3
+Last Digit: 2
+Calibration Value: 32
+------------------------
+Line: 6seven9one7threegrfqpncjthree
+First Digit: 6
+Last Digit: 7
+Calibration Value: 67
+------------------------
+Line: onebjvpzzqhvlhg1pxkvmgqvxsrglb8fourptbjs
+First Digit: 1
+Last Digit: 8
+Calibration Value: 18
+------------------------
+Line: 1fch
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: njhs4p86n22
+First Digit: 4
+Last Digit: 2
+Calibration Value: 42
+------------------------
+Line: two1one6four1six
+First Digit: 2
+Last Digit: 1
+Calibration Value: 21
+------------------------
+Line: fourphxjkjtwo8eight
+First Digit: 4
+Last Digit: 8
+Calibration Value: 48
+------------------------
+Line: 3svqrzd1fourcmlcknhvninetddpbcmbtgqpcjms
+First Digit: 3
+Last Digit: 1
+Calibration Value: 31
+------------------------
+Line: vkndzm684sixjlgkcvz4
+First Digit: 6
+Last Digit: 4
+Calibration Value: 64
+------------------------
+Line: 25five
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: pkzt2fivetwo2zffkjqrhgfive4jpsj
+First Digit: 2
+Last Digit: 4
+Calibration Value: 24
+------------------------
+Line: sevenmpfcthreembjgbfpkdzqlr4
+First Digit: 7
+Last Digit: 4
+Calibration Value: 74
+------------------------
+Line: 49four1mpldzb3
+First Digit: 4
+Last Digit: 3
+Calibration Value: 43
+------------------------
+Line: hdzddkxf1cxftflb73
+First Digit: 1
+Last Digit: 3
+Calibration Value: 13
+------------------------
+Line: zrmhdlhk2v7
+First Digit: 2
+Last Digit: 7
+Calibration Value: 27
+------------------------
+Line: 25zcd
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: 11eighteight5qcqzpvvk
+First Digit: 1
+Last Digit: 5
+Calibration Value: 15
+------------------------
+Line: 38nine43
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: 8lstwo
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: 12sixnfbrgbhdpn1three3
+First Digit: 1
+Last Digit: 3
+Calibration Value: 13
+------------------------
+Line: 8eightcd82rzkzlvthqnvhjvgfour
+First Digit: 8
+Last Digit: 2
+Calibration Value: 82
+------------------------
+Line: 24jcbjplcnqbcrxs25
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: 3fivebfkgpkglfchbmbfps
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: pgmvbnhskgzdmz2sixeightcjq5
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: cdpmrlj1one
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: 6hxqoneightjjv
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: 34gxbjzrtg5
+First Digit: 3
+Last Digit: 5
+Calibration Value: 35
+------------------------
+Line: pvddskbslqnrfngmcjgsdthree3
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: 6nkjjlknp9
+First Digit: 6
+Last Digit: 9
+Calibration Value: 69
+------------------------
+Line: hflkjhgjmeightc5n1
+First Digit: 8
+Last Digit: 1
+Calibration Value: 81
+------------------------
+Line: dmkeight1223
+First Digit: 8
+Last Digit: 3
+Calibration Value: 83
+------------------------
+Line: five9three8
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: eight7mqfsjplfprrfpkzctgtdvrmxphm
+First Digit: 8
+Last Digit: 7
+Calibration Value: 87
+------------------------
+Line: phbs2fck4sixfourqvqbr
+First Digit: 2
+Last Digit: 4
+Calibration Value: 24
+------------------------
+Line: 2bnvktn
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: sfvkgzone83
+First Digit: 1
+Last Digit: 3
+Calibration Value: 13
+------------------------
+Line: 2threetqnthdnq32ninetwo9
+First Digit: 2
+Last Digit: 9
+Calibration Value: 29
+------------------------
+Line: sixhdkvdcmp5three23j
+First Digit: 6
+Last Digit: 3
+Calibration Value: 63
+------------------------
+Line: 8615four
+First Digit: 8
+Last Digit: 5
+Calibration Value: 85
+------------------------
+Line: twosix54vrrbvzszk9
+First Digit: 2
+Last Digit: 9
+Calibration Value: 29
+------------------------
+Line: 53671
+First Digit: 5
+Last Digit: 1
+Calibration Value: 51
+------------------------
+Line: threevklcphgkjsnine4eight4fmtffknglthree
+First Digit: 3
+Last Digit: 4
+Calibration Value: 34
+------------------------
+Line: sixninethreeh4dj
+First Digit: 6
+Last Digit: 4
+Calibration Value: 64
+------------------------
+Line: oneone1pmdthreesrfsssbkt8
+First Digit: 1
+Last Digit: 8
+Calibration Value: 18
+------------------------
+Line: 7foureighteight3
+First Digit: 7
+Last Digit: 3
+Calibration Value: 73
+------------------------
+Line: srpvkzrqfive378
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: 6twodnnrvfjrjv
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: 4kpxlslqfbktwo
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: bvzpgrc9twotqsvdztwoseven8
+First Digit: 9
+Last Digit: 8
+Calibration Value: 98
+------------------------
+Line: xkjdltjgzbjhxkjvtwo6
+First Digit: 2
+Last Digit: 6
+Calibration Value: 26
+------------------------
+Line: five27sixsevensixtwo9nine
+First Digit: 5
+Last Digit: 9
+Calibration Value: 59
+------------------------
+Line: jk468qgkr
+First Digit: 4
+Last Digit: 8
+Calibration Value: 48
+------------------------
+Line: fourtwo89
+First Digit: 4
+Last Digit: 9
+Calibration Value: 49
+------------------------
+Line: fourthreethreedtnzbmlfhmgjr5nineseven7
+First Digit: 4
+Last Digit: 7
+Calibration Value: 47
+------------------------
+Line: 44seven
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: two3psfive122jps
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: sevensevenghzmpdvrffive9nine3eight
+First Digit: 7
+Last Digit: 3
+Calibration Value: 73
+------------------------
+Line: 497ftdf9five
+First Digit: 4
+Last Digit: 9
+Calibration Value: 49
+------------------------
+Line: gklfive6rnvpnvvkqheight
+First Digit: 5
+Last Digit: 6
+Calibration Value: 56
+------------------------
+Line: 2hvdfiveprrdqspsix6
+First Digit: 2
+Last Digit: 6
+Calibration Value: 26
+------------------------
+Line: 5m8nine
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: bnctbninexsixonesix8five8
+First Digit: 9
+Last Digit: 8
+Calibration Value: 98
+------------------------
+Line: xkqqlmfmrveightsix4nine93nine
+First Digit: 8
+Last Digit: 3
+Calibration Value: 83
+------------------------
+Line: 6k
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: 3foursevensix6cksix5six
+First Digit: 3
+Last Digit: 5
+Calibration Value: 35
+------------------------
+Line: 7twoone
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: three73lfddzhd1fkxmjdzsix7twonex
+First Digit: 3
+Last Digit: 7
+Calibration Value: 37
+------------------------
+Line: sthjlrjrhd741prcsqh3rmllvjmtvgfour
+First Digit: 7
+Last Digit: 3
+Calibration Value: 73
+------------------------
+Line: 4dvffpjkn
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: tpbttcslvz7twoneq
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: fourtwoninej5snfxnqzthree
+First Digit: 4
+Last Digit: 5
+Calibration Value: 45
+------------------------
+Line: n7cmsfsqd
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: eightssrzkxj5
+First Digit: 8
+Last Digit: 5
+Calibration Value: 85
+------------------------
+Line: 239
+First Digit: 2
+Last Digit: 9
+Calibration Value: 29
+------------------------
+Line: three8five7xxthreebqrbx
+First Digit: 3
+Last Digit: 7
+Calibration Value: 37
+------------------------
+Line: zrlchvsevenfournine4ktvskhjgh3h
+First Digit: 7
+Last Digit: 3
+Calibration Value: 73
+------------------------
+Line: 7fourfdjsnhdbgqjvnltzj6three
+First Digit: 7
+Last Digit: 6
+Calibration Value: 76
+------------------------
+Line: mrjsndmzkz7rszqnbhxt3fvsix1
+First Digit: 7
+Last Digit: 1
+Calibration Value: 71
+------------------------
+Line: neight85eightggtnxtgljsevenfivekz
+First Digit: 8
+Last Digit: 5
+Calibration Value: 85
+------------------------
+Line: 6vknslh4onetwonrlzm
+First Digit: 6
+Last Digit: 4
+Calibration Value: 64
+------------------------
+Line: 37zlrksix1skbsdkpjf6twonejtx
+First Digit: 3
+Last Digit: 6
+Calibration Value: 36
+------------------------
+Line: three2843five6
+First Digit: 3
+Last Digit: 6
+Calibration Value: 36
+------------------------
+Line: txgdvvdg959
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: zfjrs2zvtbqctcdqgrpfmqsjbdone5
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: six9eightninetwo72sxxnzvblthree
+First Digit: 6
+Last Digit: 2
+Calibration Value: 62
+------------------------
+Line: 2jdpslvbnpqjpglczkmzggkfkdkx8hgpxtcz
+First Digit: 2
+Last Digit: 8
+Calibration Value: 28
+------------------------
+Line: threefive5eight5mnbllfpcsp29vlnbrntt
+First Digit: 3
+Last Digit: 9
+Calibration Value: 39
+------------------------
+Line: gfxndggbs16twozpcsckzqcj3sthsgq6
+First Digit: 1
+Last Digit: 6
+Calibration Value: 16
+------------------------
+Line: gcjjvqkvzdbcsnmqqhnzzqvj4
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: flcpl3btfmbbpnkjvnlmcthreetwo1eightwops
+First Digit: 3
+Last Digit: 1
+Calibration Value: 31
+------------------------
+Line: bdmeight67tvkfh2
+First Digit: 8
+Last Digit: 2
+Calibration Value: 82
+------------------------
+Line: three645qcv1zbbheight
+First Digit: 3
+Last Digit: 1
+Calibration Value: 31
+------------------------
+Line: 3ninethvbxxppxgqcqrclptxczgrcneighttwofivebrqxl
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: 25eight41
+First Digit: 2
+Last Digit: 1
+Calibration Value: 21
+------------------------
+Line: six22
+First Digit: 6
+Last Digit: 2
+Calibration Value: 62
+------------------------
+Line: pcp5
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: dtmgxkdqsixdhmsbj821
+First Digit: 6
+Last Digit: 1
+Calibration Value: 61
+------------------------
+Line: eightprbxpj5oneightcxj
+First Digit: 8
+Last Digit: 5
+Calibration Value: 85
+------------------------
+Line: qvrn3jbhlxjsdq
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: oneclvhjhr5
+First Digit: 1
+Last Digit: 5
+Calibration Value: 15
+------------------------
+Line: 9nkmqpjjxxhvtpndls9
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: 215ltwo75
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: threeeight16nine2mzhxnine
+First Digit: 3
+Last Digit: 2
+Calibration Value: 32
+------------------------
+Line: ktfxkmdvzprhkpdhvxhzsc68
+First Digit: 6
+Last Digit: 8
+Calibration Value: 68
+------------------------
+Line: fivesix8five
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: 4z1eighttwofive
+First Digit: 4
+Last Digit: 1
+Calibration Value: 41
+------------------------
+Line: 73twotwo4
+First Digit: 7
+Last Digit: 4
+Calibration Value: 74
+------------------------
+Line: gmjlpchdzfthreesix1vljxdqsrlxmmqs2
+First Digit: 3
+Last Digit: 2
+Calibration Value: 32
+------------------------
+Line: twofxh3
+First Digit: 2
+Last Digit: 3
+Calibration Value: 23
+------------------------
+Line: threeqzcglsdcfm4four
+First Digit: 3
+Last Digit: 4
+Calibration Value: 34
+------------------------
+Line: three1eight8
+First Digit: 3
+Last Digit: 8
+Calibration Value: 38
+------------------------
+Line: seven7dtqhr7
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: 4xbjlxlptj8hzfjnz
+First Digit: 4
+Last Digit: 8
+Calibration Value: 48
+------------------------
+Line: 37jzgxbjcggone
+First Digit: 3
+Last Digit: 7
+Calibration Value: 37
+------------------------
+Line: 81fouronenine489four
+First Digit: 8
+Last Digit: 9
+Calibration Value: 89
+------------------------
+Line: eight3fiveoneseven135
+First Digit: 8
+Last Digit: 5
+Calibration Value: 85
+------------------------
+Line: stzts59zqdvrdcqrc
+First Digit: 5
+Last Digit: 9
+Calibration Value: 59
+------------------------
+Line: sixnklrjbeightn2six
+First Digit: 6
+Last Digit: 2
+Calibration Value: 62
+------------------------
+Line: bqdtntwonine1eightttzlzvzfn54xmj
+First Digit: 2
+Last Digit: 4
+Calibration Value: 24
+------------------------
+Line: sjk6
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: qmrbnhczj624394sevenseven
+First Digit: 6
+Last Digit: 4
+Calibration Value: 64
+------------------------
+Line: kkjdcjhfh93eight
+First Digit: 9
+Last Digit: 3
+Calibration Value: 93
+------------------------
+Line: 3ptmslnconethree
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: cfjgdffcgvldsnvkbjqrxhxcl7fjlxdrlrrthreeseventwo
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: 187oneseven6
+First Digit: 1
+Last Digit: 6
+Calibration Value: 16
+------------------------
+Line: fiveprnppdg2tjfbfmlvhpmkggjc
+First Digit: 5
+Last Digit: 2
+Calibration Value: 52
+------------------------
+Line: 9onetwo4
+First Digit: 9
+Last Digit: 4
+Calibration Value: 94
+------------------------
+Line: fivesvjxkzzm59vtsevenhzxtkggdhr8hvjtjvv
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: kpxkbbxseveneight89sevenrbhqqpk
+First Digit: 7
+Last Digit: 9
+Calibration Value: 79
+------------------------
+Line: drhkpssxqvvnssq59four4
+First Digit: 5
+Last Digit: 4
+Calibration Value: 54
+------------------------
+Line: oneeight17
+First Digit: 1
+Last Digit: 7
+Calibration Value: 17
+------------------------
+Line: gteightwoone268four
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: eight7fourbjnlzfiveczlzppnxck
+First Digit: 8
+Last Digit: 7
+Calibration Value: 87
+------------------------
+Line: jdqpxsevenone2eight
+First Digit: 7
+Last Digit: 2
+Calibration Value: 72
+------------------------
+Line: pvh5six4hddrhfzpxfmtwo
+First Digit: 5
+Last Digit: 4
+Calibration Value: 54
+------------------------
+Line: 5six56nineone2
+First Digit: 5
+Last Digit: 2
+Calibration Value: 52
+------------------------
+Line: v96k9115three
+First Digit: 9
+Last Digit: 5
+Calibration Value: 95
+------------------------
+Line: phqhhthree5ksqhfjlbfg
+First Digit: 3
+Last Digit: 5
+Calibration Value: 35
+------------------------
+Line: gpsskbfhhllnxfvjspkjndtlfour5
+First Digit: 4
+Last Digit: 5
+Calibration Value: 45
+------------------------
+Line: three5zqbnsrdthree8
+First Digit: 3
+Last Digit: 8
+Calibration Value: 38
+------------------------
+Line: b4mkfpkltlfdfive4mdqxjnb8tdpnpf3
+First Digit: 4
+Last Digit: 3
+Calibration Value: 43
+------------------------
+Line: qfivejjggrpktxponetrjzceightseven9xhdf
+First Digit: 5
+Last Digit: 9
+Calibration Value: 59
+------------------------
+Line: 34cpfxc
+First Digit: 3
+Last Digit: 4
+Calibration Value: 34
+------------------------
+Line: jl9
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: 84four
+First Digit: 8
+Last Digit: 4
+Calibration Value: 84
+------------------------
+Line: fourthree9three48
+First Digit: 4
+Last Digit: 8
+Calibration Value: 48
+------------------------
+Line: 7threevgvtj2five4pbq
+First Digit: 7
+Last Digit: 4
+Calibration Value: 74
+------------------------
+Line: 7kjkjc
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: seventfsvjbsh5smmdd3frthree
+First Digit: 7
+Last Digit: 3
+Calibration Value: 73
+------------------------
+Line: smgmzqzn5
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: gmtd5kvglxsixeight8twothvkprlbc5
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: twofour62
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: nine5k
+First Digit: 9
+Last Digit: 5
+Calibration Value: 95
+------------------------
+Line: hbxnpb4four4h
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: 6sixgnmnjv4fourone1
+First Digit: 6
+Last Digit: 1
+Calibration Value: 61
+------------------------
+Line: 9eightseventhree
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: 9jpvccsvhqpnhsl8
+First Digit: 9
+Last Digit: 8
+Calibration Value: 98
+------------------------
+Line: nvcnninefour9
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: v237ppqbhb
+First Digit: 2
+Last Digit: 7
+Calibration Value: 27
+------------------------
+Line: 78six
+First Digit: 7
+Last Digit: 8
+Calibration Value: 78
+------------------------
+Line: four165oneightxcm
+First Digit: 4
+Last Digit: 5
+Calibration Value: 45
+------------------------
+Line: 9pjcsfbrghnineqzth4smx
+First Digit: 9
+Last Digit: 4
+Calibration Value: 94
+------------------------
+Line: 46fpfptrq1mbqmbnktqeight
+First Digit: 4
+Last Digit: 1
+Calibration Value: 41
+------------------------
+Line: stbxvlcqz5krd1threethreeonefour
+First Digit: 5
+Last Digit: 1
+Calibration Value: 51
+------------------------
+Line: 48six5seven
+First Digit: 4
+Last Digit: 5
+Calibration Value: 45
+------------------------
+Line: 6bmltlrvrgpcfhjhmfiveqzfxptjtwo4zvsqqxgbrdlzsfmtzdd
+First Digit: 6
+Last Digit: 4
+Calibration Value: 64
+------------------------
+Line: jeightwo47three86twoseven
+First Digit: 8
+Last Digit: 6
+Calibration Value: 86
+------------------------
+Line: njxzmthree8fivevvchvjqdvn3foursix
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: 83t34
+First Digit: 8
+Last Digit: 4
+Calibration Value: 84
+------------------------
+Line: oneznzqptpxbrtqxstkmz3kmtstds
+First Digit: 1
+Last Digit: 3
+Calibration Value: 13
+------------------------
+Line: 1sixsfrnqd
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: brs7fgkbhntv5s5
+First Digit: 7
+Last Digit: 5
+Calibration Value: 75
+------------------------
+Line: twohs7m
+First Digit: 2
+Last Digit: 7
+Calibration Value: 27
+------------------------
+Line: gfljsixseventmgdvhqthree3threefive
+First Digit: 6
+Last Digit: 3
+Calibration Value: 63
+------------------------
+Line: f1twonekdh
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: oneone735eightnine
+First Digit: 1
+Last Digit: 5
+Calibration Value: 15
+------------------------
+Line: pfjvfspsseven9qgfrnmckxzsix94
+First Digit: 7
+Last Digit: 4
+Calibration Value: 74
+------------------------
+Line: 7nineninelrcqqcgcnmmqf3
+First Digit: 7
+Last Digit: 3
+Calibration Value: 73
+------------------------
+Line: 1vjdhjtrfourfive2nine278
+First Digit: 1
+Last Digit: 8
+Calibration Value: 18
+------------------------
+Line: oneone7
+First Digit: 1
+Last Digit: 7
+Calibration Value: 17
+------------------------
+Line: threelcxlqrzhdghp4zkjfivepjj
+First Digit: 3
+Last Digit: 4
+Calibration Value: 34
+------------------------
+Line: hcshggsmzpdmkvtdvdgqtfxlt8
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: 1vdjtvpfhkhfive1
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: 2eightstnj6three
+First Digit: 2
+Last Digit: 6
+Calibration Value: 26
+------------------------
+Line: 93threeeightntjblpljbv
+First Digit: 9
+Last Digit: 3
+Calibration Value: 93
+------------------------
+Line: onermlmtncmj6pxkmhmqchzvzf
+First Digit: 1
+Last Digit: 6
+Calibration Value: 16
+------------------------
+Line: 4eightfnjzfzhvg
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: hmjvmtwovnl8nine84
+First Digit: 2
+Last Digit: 4
+Calibration Value: 24
+------------------------
+Line: threets6
+First Digit: 3
+Last Digit: 6
+Calibration Value: 36
+------------------------
+Line: six9twofivexgz63
+First Digit: 6
+Last Digit: 3
+Calibration Value: 63
+------------------------
+Line: 692five
+First Digit: 6
+Last Digit: 2
+Calibration Value: 62
+------------------------
+Line: fkgblptntvhvmlv8threethreenine
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: seven86
+First Digit: 7
+Last Digit: 6
+Calibration Value: 76
+------------------------
+Line: nine1n7
+First Digit: 9
+Last Digit: 7
+Calibration Value: 97
+------------------------
+Line: 97two
+First Digit: 9
+Last Digit: 7
+Calibration Value: 97
+------------------------
+Line: 4threebqqnmvmqleightthreefiveszppmbhxrxvpxz
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: 6bxbmbdkxqmzeightlrqdqvrkr5threethree
+First Digit: 6
+Last Digit: 5
+Calibration Value: 65
+------------------------
+Line: llqcbpeight1vpjninekpdvzg
+First Digit: 8
+Last Digit: 1
+Calibration Value: 81
+------------------------
+Line: 6qgtdqvtvkcbcskfqtq
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: 6threegrrmxxxqkflltr3
+First Digit: 6
+Last Digit: 3
+Calibration Value: 63
+------------------------
+Line: 312
+First Digit: 3
+Last Digit: 2
+Calibration Value: 32
+------------------------
+Line: hqmhsxpmkxtwosix3
+First Digit: 2
+Last Digit: 3
+Calibration Value: 23
+------------------------
+Line: rpzqtmzgdfdxcgsix1six63lxjpbxfq8
+First Digit: 6
+Last Digit: 8
+Calibration Value: 68
+------------------------
+Line: zzkbtkghmmqfourrtsixxxfjnvvccmpsd5six
+First Digit: 4
+Last Digit: 5
+Calibration Value: 45
+------------------------
+Line: 13two4bxdcqzrkqtxm1mplvqxcfhcjsc
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: threesixqj8two
+First Digit: 3
+Last Digit: 8
+Calibration Value: 38
+------------------------
+Line: 9seventhree
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: dtnine5twoseven6zxd
+First Digit: 9
+Last Digit: 6
+Calibration Value: 96
+------------------------
+Line: lsqbvgjnznineone7lxtvmkmflrfcqdjmjtwo
+First Digit: 9
+Last Digit: 7
+Calibration Value: 97
+------------------------
+Line: zpkjlfp6onevxtdtdzmcqjprfive
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: gxplqqsz412sevenninejs1
+First Digit: 4
+Last Digit: 1
+Calibration Value: 41
+------------------------
+Line: psvjsvvnrv796
+First Digit: 7
+Last Digit: 6
+Calibration Value: 76
+------------------------
+Line: 69tfxkbkchvlhkjbrmone
+First Digit: 6
+Last Digit: 9
+Calibration Value: 69
+------------------------
+Line: fivehnrvtb6
+First Digit: 5
+Last Digit: 6
+Calibration Value: 56
+------------------------
+Line: eightzdlqrbzxteightptlgmcmvtwothreergcddqxf2twonepxh
+First Digit: 8
+Last Digit: 2
+Calibration Value: 82
+------------------------
+Line: 343sevenxsffneightdvft
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: fivednmrpmvv8fiveninesevenzbggk
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: seventwot3hpfrzbhxlhfivetwo7zvmpmq
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: xnsxz8fivezhzdcbzsvp
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: sfzch8twoned
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: 5rstpx
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: 12six
+First Digit: 1
+Last Digit: 2
+Calibration Value: 12
+------------------------
+Line: gqznine5gpg
+First Digit: 9
+Last Digit: 5
+Calibration Value: 95
+------------------------
+Line: 6zrmsp825seven
+First Digit: 6
+Last Digit: 5
+Calibration Value: 65
+------------------------
+Line: 2493twothree
+First Digit: 2
+Last Digit: 3
+Calibration Value: 23
+------------------------
+Line: 9fivemksdnmgbvx
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: 6dvdpdpkmqpxvfive28six
+First Digit: 6
+Last Digit: 8
+Calibration Value: 68
+------------------------
+Line: dzvnrdksixonetwoonetr4
+First Digit: 6
+Last Digit: 4
+Calibration Value: 64
+------------------------
+Line: 7fncndxbqj6onetwosixsixthree
+First Digit: 7
+Last Digit: 6
+Calibration Value: 76
+------------------------
+Line: 7cnprcdgk2three2dvtccqnskvzfsevenxdrnqf
+First Digit: 7
+Last Digit: 2
+Calibration Value: 72
+------------------------
+Line: cxfcdvbsjqjbnxddlggjfourtnfzvtgx4twoddkkpdd
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: pxjgqrmdg5mpcgcdmfeight825jxxqcnfive
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: 1tkhgtzzfrbdvnbft
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: hgxfive14ddcfhshfd4
+First Digit: 5
+Last Digit: 4
+Calibration Value: 54
+------------------------
+Line: onenzlhvtdgkjmjgldmddhngdv9onebkt
+First Digit: 1
+Last Digit: 9
+Calibration Value: 19
+------------------------
+Line: foureight8rzxkktk9eighteight1
+First Digit: 4
+Last Digit: 1
+Calibration Value: 41
+------------------------
+Line: 478nshqhnhjrmlqbmp
+First Digit: 4
+Last Digit: 8
+Calibration Value: 48
+------------------------
+Line: ddjzzxgj75zktccgqrltfivethree
+First Digit: 7
+Last Digit: 5
+Calibration Value: 75
+------------------------
+Line: eightmcnmt5jnmnqhqdfive
+First Digit: 8
+Last Digit: 5
+Calibration Value: 85
+------------------------
+Line: rcdxshk1seven5
+First Digit: 1
+Last Digit: 5
+Calibration Value: 15
+------------------------
+Line: rdcmbznk79
+First Digit: 7
+Last Digit: 9
+Calibration Value: 79
+------------------------
+Line: 2gtbskjxpmmvdclgmfjrc48one
+First Digit: 2
+Last Digit: 8
+Calibration Value: 28
+------------------------
+Line: 8mqgnfive7chknsixrfourseven
+First Digit: 8
+Last Digit: 7
+Calibration Value: 87
+------------------------
+Line: 4hgdxjgbn1sixseven7twosixseven
+First Digit: 4
+Last Digit: 7
+Calibration Value: 47
+------------------------
+Line: mkjslkltjd59
+First Digit: 5
+Last Digit: 9
+Calibration Value: 59
+------------------------
+Line: fourfoursixfkjrcfsfivenrtzv4eight
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: five8threeseven4
+First Digit: 5
+Last Digit: 4
+Calibration Value: 54
+------------------------
+Line: 81821tcmfourddhmzvzfive
+First Digit: 8
+Last Digit: 1
+Calibration Value: 81
+------------------------
+Line: onesix943fivejld
+First Digit: 1
+Last Digit: 3
+Calibration Value: 13
+------------------------
+Line: 5eighteight3cmvvpqmdq72vrvb
+First Digit: 5
+Last Digit: 2
+Calibration Value: 52
+------------------------
+Line: two86
+First Digit: 2
+Last Digit: 6
+Calibration Value: 26
+------------------------
+Line: nqjrpqvgqr7rjjjxglqzrmt
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: 5kqjjvzxt
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: 6fourvstjrlnvone3ndphzphkrnsqmkmsthreep
+First Digit: 6
+Last Digit: 3
+Calibration Value: 63
+------------------------
+Line: six8four7
+First Digit: 6
+Last Digit: 7
+Calibration Value: 67
+------------------------
+Line: two1dntwo
+First Digit: 2
+Last Digit: 1
+Calibration Value: 21
+------------------------
+Line: eightgmcgrnptrcvztbdp4three
+First Digit: 8
+Last Digit: 4
+Calibration Value: 84
+------------------------
+Line: xxbpnnztr5eightpnqeight
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: three9pfpnjx6rkphpjeight3five
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: sevendzstsjl3krspscb1
+First Digit: 7
+Last Digit: 1
+Calibration Value: 71
+------------------------
+Line: fsevenfqtxxhjzvnineninesixeight8
+First Digit: 7
+Last Digit: 8
+Calibration Value: 78
+------------------------
+Line: kznjhnxbnk7qbxjrztltv
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: rkeightwo6zfpvrfgqr7qxbkkg43lrjqtzjrprqttxmbrzg
+First Digit: 8
+Last Digit: 3
+Calibration Value: 83
+------------------------
+Line: mcfive77vgzxonehglbj
+First Digit: 5
+Last Digit: 7
+Calibration Value: 57
+------------------------
+Line: 9319
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: 4mzds
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: sevensixthree5sixdvzxkndhvjfive
+First Digit: 7
+Last Digit: 5
+Calibration Value: 75
+------------------------
+Line: 9mjhfkeight88v
+First Digit: 9
+Last Digit: 8
+Calibration Value: 98
+------------------------
+Line: seven5zhdthbmrkdpdxfcp8njtqvpnjj14
+First Digit: 7
+Last Digit: 4
+Calibration Value: 74
+------------------------
+Line: 8ninetwo
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: 95tnjldjqcrzdxlm3
+First Digit: 9
+Last Digit: 3
+Calibration Value: 93
+------------------------
+Line: fourgffour8
+First Digit: 4
+Last Digit: 8
+Calibration Value: 48
+------------------------
+Line: nine821qbv6five
+First Digit: 9
+Last Digit: 6
+Calibration Value: 96
+------------------------
+Line: jbtfg83two
+First Digit: 8
+Last Digit: 3
+Calibration Value: 83
+------------------------
+Line: twozcpjrcnplnz5bdtgpdctb87lzlvqhtrjj
+First Digit: 2
+Last Digit: 7
+Calibration Value: 27
+------------------------
+Line: tr4
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: 5foureightfourfcs
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: 1cqjts1jgzkfm
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: 66threetwo
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: jsdpkfnineeightzpjdmrvxkbhdntj9
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: pgcqrsix6mqrr8threeqxgkftbmzninevndn
+First Digit: 6
+Last Digit: 8
+Calibration Value: 68
+------------------------
+Line: kmvqsqhbrcnbqqgninet6
+First Digit: 9
+Last Digit: 6
+Calibration Value: 96
+------------------------
+Line: bxtstqzpqfzqnhjfb8htszvgqhpnggvqt
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: ninecpqpffivehg8
+First Digit: 9
+Last Digit: 8
+Calibration Value: 98
+------------------------
+Line: kxmstxkffourqmx41
+First Digit: 4
+Last Digit: 1
+Calibration Value: 41
+------------------------
+Line: scfourlkfbrjvbtwo5
+First Digit: 4
+Last Digit: 5
+Calibration Value: 45
+------------------------
+Line: qr88fivenine1lfvksgrtqseven
+First Digit: 8
+Last Digit: 1
+Calibration Value: 81
+------------------------
+Line: four6foursix
+First Digit: 4
+Last Digit: 6
+Calibration Value: 46
+------------------------
+Line: twoqmnxrjql5fourpdlstnnsfkdjgt9
+First Digit: 2
+Last Digit: 9
+Calibration Value: 29
+------------------------
+Line: 4zsvbsjqv97bpxvncr
+First Digit: 4
+Last Digit: 7
+Calibration Value: 47
+------------------------
+Line: xhqlhsbqjhvdqqonesevenfive3qvrtbkhhlfbzsj9
+First Digit: 1
+Last Digit: 9
+Calibration Value: 19
+------------------------
+Line: sixeight4six5szgzcjhpj1
+First Digit: 6
+Last Digit: 1
+Calibration Value: 61
+------------------------
+Line: 7vpjq9hjtrjgone
+First Digit: 7
+Last Digit: 9
+Calibration Value: 79
+------------------------
+Line: f92eight
+First Digit: 9
+Last Digit: 2
+Calibration Value: 92
+------------------------
+Line: eighteightnc8134
+First Digit: 8
+Last Digit: 4
+Calibration Value: 84
+------------------------
+Line: 22onespjpxlttsqsix8eighthxdfvsdx
+First Digit: 2
+Last Digit: 8
+Calibration Value: 28
+------------------------
+Line: 5ninefourgrrmxsxjfxk
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: threeninepmvsv763xlxjp
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: oneone7lzzhjqqrg
+First Digit: 1
+Last Digit: 7
+Calibration Value: 17
+------------------------
+Line: 9fourtqqmhrpmkxhrvlnjvvhsevenseven
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: threethreetvjpnoneseven8
+First Digit: 3
+Last Digit: 8
+Calibration Value: 38
+------------------------
+Line: two46onetwoqbvntlxbrftpjf9
+First Digit: 2
+Last Digit: 9
+Calibration Value: 29
+------------------------
+Line: 8one5nine1three8
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: three69sgdkstpqbqdz
+First Digit: 3
+Last Digit: 9
+Calibration Value: 39
+------------------------
+Line: q8rzcl
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: onepjmchxtlqnmrcrvm6
+First Digit: 1
+Last Digit: 6
+Calibration Value: 16
+------------------------
+Line: 61fivegjjsevenqgdkq
+First Digit: 6
+Last Digit: 1
+Calibration Value: 61
+------------------------
+Line: 49fxhdzfntmk6tb8dpdkknzsb
+First Digit: 4
+Last Digit: 8
+Calibration Value: 48
+------------------------
+Line: bbseven1xvqmlrhx
+First Digit: 7
+Last Digit: 1
+Calibration Value: 71
+------------------------
+Line: 2j
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: seventwozjqszlhzxlpgphnkz2foursixfour
+First Digit: 7
+Last Digit: 2
+Calibration Value: 72
+------------------------
+Line: 1sixhgvhrbonetwom
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: fournine8gvmrpgdxvcbdspzdcqt87bdzvxbf5
+First Digit: 4
+Last Digit: 5
+Calibration Value: 45
+------------------------
+Line: 3sevennine2fzpt
+First Digit: 3
+Last Digit: 2
+Calibration Value: 32
+------------------------
+Line: threedcdlq9kcjhtmtz
+First Digit: 3
+Last Digit: 9
+Calibration Value: 39
+------------------------
+Line: 86five
+First Digit: 8
+Last Digit: 6
+Calibration Value: 86
+------------------------
+Line: tpfqhqs3977
+First Digit: 3
+Last Digit: 7
+Calibration Value: 37
+------------------------
+Line: 8four1cgmm12shfl58
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: xlkrrkpkqjtslblqfnxp7two16jzpmpkrfvdzh
+First Digit: 7
+Last Digit: 6
+Calibration Value: 76
+------------------------
+Line: 243
+First Digit: 2
+Last Digit: 3
+Calibration Value: 23
+------------------------
+Line: three9hkgnmrh6lqrsx5
+First Digit: 3
+Last Digit: 5
+Calibration Value: 35
+------------------------
+Line: fivexsczpmltrmcgrvfc58
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: mxngrsh2sevensixthreelgrmg
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: ljqmflvone76
+First Digit: 1
+Last Digit: 6
+Calibration Value: 16
+------------------------
+Line: ksponeightthree2ninenine
+First Digit: 1
+Last Digit: 2
+Calibration Value: 12
+------------------------
+Line: tdsdmjznr5nine7fourtwojgjsdfsevenone
+First Digit: 5
+Last Digit: 7
+Calibration Value: 57
+------------------------
+Line: eightfive1fourseven3gsqhtv
+First Digit: 8
+Last Digit: 3
+Calibration Value: 83
+------------------------
+Line: 1xfdmqtmgkmjkthree
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: rztwonelztpgkxzzcbn1eightttssdpone71
+First Digit: 2
+Last Digit: 1
+Calibration Value: 21
+------------------------
+Line: zthhsgvmhqsgvdponetwo9p
+First Digit: 1
+Last Digit: 9
+Calibration Value: 19
+------------------------
+Line: 293rmjjjpmjchjnbdcssfrneightvdzrkbhdln
+First Digit: 2
+Last Digit: 3
+Calibration Value: 23
+------------------------
+Line: 7nfkdntfourthreefzrfxmxgqone5
+First Digit: 7
+Last Digit: 5
+Calibration Value: 75
+------------------------
+Line: tkgrnhbflp7zltmbdoneeightwoh
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: 7bspgfklffgsix4
+First Digit: 7
+Last Digit: 4
+Calibration Value: 74
+------------------------
+Line: eighthcmlrpbhjjmvbjrleightgd94
+First Digit: 8
+Last Digit: 4
+Calibration Value: 84
+------------------------
+Line: sixbgfjzgzbxsb4qsixthreehbbn
+First Digit: 6
+Last Digit: 4
+Calibration Value: 64
+------------------------
+Line: ninerhzjpjdfnsevenonenine8
+First Digit: 9
+Last Digit: 8
+Calibration Value: 98
+------------------------
+Line: 38kqzjxqmmm
+First Digit: 3
+Last Digit: 8
+Calibration Value: 38
+------------------------
+Line: jngngvc412
+First Digit: 4
+Last Digit: 2
+Calibration Value: 42
+------------------------
+Line: 4twosponesixdpj15five
+First Digit: 4
+Last Digit: 5
+Calibration Value: 45
+------------------------
+Line: 41four2oneonekr2
+First Digit: 4
+Last Digit: 2
+Calibration Value: 42
+------------------------
+Line: cpsixjnlhkthree353seven
+First Digit: 6
+Last Digit: 3
+Calibration Value: 63
+------------------------
+Line: bknflgv1sixfivefive5
+First Digit: 1
+Last Digit: 5
+Calibration Value: 15
+------------------------
+Line: 3qkhnsjqkcjmlg7gl4jthreethree
+First Digit: 3
+Last Digit: 4
+Calibration Value: 34
+------------------------
+Line: dhlngstrvbxjjll2979kjsttsfgjkc
+First Digit: 2
+Last Digit: 9
+Calibration Value: 29
+------------------------
+Line: 4kkq7rqlxcldqqtwo
+First Digit: 4
+Last Digit: 7
+Calibration Value: 47
+------------------------
+Line: jfh74
+First Digit: 7
+Last Digit: 4
+Calibration Value: 74
+------------------------
+Line: lkfpcdghgq8gpgldrsnzkzzzzskrvcvsjthree
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: 57fivefive3cxqj2
+First Digit: 5
+Last Digit: 2
+Calibration Value: 52
+------------------------
+Line: ztwone7vcd37122
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: 4qrrhhlxgpr4
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: twokzfjg2sevenlnvlpzxknznpsc1
+First Digit: 2
+Last Digit: 1
+Calibration Value: 21
+------------------------
+Line: 4jjbcdbfm8six6four
+First Digit: 4
+Last Digit: 6
+Calibration Value: 46
+------------------------
+Line: 5eightninesixvzvf98two
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: 8flntwomkktkpvsone78sixone
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: sevenzltjhkptjfjbrppm85eight
+First Digit: 7
+Last Digit: 5
+Calibration Value: 75
+------------------------
+Line: fivemfrmnqptthreepninepd5
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: 6one9
+First Digit: 6
+Last Digit: 9
+Calibration Value: 69
+------------------------
+Line: vkqxgzmbm2b4pjqjddsbjnjcqqvm9
+First Digit: 2
+Last Digit: 9
+Calibration Value: 29
+------------------------
+Line: 5443nfkv
+First Digit: 5
+Last Digit: 3
+Calibration Value: 53
+------------------------
+Line: leightwo5
+First Digit: 8
+Last Digit: 5
+Calibration Value: 85
+------------------------
+Line: 8fiveeightonetwovgvhzgzfjh16eightwohlk
+First Digit: 8
+Last Digit: 6
+Calibration Value: 86
+------------------------
+Line: fivexnbhkzjfg1
+First Digit: 5
+Last Digit: 1
+Calibration Value: 51
+------------------------
+Line: chkxvgrgb1sqxsnhngnrtqsnqgjkd
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: 96twoone5553dv
+First Digit: 9
+Last Digit: 3
+Calibration Value: 93
+------------------------
+Line: 36pfltskrbcmlmnspn
+First Digit: 3
+Last Digit: 6
+Calibration Value: 36
+------------------------
+Line: 4jbbrh95249
+First Digit: 4
+Last Digit: 9
+Calibration Value: 49
+------------------------
+Line: xfzspqssdfourhnmtzfive2pfzczh
+First Digit: 4
+Last Digit: 2
+Calibration Value: 42
+------------------------
+Line: onexzbzhddkqgfr2
+First Digit: 1
+Last Digit: 2
+Calibration Value: 12
+------------------------
+Line: sevenninerrlveight5nine3
+First Digit: 7
+Last Digit: 3
+Calibration Value: 73
+------------------------
+Line: eight7qvgkbk238fiveeight
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: sevenseveneightgtxtxkjsgdgklzzxxc3two8
+First Digit: 7
+Last Digit: 8
+Calibration Value: 78
+------------------------
+Line: tvfjhvtclm75skqdxsskqhrjkbg
+First Digit: 7
+Last Digit: 5
+Calibration Value: 75
+------------------------
+Line: 45
+First Digit: 4
+Last Digit: 5
+Calibration Value: 45
+------------------------
+Line: sevenfive82
+First Digit: 7
+Last Digit: 2
+Calibration Value: 72
+------------------------
+Line: 425zkhjhmk
+First Digit: 4
+Last Digit: 5
+Calibration Value: 45
+------------------------
+Line: onexdchhtxmhsevenbczrslrppneightonenbnhfmbsvdcnzjx1
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: zfkscdbmtwoeightrksdmgx4
+First Digit: 2
+Last Digit: 4
+Calibration Value: 24
+------------------------
+Line: lnseightnine9eight
+First Digit: 8
+Last Digit: 9
+Calibration Value: 89
+------------------------
+Line: fourhmbhlcpht53ngkbzjmfivesixg
+First Digit: 4
+Last Digit: 3
+Calibration Value: 43
+------------------------
+Line: threestrhbj9sixggczcg
+First Digit: 3
+Last Digit: 9
+Calibration Value: 39
+------------------------
+Line: 9twoskgrps8
+First Digit: 9
+Last Digit: 8
+Calibration Value: 98
+------------------------
+Line: 3four6xdqczgtzlzf
+First Digit: 3
+Last Digit: 6
+Calibration Value: 36
+------------------------
+Line: ldfn2
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: qlzjsnbzfourfdq476
+First Digit: 4
+Last Digit: 6
+Calibration Value: 46
+------------------------
+Line: tpkczdh5hdbxvvmmt3sixsix
+First Digit: 5
+Last Digit: 3
+Calibration Value: 53
+------------------------
+Line: tdpxzld5
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: lnveightwohdkgcvvrjs38
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: zz8eightstvmhvrh7hftdhkrjcneight1
+First Digit: 8
+Last Digit: 1
+Calibration Value: 81
+------------------------
+Line: 9kdbcpqtx15
+First Digit: 9
+Last Digit: 5
+Calibration Value: 95
+------------------------
+Line: rbqgdbvrstgninefive4bqq2six
+First Digit: 9
+Last Digit: 2
+Calibration Value: 92
+------------------------
+Line: nine3psmkzkgnjbndrcninesevenzvcr6
+First Digit: 9
+Last Digit: 6
+Calibration Value: 96
+------------------------
+Line: eight4jfrqcbqfninedxmdtjgqgtrg6four5
+First Digit: 8
+Last Digit: 5
+Calibration Value: 85
+------------------------
+Line: 3mmnineninenjjpmfivetwo
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: cv4znxcjthreeqqtdqmzxfknnp
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: 8pjkm
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: ptwonethreegrgvseven7
+First Digit: 2
+Last Digit: 7
+Calibration Value: 27
+------------------------
+Line: onethree1bgjsix5sevengpts
+First Digit: 1
+Last Digit: 5
+Calibration Value: 15
+------------------------
+Line: 96xlmmthreeeightcbdnrstvpncmr
+First Digit: 9
+Last Digit: 6
+Calibration Value: 96
+------------------------
+Line: rtc94tcninefive
+First Digit: 9
+Last Digit: 4
+Calibration Value: 94
+------------------------
+Line: onespqnnptpdbrgqsqrldstl1
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: qkeightwotwocjcngknkztwo7
+First Digit: 8
+Last Digit: 7
+Calibration Value: 87
+------------------------
+Line: gzjhzlf4fdglcrzckbrlkmg
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: 3eighttwopninefour
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: 2seven1c
+First Digit: 2
+Last Digit: 1
+Calibration Value: 21
+------------------------
+Line: 17nine447qkmfour2
+First Digit: 1
+Last Digit: 2
+Calibration Value: 12
+------------------------
+Line: six6xfgqddnfpsc
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: mkbgbkvzdpzxfmrhdcjklxfoureightzzpn3eight
+First Digit: 4
+Last Digit: 3
+Calibration Value: 43
+------------------------
+Line: 95ninevhctbgznbzz871sixoneightr
+First Digit: 9
+Last Digit: 1
+Calibration Value: 91
+------------------------
+Line: 31onekmseveneight2four
+First Digit: 3
+Last Digit: 2
+Calibration Value: 32
+------------------------
+Line: mlxqgmvj2six6
+First Digit: 2
+Last Digit: 6
+Calibration Value: 26
+------------------------
+Line: 2sixgvsbmrhtwofour
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: eight221three99two3
+First Digit: 8
+Last Digit: 3
+Calibration Value: 83
+------------------------
+Line: 88xrrbjdlzrfour8plv
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: xdglmrpxbz5xpjxzpmvrgsixthreeseven7threebtqfkqp
+First Digit: 5
+Last Digit: 7
+Calibration Value: 57
+------------------------
+Line: lbd2onethree
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: seventwoseven7threesixbpld
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: 1pstwofour8eight3dsdfrseven
+First Digit: 1
+Last Digit: 3
+Calibration Value: 13
+------------------------
+Line: gnvzm19htsbvcsfmlrmbgtstzmm3twoqzffkrrq
+First Digit: 1
+Last Digit: 3
+Calibration Value: 13
+------------------------
+Line: 94nvrbbj
+First Digit: 9
+Last Digit: 4
+Calibration Value: 94
+------------------------
+Line: one71rsfbpnnbkrklmxqfive
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: 4six1
+First Digit: 4
+Last Digit: 1
+Calibration Value: 41
+------------------------
+Line: eight48chsrmsix
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: vqxrnmsix98hlzdgvd3sevenninekng
+First Digit: 6
+Last Digit: 3
+Calibration Value: 63
+------------------------
+Line: 12threehscqzvzcbgfive6three2zhtthr
+First Digit: 1
+Last Digit: 2
+Calibration Value: 12
+------------------------
+Line: 6sixkzrnv
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: 5gmnhhzkfmp
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: four35seven7onenvdsevenftnpbcj
+First Digit: 4
+Last Digit: 7
+Calibration Value: 47
+------------------------
+Line: 6zxrhcxxkppkn2
+First Digit: 6
+Last Digit: 2
+Calibration Value: 62
+------------------------
+Line: dgshxchmhgtgjk281seven
+First Digit: 2
+Last Digit: 1
+Calibration Value: 21
+------------------------
+Line: lbdsmfvdsfzlp6dfpgd3
+First Digit: 6
+Last Digit: 3
+Calibration Value: 63
+------------------------
+Line: three2dpsdhfld95eightwoht
+First Digit: 3
+Last Digit: 5
+Calibration Value: 35
+------------------------
+Line: jbktdklsqkgnhnfmseven1lhdsbjksixtwo
+First Digit: 7
+Last Digit: 1
+Calibration Value: 71
+------------------------
+Line: 3fdqfour
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: 5jpljkkpmdsix
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: qfeightwo9threethree
+First Digit: 8
+Last Digit: 9
+Calibration Value: 89
+------------------------
+Line: hpqdx4911tzfcxlrtccqf9one
+First Digit: 4
+Last Digit: 9
+Calibration Value: 49
+------------------------
+Line: q79zspgmjpdzs63
+First Digit: 7
+Last Digit: 3
+Calibration Value: 73
+------------------------
+Line: 344zk5xbthreezgbffcb
+First Digit: 3
+Last Digit: 5
+Calibration Value: 35
+------------------------
+Line: nlzmjfqxmneightxqjdnjvr21
+First Digit: 8
+Last Digit: 1
+Calibration Value: 81
+------------------------
+Line: 8cxtrkpvzj21xfgbdgcvgrztwo
+First Digit: 8
+Last Digit: 1
+Calibration Value: 81
+------------------------
+Line: three18444
+First Digit: 3
+Last Digit: 4
+Calibration Value: 34
+------------------------
+Line: sntrptktwo2one1five
+First Digit: 2
+Last Digit: 1
+Calibration Value: 21
+------------------------
+Line: qxjrgfcnpcjtnfjljqnq1onehzfcqlnine
+First Digit: 1
+Last Digit: 1
+Calibration Value: 11
+------------------------
+Line: kflgzv58dbzbjjdvclgtseven
+First Digit: 5
+Last Digit: 8
+Calibration Value: 58
+------------------------
+Line: twofive4eightwozz
+First Digit: 2
+Last Digit: 4
+Calibration Value: 24
+------------------------
+Line: eightfive365
+First Digit: 8
+Last Digit: 5
+Calibration Value: 85
+------------------------
+Line: 7nqnksvphhnine88
+First Digit: 7
+Last Digit: 8
+Calibration Value: 78
+------------------------
+Line: t8eight
+First Digit: 8
+Last Digit: 8
+Calibration Value: 88
+------------------------
+Line: bjd6five
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: khbrbtsx5jqxmbsqtf5nine3sevenskhfg6
+First Digit: 5
+Last Digit: 6
+Calibration Value: 56
+------------------------
+Line: seventlkmfhqkgxkbhqr6ncjztnfive
+First Digit: 7
+Last Digit: 6
+Calibration Value: 76
+------------------------
+Line: 152one
+First Digit: 1
+Last Digit: 2
+Calibration Value: 12
+------------------------
+Line: three5cbpqkzb4eightseventgmqzflsfksix
+First Digit: 3
+Last Digit: 4
+Calibration Value: 34
+------------------------
+Line: seven32threegfddgtf
+First Digit: 7
+Last Digit: 2
+Calibration Value: 72
+------------------------
+Line: two5twofivexzkkvcqs3
+First Digit: 2
+Last Digit: 3
+Calibration Value: 23
+------------------------
+Line: tvvdgrnqlmkfour1zrcznqkhseveneight1q
+First Digit: 4
+Last Digit: 1
+Calibration Value: 41
+------------------------
+Line: 92threesix89
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: 3zbdlttpbh7fivepgxmrvbzlnfgmbkzknndfqk5
+First Digit: 3
+Last Digit: 5
+Calibration Value: 35
+------------------------
+Line: threefnhxtdbl1jtxeightwol
+First Digit: 3
+Last Digit: 1
+Calibration Value: 31
+------------------------
+Line: 5vgthldgfmgdjphvcgh53dshmdkc
+First Digit: 5
+Last Digit: 3
+Calibration Value: 53
+------------------------
+Line: 3nineeightwokh
+First Digit: 3
+Last Digit: 3
+Calibration Value: 33
+------------------------
+Line: 57eighttddbcdsjdss
+First Digit: 5
+Last Digit: 7
+Calibration Value: 57
+------------------------
+Line: tkcgn86xfgbmzt7rksvnchnrh
+First Digit: 8
+Last Digit: 7
+Calibration Value: 87
+------------------------
+Line: five3dn5
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: three2eighteight15nine
+First Digit: 3
+Last Digit: 5
+Calibration Value: 35
+------------------------
+Line: 49bn1zvbm57
+First Digit: 4
+Last Digit: 7
+Calibration Value: 47
+------------------------
+Line: 351six6xfzfjvpz
+First Digit: 3
+Last Digit: 6
+Calibration Value: 36
+------------------------
+Line: 5one5zchddj4dkksn
+First Digit: 5
+Last Digit: 4
+Calibration Value: 54
+------------------------
+Line: xfhtwonesevenfivethreepqzmrzrrfourthree5
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: ninetzmcgp47four
+First Digit: 9
+Last Digit: 7
+Calibration Value: 97
+------------------------
+Line: sevenbcfbpnrvkkscrjtpctdtb69bvvnvlgsmjltlvs
+First Digit: 7
+Last Digit: 9
+Calibration Value: 79
+------------------------
+Line: 6threev
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: ninerlsbznvfn9
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: fourbm2
+First Digit: 4
+Last Digit: 2
+Calibration Value: 42
+------------------------
+Line: sdxd22
+First Digit: 2
+Last Digit: 2
+Calibration Value: 22
+------------------------
+Line: n7
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: 7sixcjdsxfourfmvzrbvlnine5
+First Digit: 7
+Last Digit: 5
+Calibration Value: 75
+------------------------
+Line: threeqtbhgznine7one
+First Digit: 3
+Last Digit: 7
+Calibration Value: 37
+------------------------
+Line: ftmkmxkd9fvvlg353rp51
+First Digit: 9
+Last Digit: 1
+Calibration Value: 91
+------------------------
+Line: 9zjhmpnjv5jvndz
+First Digit: 9
+Last Digit: 5
+Calibration Value: 95
+------------------------
+Line: 58three59nineonesix
+First Digit: 5
+Last Digit: 9
+Calibration Value: 59
+------------------------
+Line: rmjvhrjjmkqsn6gqthreeonefivemxqhrzvffone
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: xsslv7gpgkbzdmr434four
+First Digit: 7
+Last Digit: 4
+Calibration Value: 74
+------------------------
+Line: pnzxp4nbtsjqctkvqncxzxzj
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: eightseven52five4ninekntfjrdt
+First Digit: 8
+Last Digit: 4
+Calibration Value: 84
+------------------------
+Line: 4sixldsmv
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: pknxkqgdpnc7fivedbvhkn
+First Digit: 7
+Last Digit: 7
+Calibration Value: 77
+------------------------
+Line: qkpjhjlxone4sixpfkvhlmxmd3
+First Digit: 1
+Last Digit: 3
+Calibration Value: 13
+------------------------
+Line: four3ninerkrcvgcmbb2qm
+First Digit: 4
+Last Digit: 2
+Calibration Value: 42
+------------------------
+Line: fivenine6six1eight
+First Digit: 5
+Last Digit: 1
+Calibration Value: 51
+------------------------
+Line: 69sixnine
+First Digit: 6
+Last Digit: 9
+Calibration Value: 69
+------------------------
+Line: bvjx5lg5vgrqq
+First Digit: 5
+Last Digit: 5
+Calibration Value: 55
+------------------------
+Line: 21ninegnhdkcxhzkcfdksvsmdthree
+First Digit: 2
+Last Digit: 1
+Calibration Value: 21
+------------------------
+Line: zjrnmhclxhrkjpffhxkthnvj83jnshbqvx
+First Digit: 8
+Last Digit: 3
+Calibration Value: 83
+------------------------
+Line: bzfphcg9fourthreegkchdvrgsx
+First Digit: 9
+Last Digit: 9
+Calibration Value: 99
+------------------------
+Line: 2ninebvgdcfxtktqjxjqvxfgjdqfhv5threegqtsfhtfxg
+First Digit: 2
+Last Digit: 5
+Calibration Value: 25
+------------------------
+Line: 6rqskvckjzq2qzrnbxjmlthreeeight6hrs
+First Digit: 6
+Last Digit: 6
+Calibration Value: 66
+------------------------
+Line: sixthree6lxcrsevenseven69twonegs
+First Digit: 6
+Last Digit: 9
+Calibration Value: 69
+------------------------
+Line: 2dcvcqcbpshsixone3
+First Digit: 2
+Last Digit: 3
+Calibration Value: 23
+------------------------
+Line: drkdbmv4zbjbznsqtj
+First Digit: 4
+Last Digit: 4
+Calibration Value: 44
+------------------------
+Line: eightbqfhnmvqsoneninezbrzcqkz4ftv
+First Digit: 8
+Last Digit: 4
+Calibration Value: 84
+------------------------
+Line: 1eightcrcjcbdthreebscfpvznqfrj6
+First Digit: 1
+Last Digit: 6
+Calibration Value: 16
+------------------------
