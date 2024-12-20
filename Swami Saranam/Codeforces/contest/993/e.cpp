@@ -8,21 +8,15 @@ int main() {
     cin >> t; 
     while (t--) {
         ll k, l1, r1, l2, r2;
-        cin >> k >> l1 >> r1 >> l2 >> r2;
-        ll count = 0;
-        for (ll x = l1; x <= r1; ++x) {
-            ll y = x;
-            while (y <= r2) {
-                if (y >= l2) { 
-                    count++;
-                }
-                if (y > r2 / k) {
-                    break;
-                }
-                y *= k;
-            }
+        cin >> k >> l1 >> r1 >> l2 >> r2;       
+        ll cur=1,ans=0;
+        while(cur<=r2){
+            const ll R=min(r2/cur,r1),L=max((l2+cur-1)/cur,l1);
+            if(L<=R)
+                ans+=R-L+1;
+            cur*=k;
         }
-        cout<<count<<endl;
+        cout<<ans<<endl;
     }
     return 0;
 }
