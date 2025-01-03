@@ -7,13 +7,13 @@ using namespace std;
 
 int main(){
     fast();
-    int siz,t;
+    ll siz,t;
     cin>>siz>>t;
-    vector<int>nums;
-    for(int i=1;i<=siz;i+=2){
+    vector<ll>nums;
+    for(ll i=1;i<=siz;i+=2){
         nums.push_back(i);
     }
-    for(int i=2;i<=siz;i+=2){
+    for(ll i=2;i<=siz;i+=2){
         nums.push_back(i);
     }
     cout<<nums[t-1]<<endl;
