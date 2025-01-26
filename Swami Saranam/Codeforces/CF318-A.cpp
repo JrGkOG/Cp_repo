@@ -7,14 +7,25 @@ using namespace std;
 
 int main(){
     fast();
-    ll siz,t;
-    cin>>siz>>t;
-    vector<ll>nums;
-    for(ll i=1;i<=siz;i+=2){
-        nums.push_back(i);
+    ll siz, t;
+    cin >> siz >> t;
+    ll mid = siz / 2;
+    
+    if (siz % 2 == 0) {
+        if (t > mid) {
+            t = t - mid;
+            cout << 2 + (t - 1) * 2 << "\n";
+        } else {
+            cout << 1 + (t - 1) * 2 << "\n";
+        }
+    } else {
+        mid = (siz + 1) / 2;  // Corrected for odd sizes
+        if (t > mid) {
+            t = t - mid;
+            cout << 2 + (t - 1) * 2 << "\n";
+        } else {
+            cout << 1 + (t - 1) * 2 << "\n";
+        }
     }
-    for(ll i=2;i<=siz;i+=2){
-        nums.push_back(i);
-    }
-    cout<<nums[t-1]<<endl;
+    return 0;
 }
