@@ -12,9 +12,12 @@ int main(){
     while(t--){
         string s;
         cin>>s;
-        s.pop_back();
-        s.pop_back();
-        s+="i";
-        cout<<s<<endl;
+        int one = 0;
+        for(int i=0;i<s.size();i++){
+            if(s[i]=='1'){
+                one++;
+            }
+        }
+        cout<<one<<endl;
     }
 }
