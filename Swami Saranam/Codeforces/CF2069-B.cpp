@@ -54,7 +54,7 @@ void performAction(vector<vector<ll>> &grid, unordered_map<ll, pair<ll, ll>> &mp
 
 void func(){
     fast();
-    int t; 
+    int t;  
     cin>>t;
     while(t--){
         ll m,n;

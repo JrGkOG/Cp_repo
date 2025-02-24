@@ -5,11 +5,15 @@ using namespace std;
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);   
 
-int main(){
-    fast();
+void func(){
     int t;
     cin>>t;
     while(t--){
         
     }
+}
+int main(){
+    fast();
+    func();
+    return 0;
 }
