@@ -10,11 +10,26 @@ int main(){
     int t;
     cin>>t;
     while(t--){
-        int siz;
-        cin>>siz;
-        vector<int>nums(siz+1);
-        for(int i=0;i<siz;i++){
-            cin>>nums[i];
+        ll x;
+        cin>>x;
+        if(x%2!=0){
+            cout<<"NO"<<endl;
+        }
+        else{
+            map<ll,ll>mp;
+            ll itemp=x; 
+            ll maxi=INT_MIN;
+            while(x!=0){
+                ll num;
+                cin>>num;
+                mp[num]+=1;
+                maxi=max(maxi,num);
+            }
+            for(auto it:mp){
+                if(maxi-it.first> it.second){
+                    
+                }
+            }
         }
     }
 }
