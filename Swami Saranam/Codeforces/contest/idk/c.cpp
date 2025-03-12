@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void Solve ) {
+void Solve () {
   int x;
   cin >> x;
 
