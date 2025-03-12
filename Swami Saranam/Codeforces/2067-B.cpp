@@ -4,32 +4,42 @@ using namespace std;
 #define fast()                        \
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);   
-
-int main(){
-    fast();
+#define Yes cout<<"YES"<<endl;
+#define No cout<<"NO"<<endl;
+void func(){
     int t;
     cin>>t;
     while(t--){
         ll x;
         cin>>x;
-        if(x%2!=0){
-            cout<<"NO"<<endl;
+        vector<int>nums(x+1,0);
+        for(int i=0;i<x;i++){
+            int num;
+            cin>>num;
+            nums[num]++;
         }
-        else{
-            map<ll,ll>mp;
-            ll itemp=x; 
-            ll maxi=INT_MIN;
-            while(x!=0){
-                ll num;
-                cin>>num;
-                mp[num]+=1;
-                maxi=max(maxi,num);
+        for(int i=0;i<x;i++){
+            if(nums[i]>2){
+                nums[i+1]+=nums[i]-2;
+                nums[i]=2;
             }
-            for(auto it:mp){
-                if(maxi-it.first> it.second){
-                    
-                }
+        }
+        bool flag=true;
+        for(int i=0;i<x;i++){
+            if(nums[i]%2!=0){
+                No;
+                flag=false;
+                break;
             }
+        }
+        if(flag==true){
+            Yes;
         }
     }
+}
+
+int main(){
+    fast();
+    func();
+    return 0;
 }
