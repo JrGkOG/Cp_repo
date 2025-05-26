@@ -18,13 +18,21 @@ void func(){
             cin>>nums[i];
         }
         sort(nums.begin(),nums.end());
-        ll mini=nums[0];
-        ll maxi=nums[x-1];
-        if((mini + maxi)%2==0) cout<<0<<endl;
-        else{
-            if(mini%2==0){
-                c
+        ll first = -1 ;
+        ll last = -1;
+        for(int i=0;i<x;i++){
+            if(first==-1 && (nums[i]%2)!=nums[0]%2){
+                first=i;
             }
+            else if(nums[i]%2 != nums[x-1]%2){
+                last=i;
+            }
+        }
+        if((nums[0]+ nums[x-1])%2){
+            cout<<min(first,(x-last-1))<<endl;
+        }
+        else{
+            cout<<0<<endl;
         }
     }
 }
