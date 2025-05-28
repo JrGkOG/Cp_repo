@@ -1,27 +1,28 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
-#define yes "Yes"
-#define no "No"
-#define fast()                        \
-    ios_base::sync_with_stdio(false); \
-    cin.tie(NULL);   
-
-void func(){
-    int t;
-    cin>>t;
-    while(t--){
-        string s;
-        cin>>s;
-        vector<int>nums(10);
-        for(int i=0;i<s.size();i++){
-            nums[s[i]-'0']++;
-        }
-
+void Solve()
+{
+    string a;
+    cin >> a;
+    multiset<int> s;
+    for (auto x : a)
+        s.insert(x - '0');
+    vector<int> ans;
+    for (int i = 1; i <= 10; i++)
+    {
+        auto it = s.lower_bound(10 - i);
+        ans.push_back(*it);
+        s.erase(it);
     }
+    for (auto x : ans)
+        cout << x;
+    cout << "\n";
 }
-int main(){
-    fast();
-    func();
+int main()
+{
+    ios::sync_with_stdio(false), cin.tie(0);
+    int T;
+    for (cin >> T; T--;)
+        Solve();
     return 0;
 }
