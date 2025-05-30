@@ -58,6 +58,7 @@ void func()
         }else{
             cout<<mini<<endl;
         }
+        binary_search(nums.begin(),nums.end(),7);
     }
 }
 int main()
