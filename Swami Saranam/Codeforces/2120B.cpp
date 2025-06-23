@@ -21,30 +21,23 @@ void func(){
     int t;
     cin>>t;
     while(t--){
-        int n;
-        cin>>n;
-        iv(v,n);
-        if(v.size()<=2) {
-            int cnt=1;
-            int prev=v[0];
-            for(int i=1;i<v.size();i++){
-                if(prev==v[i]) cnt++;
-            }
-            cout<<cnt<<endl;
-        }
-        else{   
-            int cnt=0;
-            multiset<int>st;
-            st.insert(v[0]);
-            st.insert(v[1]);
-            int cnt=0;
-            for(int i=2;i<n;i++){
-                if(st.count(v[i])){
-                    st.erase(v[i]);
+        int n,s;
+        cin>>n>>s;
+        int cnt=0;
+        for(int i=0;i<n;i++){
+            int a,b,c,d;
+            cin>>a>>b>>c>>d;
+            if(a==b){
+                if((c-d)%s==0){
+                    cnt++;
+                }
+            }else{
+                if((c+d)%s == 0){
+                    cnt++;
                 }
             }
         }
-        
+        cout<<cnt<<endl;
     }
 }
 int main(){

@@ -24,27 +24,20 @@ void func(){
         int n;
         cin>>n;
         iv(v,n);
-        if(v.size()<=2) {
-            int cnt=1;
-            int prev=v[0];
-            for(int i=1;i<v.size();i++){
-                if(prev==v[i]) cnt++;
-            }
-            cout<<cnt<<endl;
-        }
-        else{   
-            int cnt=0;
-            multiset<int>st;
-            st.insert(v[0]);
-            st.insert(v[1]);
-            int cnt=0;
-            for(int i=2;i<n;i++){
-                if(st.count(v[i])){
-                    st.erase(v[i]);
-                }
-            }
+        ll y=(2*v[0]-v[1])/(n+1);
+        ll x=v[1]-v[0]+y;
+        bool flag=false;
+        if(y < 0 || x < 0) flag =true;
+        f(i,n){
+            v[i] -=x*(i+1);
+            v[i] -=y*(n-i);
         }
         
+        f(i,n){
+            if(v[i]!=0) flag=true;
+        }
+        if(flag) no;
+        else yes;
     }
 }
 int main(){
