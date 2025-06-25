@@ -1,7 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define fast() ios_base::sync_with_stdio(false); cin.tie(NULL);
-#define int long long
+#define fast()                        \
+    ios_base::sync_with_stdio(false); \
+    cin.tie(NULL);   
+#define ll long long
+#define f(i, n) for (ll i = 0; i < n; i++)
+#define ia(a, n) \
+    ll a[n];     \
+    f(i, n) cin >> a[i]
+#define iv(v, n)     \
+    vector<ll> v(n); \
+    f(i, n) cin >> v[i]
+#define MOD (1000000007)
+#define INF 1000000000000000000LL // Infinity for ll
+#define mp make_pair
+#define nline '\n'
+#define yes cout << "YES\n"
+#define no cout << "NO\n"
 #define pb push_back
 #define ppb pop_back
 #define mp make_pair
@@ -13,10 +28,6 @@ const int inf = 1e18;
 const int mod = 1e9 + 7;
 const int NUM = 1e6 + 5; 
 const int N = 1e7 + 5;  
-using vi = vector<int>;
-using vvi = vector<vi>;
-using pi = pair<int, int>;
-using vpi = vector<pi>;
 #define DEBUG(x) cerr << #x << ": " << x << '\n'
 vector<int> fact, invfact, power, sieve, lp, primes;
 
