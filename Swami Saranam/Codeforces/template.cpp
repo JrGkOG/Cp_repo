@@ -1,201 +1,97 @@
-// 
 #include <bits/stdc++.h>
-#define ll long long
+using namespace std;
+#define fast() ios_base::sync_with_stdio(false); cin.tie(NULL);
 #define int long long
 #define pb push_back
 #define ppb pop_back
 #define mp make_pair
-using namespace std;
-using vpi = vector<pair<int, int>>;
-using pi = pair<int, int>;
-using vi = vector<int>;
-using vvi = vector<vector<int>>;
 #define ff first
 #define ss second
 #define all(x) x.begin(), x.end()
 #define sz(x) (int)(x).size()
-const int inf = 9e18;
+const int inf = 1e18;
 const int mod = 1e9 + 7;
-const int NUM = 1000030;
-const int N = 10000000;
+const int NUM = 1e6 + 5; 
+const int N = 1e7 + 5;  
+using vi = vector<int>;
+using vvi = vector<vi>;
+using pi = pair<int, int>;
+using vpi = vector<pi>;
 #define DEBUG(x) cerr << #x << ": " << x << '\n'
-template <typename T, typename Y>
-#define fast()                        \
-    ios_base::sync_with_stdio(false); \
-    cin.tie(NULL);   
-istream &operator>>(istream &is, pair<T, Y> &p)
-{
-    is >> p.first >> p.second;
-    return is;
-}
-template <typename T, typename Y>
-ostream &operator<<(ostream &os, pair<T, Y> p)
-{
-    os << p.first << ' ' << p.second << ' ';
-    return os;
-}
-template <typename T>
-istream &operator>>(istream &is, vector<T> &v)
-{
-    for (auto &i : v)
-        is >> i;
-    return is;
-}
-template <typename T>
-ostream &operator<<(ostream &os, vector<T> v)
-{
-    for (auto &i : v)
-        os << i << ' ';
-    return os;
-}
-vector<int> lp, sieve;
-vector<int> pr;
-vector<int> power;
-vector<int> fact;
-void initpow(int x)
-{
-    power.resize(NUM);
-    power[0] = 1;
-    for (int i = 1; i < NUM; i++)
-    {
-        power[i] = (power[i - 1] * (x % mod)) % mod;
-    }
-}
-void initFactorial()
-{
-    fact.resize(NUM);
-    fact[0] = 1;
-    for (int i = 1; i < NUM; i++)
-    {
-        fact[i] = (fact[i - 1] * i) % mod;
-    }
-}
-void calc_sieve()
-{
-    sieve.resize(NUM + 1, 0);
-    for (int x = 2; x <= NUM; x++)
-    {
-        if (sieve[x])
-            continue;
-        for (int u = x; u <= NUM; u += x)
-        {
-            sieve[u] = x;
-        }
-    }
-}
-void primefactor()
-{
-    lp.resize(N + 1, 0);
-    for (int i = 2; i <= N; ++i)
-    {
-        if (lp[i] == 0)
-        {
-            lp[i] = i;
-            pr.push_back(i);
-        }
-        for (int j = 0; j < (int)pr.size() && pr[j] <= lp[i] && i * pr[j] <= N; ++j)
-            lp[i * pr[j]] = pr[j];
-    }
-}
-int binpow(int a, int b)
-{
+vector<int> fact, invfact, power, sieve, lp, primes;
+
+int mod_pow(int a, int b, int m = mod) {
     int res = 1;
-    while (b > 0)
-    {
-        if (b & 1)
-            res = res * a;
-        a = a * a;
+    a %= m;
+    while (b) {
+        if (b & 1) res = (res * a) % m;
+        a = (a * a) % m;
         b >>= 1;
     }
     return res;
 }
-int binpow(int a, int b, int mod)
-{
-    int res = 1;
-    while (b > 0)
-    {
-        if (b & 1)
-            res = (res * a) % mod;
-        a = (a * a) % mod;
-        b >>= 1;
-    }
-    return res % mod;
+int mod_inv(int a, int m = mod) {
+    return mod_pow(a, m - 2, m);
 }
-int gcd(int a, int b)
-{
-    if (b == 0)
-        return a;
-    else
-        return gcd(b, a % b);
+int mod_div(int a, int b, int m = mod) {
+    return (a % m * mod_inv(b, m)) % m;
 }
-int lcm(int a, int b)
-{
-    return ((a / gcd(a, b)) * b);
+void init_factorials(int max_n = NUM) {
+    fact.resize(max_n);
+    invfact.resize(max_n);
+    fact[0] = invfact[0] = 1;
+    for (int i = 1; i < max_n; i++)
+        fact[i] = (fact[i - 1] * i) % mod;
+    invfact[max_n - 1] = mod_inv(fact[max_n - 1]);
+    for (int i = max_n - 2; i >= 1; i--)
+        invfact[i] = (invfact[i + 1] * (i + 1)) % mod;
 }
-int inversemod(int a, int mod)
-{
-    return binpow(a, mod - 2, mod);
+int combination(int n, int k) {
+    if (k > n || k < 0) return 0;
+    return fact[n] * invfact[k] % mod * invfact[n - k] % mod;
 }
-int divmod(int a, int b, int c)
-{
-    return ((a % c) * inversemod(b, c)) % c;
+void init_powers(int x, int max_n = NUM) {
+    power.resize(max_n);
+    power[0] = 1;
+    for (int i = 1; i < max_n; i++)
+        power[i] = (power[i - 1] * x) % mod;
 }
-int combination(int n, int k)
-{
-    if (k > n)
-        return 0;
-    int p1 = (fact[n] * inversemod(fact[k], mod)) % mod;
-    int p2 = (1 * inversemod(fact[n - k], mod)) % mod;
-    return (p1 * p2) % mod;
-}
-void solve()
-{
-    ll n;
-    cin >> n;
-    vector<string> adj(n);
-    for (ll i = 0; i < n; i++)
-    {
-        cin >> adj[i];
-    }
-    vi ans(n);
-    vi l(n, 0);
-    vi r(n, n - 1);
-    for (ll i = 0; i < n; i++)
-    {
-        ll cnt = 0;
-        for (ll j = 0; j < n; j++)
-        {
-            if (l[j] == l[i] && r[j] == r[i] && adj[i][j] == '1')
-            {
-                cnt++;
-            }
+void calc_sieve(int max_n = NUM) {
+    sieve.assign(max_n + 1, 0);
+    for (int i = 2; i <= max_n; ++i) {
+        if (!sieve[i]) {
+            for (int j = i; j <= max_n; j += i)
+                if (!sieve[j]) sieve[j] = i;
         }
-        ll pos = r[i] - cnt;
-        ans[pos] = i + 1;
-        for (ll j = 0; j < n; j++)
-        {
-            if (l[j] == l[i] && r[j] == r[i] && i != j)
-            {
-                if (adj[i][j] == '0')
-                {
-                    r[j] = pos - 1;
-                }
-                else
-                {
-                    l[j] = pos + 1;
-                }
-            }
-        }
-        l[i] = r[i] = pos;
     }
-    cout << ans << endl;
 }
-signed main()
-{
+void linear_sieve(int max_n = N) {
+    lp.assign(max_n + 1, 0);
+    for (int i = 2; i <= max_n; ++i) {
+        if (lp[i] == 0) {
+            lp[i] = i;
+            primes.pb(i);
+        }
+        for (int j = 0; j < sz(primes) && primes[j] <= lp[i] && i * primes[j] <= max_n; ++j)
+            lp[i * primes[j]] = primes[j];
+    }
+}
+
+int gcd(int a, int b) {
+    return b ? gcd(b, a % b) : a;
+}
+int lcm(int a, int b) {
+    return (a / gcd(a, b)) * b;
+}
+
+void solve() {
+    
+}
+
+signed main() {
     fast();
     int t = 1;
     cin >> t;
-    while (t--)
-        solve();
+    while (t--) solve();
     return 0;
 }
