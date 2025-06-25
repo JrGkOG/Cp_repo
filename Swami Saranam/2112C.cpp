@@ -17,15 +17,110 @@ using namespace std;
 #define nline '\n'
 #define yes cout << "YES\n"
 #define no cout << "NO\n"
-void func(){
-    int t;
-    cin>>t;
-    while(t--){
-        
+#define pb push_back
+#define ppb pop_back
+#define mp make_pair
+#define ff first
+#define ss second
+#define all(x) x.begin(), x.end()
+#define sz(x) (int)(x).size()
+const int inf = 1e18;
+const int mod = 1e9 + 7;
+const int NUM = 1e6 + 5; 
+const int N = 1e7 + 5;  
+#define DEBUG(x) cerr << #x << ": " << x << '\n'
+vector<int> fact, invfact, power, sieve, lp, primes;
+
+int mod_pow(int a, int b, int m = mod) {
+    int res = 1;
+    a %= m;
+    while (b) {
+        if (b & 1) res = (res * a) % m;
+        a = (a * a) % m;
+        b >>= 1;
+    }
+    return res;
+}
+int mod_inv(int a, int m = mod) {
+    return mod_pow(a, m - 2, m);
+}
+int mod_div(int a, int b, int m = mod) {
+    return (a % m * mod_inv(b, m)) % m;
+}
+void init_factorials(int max_n = NUM) {
+    fact.resize(max_n);
+    invfact.resize(max_n);
+    fact[0] = invfact[0] = 1;
+    for (int i = 1; i < max_n; i++)
+        fact[i] = (fact[i - 1] * i) % mod;
+    invfact[max_n - 1] = mod_inv(fact[max_n - 1]);
+    for (int i = max_n - 2; i >= 1; i--)
+        invfact[i] = (invfact[i + 1] * (i + 1)) % mod;
+}
+int combination(int n, int k) {
+    if (k > n || k < 0) return 0;
+    return fact[n] * invfact[k] % mod * invfact[n - k] % mod;
+}
+void init_powers(int x, int max_n = NUM) {
+    power.resize(max_n);
+    power[0] = 1;
+    for (int i = 1; i < max_n; i++)
+        power[i] = (power[i - 1] * x) % mod;
+}
+void calc_sieve(int max_n = NUM) {
+    sieve.assign(max_n + 1, 0);
+    for (int i = 2; i <= max_n; ++i) {
+        if (!sieve[i]) {
+            for (int j = i; j <= max_n; j += i)
+                if (!sieve[j]) sieve[j] = i;
+        }
     }
 }
-int main(){
+void linear_sieve(int max_n = N) {
+    lp.assign(max_n + 1, 0);
+    for (int i = 2; i <= max_n; ++i) {
+        if (lp[i] == 0) {
+            lp[i] = i;
+            primes.pb(i);
+        }
+        for (int j = 0; j < sz(primes) && primes[j] <= lp[i] && i * primes[j] <= max_n; ++j)
+            lp[i * primes[j]] = primes[j];
+    }
+}
+
+int gcd(int a, int b) {
+    return b ? gcd(b, a % b) : a;
+}
+int lcm(int a, int b) {
+    return (a / gcd(a, b)) * b;
+}
+
+void solve() {
+    ll n;
+    cin>>n;
+    iv(v,n);
+    ll ans=0;
+    for(int i=2;i<n;i++){
+        ll temp2= (i==n-1) ? v[n-2] : v[n-1];
+        ll find=max(2*v[i],temp2)-v[i];
+        ll l=0;
+        ll r=i-1;
+        while(l<r){
+            if(v[l] + v[r] > find) {
+                ans+=r-l;
+                r--;
+            }else{
+                l++;
+            }
+        }
+    }    
+    cout<<ans<<endl;  
+}
+
+signed main() {
     fast();
-    func();
+    int t = 1;
+    cin >> t;
+    while (t--) solve();
     return 0;
 }
