@@ -136,11 +136,17 @@ void solve() {
     }
     cout<<ans<<endl;
 }
+void solve2(){
+    ll n;
+    cin>>n;
+    iv(v,n);
+    cout<<min(2*v[0],v[0]+v[1])<<endl;
+}
 
 signed main() {
     fast();
     int t = 1;
     cin >> t;
-    while (t--) solve();
+    while (t--) solve2();
     return 0;
 }
