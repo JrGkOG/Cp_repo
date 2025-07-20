@@ -96,7 +96,23 @@ int lcm(int a, int b) {
 }
 
 void solve() {
-    
+    ll n;
+    cin>>n;
+    ll total=0;
+    for(int i=0;i<n;i++){
+        ll a,b,c,d;
+        cin>>a>>b>>c>>d;
+        ll temp1=max(0ll,b-d);
+        ll temp2=0;
+        if(temp1>0 && a>0){
+            temp2=a;
+        }
+        else{
+            temp2=max(0ll,a-c);
+        }
+        total+=temp1+temp2;
+    }
+    cout<<total<<endl;
 }
 
 signed main() {

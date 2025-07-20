@@ -94,9 +94,15 @@ int gcd(int a, int b) {
 int lcm(int a, int b) {
     return (a / gcd(a, b)) * b;
 }
-
+string checker(int n,int m){
+    if((n==1 || m==1)) return "no";
+    else if(n==2 || m==2) return "no";
+    else return "yes";
+}
 void solve() {
-    
+    ll n,m;
+    cin>>n>>m;
+    cout<<checker<<endl;
 }
 
 signed main() {

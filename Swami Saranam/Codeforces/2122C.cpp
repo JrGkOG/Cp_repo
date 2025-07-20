@@ -94,9 +94,27 @@ int gcd(int a, int b) {
 int lcm(int a, int b) {
     return (a / gcd(a, b)) * b;
 }
+bool cmpx(vector<ll>& a,vector<ll>& b){
+    if(a[0]!=b[0])return a[0]<b[0];
+    return a[1]<b[1];
+}
 
-void solve() {
-    
+bool cmpy(vector<ll>& a,vector<ll>& b){
+    if(a[1]!=b[1])return a[1]<b[1];
+    return a[0]<b[0];
+}
+
+void solve(){
+    ll n;cin>>n;
+    vector<vector<ll>> pts(n,vector<ll>(3));
+    f(i,n){
+        cin>>pts[i][0]>>pts[i][1];
+        pts[i][2]=i+1;
+    }
+    sort(all(pts),cmpx);
+    sort(pts.begin(),pts.begin()+n/2,cmpy);
+    sort(pts.begin()+n/2,pts.end(),cmpy);
+    f(i,n/2)cout<<pts[i][2]<<" "<<pts[n-1-i][2]<<endl;
 }
 
 signed main() {

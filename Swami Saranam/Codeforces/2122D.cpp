@@ -94,9 +94,49 @@ int gcd(int a, int b) {
 int lcm(int a, int b) {
     return (a / gcd(a, b)) * b;
 }
-
+ll MAXI=5005;
 void solve() {
-    
+    ll n,m;
+    cin>>n>>m;
+    vector<ll>adjList[n+1];
+    for(int i=0;i<m;i++){
+        ll v,u;
+        cin>>v>>u;
+        adjList[v].push_back(u);
+        adjList[u].push_back(v);
+    }
+    vector<vector<ll>>time(n+1,vector<ll>(MAXI,-1));
+    deque<pair<ll,ll>>dq;
+    dq.push_front({1,0});
+    time[1][0] = 0;
+
+    while(dq.empty()!=true){
+        auto it=dq.front();
+        dq.pop_front();
+        ll node=it.first;
+        ll t=it.second;
+        if(t+1 >= MAXI) continue;
+        ll curr=time[node][t];
+        if(time[node][t+1]==-1 || time[node][t+1]>curr+1){
+            time[node][t+1]=curr+1;
+            dq.push_back({node,t+1});
+        }
+        ll deg=adjList[node].size();
+        if(deg==0) continue;
+        ll can=t%deg;
+        ll thatNode=adjList[node][can];
+        if(time[thatNode][t+1]==-1 || time[thatNode][t+1]>curr){
+            time[thatNode][t+1]=curr;
+            dq.push_front({thatNode,t+1});
+        }
+    }
+
+    for(int i=1;i<MAXI;i++){
+        if(time[n][i]!=-1){
+            cout<<i<<" "<<time[n][i]<<endl;
+            break;
+        }
+    }
 }
 
 signed main() {
