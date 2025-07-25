@@ -24,15 +24,15 @@ using namespace std;
 #define ss second
 #define all(x) x.begin(), x.end()
 #define sz(x) (int)(x).size()
-const int inf = 1e18;
-const int mod = 1e9 + 7;
-const int NUM = 1e6 + 5; 
-const int N = 1e7 + 5;  
+const ll inf = 1e18;
+const ll mod = 1e9 + 7;
+const ll NUM = 1e6 + 5; 
+const ll N = 1e7 + 5;  
 #define DEBUG(x) cerr << #x << ": " << x << '\n'
-vector<int> fact, invfact, power, sieve, lp, primes;
+vector<ll> fact, invfact, power, sieve, lp, primes;
 
-int mod_pow(int a, int b, int m = mod) {
-    int res = 1;
+ll mod_pow(ll a, ll b, ll m = mod) {
+    ll res = 1;
     a %= m;
     while (b) {
         if (b & 1) res = (res * a) % m;
@@ -41,107 +41,95 @@ int mod_pow(int a, int b, int m = mod) {
     }
     return res;
 }
-int mod_inv(int a, int m = mod) {
+ll mod_inv(ll a, ll m = mod) {
     return mod_pow(a, m - 2, m);
 }
-int mod_div(int a, int b, int m = mod) {
+ll mod_div(ll a, ll b, ll m = mod) {
     return (a % m * mod_inv(b, m)) % m;
 }
-void init_factorials(int max_n = NUM) {
+void init_factorials(ll max_n = NUM) {
     fact.resize(max_n);
     invfact.resize(max_n);
     fact[0] = invfact[0] = 1;
-    for (int i = 1; i < max_n; i++)
+    for (ll i = 1; i < max_n; i++)
         fact[i] = (fact[i - 1] * i) % mod;
     invfact[max_n - 1] = mod_inv(fact[max_n - 1]);
-    for (int i = max_n - 2; i >= 1; i--)
+    for (ll i = max_n - 2; i >= 1; i--)
         invfact[i] = (invfact[i + 1] * (i + 1)) % mod;
 }
-int combination(int n, int k) {
+ll combination(ll n, ll k) {
     if (k > n || k < 0) return 0;
     return fact[n] * invfact[k] % mod * invfact[n - k] % mod;
 }
-void init_powers(int x, int max_n = NUM) {
+void init_powers(ll x, ll max_n = NUM) {
     power.resize(max_n);
     power[0] = 1;
-    for (int i = 1; i < max_n; i++)
+    for (ll i = 1; i < max_n; i++)
         power[i] = (power[i - 1] * x) % mod;
 }
-void calc_sieve(int max_n = NUM) {
+void calc_sieve(ll max_n = NUM) {
     sieve.assign(max_n + 1, 0);
-    for (int i = 2; i <= max_n; ++i) {
+    for (ll i = 2; i <= max_n; ++i) {
         if (!sieve[i]) {
-            for (int j = i; j <= max_n; j += i)
+            for (ll j = i; j <= max_n; j += i)
                 if (!sieve[j]) sieve[j] = i;
         }
     }
 }
-void linear_sieve(int max_n = N) {
+void linear_sieve(ll max_n = N) {
     lp.assign(max_n + 1, 0);
-    for (int i = 2; i <= max_n; ++i) {
+    for (ll i = 2; i <= max_n; ++i) {
         if (lp[i] == 0) {
             lp[i] = i;
             primes.pb(i);
         }
-        for (int j = 0; j < sz(primes) && primes[j] <= lp[i] && i * primes[j] <= max_n; ++j)
+        for (ll j = 0; j < sz(primes) && primes[j] <= lp[i] && i * primes[j] <= max_n; ++j)
             lp[i * primes[j]] = primes[j];
     }
 }
 
-int gcd(int a, int b) {
+ll gcd(ll a, ll b) {
     return b ? gcd(b, a % b) : a;
 }
-int lcm(int a, int b) {
+ll lcm(ll a, ll b) {
     return (a / gcd(a, b)) * b;
 }
-ll MAXI=5005;
+
 void solve() {
     ll n,m;
     cin>>n>>m;
-    vector<ll>adjList[n+1];
+    vector<vector<ll>>adj(n);
     for(int i=0;i<m;i++){
-        ll v,u;
-        cin>>v>>u;
-        adjList[v].push_back(u);
-        adjList[u].push_back(v);
+        ll u,v;
+        cin>>u>>v;
+        u--;v--;
+        adj[u].push_back(v);
+        adj[v].push_back(u);
     }
-    vector<vector<ll>>time(n+1,vector<ll>(MAXI,-1));
-    deque<pair<ll,ll>>dq;
-    dq.push_front({1,0});
-    time[1][0] = 0;
-
-    while(dq.empty()!=true){
-        auto it=dq.front();
-        dq.pop_front();
-        ll node=it.first;
-        ll t=it.second;
-        if(t+1 >= MAXI) continue;
-        ll curr=time[node][t];
-        if(time[node][t+1]==-1 || time[node][t+1]>curr+1){
-            time[node][t+1]=curr+1;
-            dq.push_back({node,t+1});
+    vector<ll>dp(n,INT_MAX);
+    dp[0]=0;
+    for(int t=0; ;t++){
+        vector <ll> ndp(n, INT_MAX);
+        for (int u = 0; u < n; u++){
+            if (dp[u] < INT_MAX){
+                ll s = adj[u].size();
+                ll tt = t % s;
+                ll v = adj[u][tt];
+                ndp[v] = min(ndp[v], dp[u]);
+                ndp[u] = min(ndp[u], dp[u] + 1);
+            }
         }
-        ll deg=adjList[node].size();
-        if(deg==0) continue;
-        ll can=t%deg;
-        ll thatNode=adjList[node][can];
-        if(time[thatNode][t+1]==-1 || time[thatNode][t+1]>curr){
-            time[thatNode][t+1]=curr;
-            dq.push_front({thatNode,t+1});
-        }
-    }
-
-    for(int i=1;i<MAXI;i++){
-        if(time[n][i]!=-1){
-            cout<<i<<" "<<time[n][i]<<endl;
-            break;
+        dp = ndp;
+        if (dp[n - 1] < INT_MAX){
+            cout << (t + 1) << " " << dp[n - 1] <<endl;
+            return;
         }
     }
 }
 
 signed main() {
     fast();
-    int t = 1;
+    ll t = 1;
     cin >> t;
     while (t--) solve();
     return 0;
