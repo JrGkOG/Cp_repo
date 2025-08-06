@@ -95,59 +95,35 @@ int lcm(int a, int b) {
     return (a / gcd(a, b)) * b;
 }
 
-void dfs0(int u,const vector<vector<int>>&g0,vector<bool>&used,vector<int>&comp){
-    used[u]=true;
-    comp.push_back(u);
-    for(int v:g0[u]){
-        if(!used[v]) dfs0(v,g0,used,comp);
-    }
-}
-
-void dfs1(int u,const vector<vector<int>>&g1,vector<bool>&used,vector<int>&comp){
-    used[u]=true;
-    comp.push_back(u);
-    for(int v:g1[u]){
-        if(!used[v]) dfs1(v,g1,used,comp);
-    }
-}
-
-void solve(){
-    int n;
+void solve() {
+    ll n;
     cin>>n;
-    vector<vector<int>>g0(n),g1(n);
-    vector<bool>used(n,false);
-    vector<int>cnt0(n,0),cnt1(n,0),comp;
-    ll ans=0;
-    for(int i=0;i<n-1;i++){
-        int u,v,w;
-        cin>>u>>v>>w;
-        u--;v--;
-        if(w==0)g0[u].push_back(v),g0[v].push_back(u);
-        else g1[u].push_back(v),g1[v].push_back(u);
+    int ans=0;
+    for(int i=0;i<9;i++){
+        vector<int>a;
+        vector<int>b;
+        for(int j=0;j<n;j++){
+            if((j>>i) & 1){
+                a.push_back(j);
+            }
+            else b.push_back(j);
+        }
+        if(a.size() ==0 || b.size()==0) continue;
+        cout<<a.size()<<" "<<b.size();
+        for( int x : a) cout<<" "<<x+1;
+        for( int x : b) cout<<" "<<x+1;
+        cout<<endl;
+        int exp;
+        cin>>exp;
+        ans=max(exp,ans);
     }
-    fill(used.begin(),used.end(),false);
-    for(int i=0;i<n;i++)if(!used[i]){
-        comp.clear();
-        dfs0(i,g0,used,comp);
-        ans+=1LL*comp.size()*(comp.size()-1);
-        for(int x:comp)cnt0[x]=comp.size();
-    }
-    fill(used.begin(),used.end(),false);
-    for(int i=0;i<n;i++)if(!used[i]){
-        comp.clear();
-        dfs1(i,g1,used,comp);
-        ans+=1LL*comp.size()*(comp.size()-1);
-        for(int x:comp)cnt1[x]=comp.size();
-    }
-    for(int i=0;i<n;i++) ans+=1LL*(cnt0[i]-1)*(cnt1[i]-1);
-    cout<<ans<<endl;
+    cout<<-1<<" "<<ans<<endl;
 }
-
-
 
 signed main() {
     fast();
     int t = 1;
+    cin >> t;
     while (t--) solve();
     return 0;
 }

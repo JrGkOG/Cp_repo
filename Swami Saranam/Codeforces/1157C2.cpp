@@ -95,55 +95,75 @@ int lcm(int a, int b) {
     return (a / gcd(a, b)) * b;
 }
 
-void dfs0(int u,const vector<vector<int>>&g0,vector<bool>&used,vector<int>&comp){
-    used[u]=true;
-    comp.push_back(u);
-    for(int v:g0[u]){
-        if(!used[v]) dfs0(v,g0,used,comp);
-    }
-}
-
-void dfs1(int u,const vector<vector<int>>&g1,vector<bool>&used,vector<int>&comp){
-    used[u]=true;
-    comp.push_back(u);
-    for(int v:g1[u]){
-        if(!used[v]) dfs1(v,g1,used,comp);
-    }
-}
-
-void solve(){
-    int n;
+void solve() {
+    ll n;
     cin>>n;
-    vector<vector<int>>g0(n),g1(n);
-    vector<bool>used(n,false);
-    vector<int>cnt0(n,0),cnt1(n,0),comp;
-    ll ans=0;
-    for(int i=0;i<n-1;i++){
-        int u,v,w;
-        cin>>u>>v>>w;
-        u--;v--;
-        if(w==0)g0[u].push_back(v),g0[v].push_back(u);
-        else g1[u].push_back(v),g1[v].push_back(u);
+    iv(v,n);
+    ll prev=-1;
+    string s;
+    ll l=0;
+    ll r=n-1;
+    while(r>=l){
+        bool can_l = (v[l] > prev);
+        bool can_r = (v[r] > prev);
+        if(can_l && can_r){
+            if(v[l] < v[r]){
+                s.append("L");
+                prev=v[l];
+                l++;
+            }
+            else if(v[r] < v[l]){
+                s.append("R");
+                prev=v[r];
+                r--;
+            }
+            else{
+                string left_path_moves;
+                ll temp_prev = prev;
+                for (int i = l; i <= r; ++i) {
+                    if (v[i] > temp_prev) {
+                        left_path_moves += 'L';
+                        temp_prev = v[i];
+                    } else {
+                        break;
+                    }
+                }
+                string right_path_moves;
+                temp_prev = prev;
+                for (int i = r; i >= l; --i) {
+                    if (v[i] > temp_prev) {
+                        right_path_moves += 'R';
+                        temp_prev = v[i];
+                    } else {
+                        break;
+                    }
+                }
+                if (left_path_moves.length() > right_path_moves.length()) {
+                    s.append(left_path_moves);
+                } else {
+                    s.append(right_path_moves);
+                }
+                break;
+            }
+        }
+        else if(can_l){
+            s.append("L");
+            prev=v[l];
+            l++;
+        }
+        else if(can_r){
+            s.append("R");   
+            prev=v[r];
+            r--;
+        }
+        else{
+            break;
+        }
     }
-    fill(used.begin(),used.end(),false);
-    for(int i=0;i<n;i++)if(!used[i]){
-        comp.clear();
-        dfs0(i,g0,used,comp);
-        ans+=1LL*comp.size()*(comp.size()-1);
-        for(int x:comp)cnt0[x]=comp.size();
-    }
-    fill(used.begin(),used.end(),false);
-    for(int i=0;i<n;i++)if(!used[i]){
-        comp.clear();
-        dfs1(i,g1,used,comp);
-        ans+=1LL*comp.size()*(comp.size()-1);
-        for(int x:comp)cnt1[x]=comp.size();
-    }
-    for(int i=0;i<n;i++) ans+=1LL*(cnt0[i]-1)*(cnt1[i]-1);
-    cout<<ans<<endl;
+    cout<<s.size()<<endl;
+    for(char c :s) cout<<c;
+    cout<<endl;
 }
-
-
 
 signed main() {
     fast();
@@ -151,3 +171,5 @@ signed main() {
     while (t--) solve();
     return 0;
 }
+// [10, 11, 12, 13, 13, 10]
+// [1 2, 3, 4, 5, 6, 7,8,9
