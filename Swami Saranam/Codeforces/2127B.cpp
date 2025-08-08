@@ -30,10 +30,6 @@ const int NUM = 1e6 + 5;
 const int N = 1e7 + 5;  
 #define DEBUG(x) cerr << #x << ": " << x << '\n'
 vector<int> fact, invfact, power, sieve, lp, primes;
-vector<vector<pair<ll,ll>>> adj;
-vector<vector<ll>> adj_unweighted;
-vector<ll> dist;
-vector<bool> visited;
 
 int mod_pow(int a, int b, int m = mod) {
     int res = 1;
@@ -99,59 +95,48 @@ int lcm(int a, int b) {
     return (a / gcd(a, b)) * b;
 }
 
-void init_graph_weighted(ll n) {
-    adj.assign(n + 1, {});
-    dist.assign(n + 1, INF);
-    visited.assign(n + 1, false);
-}
-
-void dfs(ll u) {
-    visited[u] = true;
-    for (ll v : adj_unweighted[u]) {
-        if (!visited[v]) dfs(v);
-    }
-}
-
-void bfs(ll start) {
-    queue<ll> q;
-    dist.assign(sz(adj_unweighted), INF);
-    visited.assign(sz(adj_unweighted), false);
-    dist[start] = 0;
-    visited[start] = true;
-    q.push(start);
-    while (!q.empty()) {
-        ll u = q.front();
-        q.pop();
-        for (ll v : adj_unweighted[u]) {
-            if (!visited[v]) {
-                visited[v] = true;
-                dist[v] = dist[u] + 1;
-                q.push(v);
-            }
-        }
-    }
-}
-
-void dijkstra(ll start) {
-    dist.assign(sz(adj), INF);
-    dist[start] = 0;
-    priority_queue<pair<ll,ll>, vector<pair<ll,ll>>, greater<pair<ll,ll>>> pq;
-    pq.push({0, start});
-    while (!pq.empty()) {
-        auto [d, u] = pq.top();
-        pq.pop();
-        if (d != dist[u]) continue;
-        for (auto [v, w] : adj[u]) {
-            if (dist[u] + w < dist[v]) {
-                dist[v] = dist[u] + w;
-                pq.push({dist[v], v});
-            }
-        }
-    }
-}
-void solve() {
+void solve(){
+    int n;
+    ll x;
+    cin>>n>>x;
+    string s;
+    cin>>s;
+    --x;
+    // ll wl=0,empl=0;
+    // for(int i=0;i<x;++i){
+    //     if(s[i]=='#')wl++;
+    //     else empl++;
+    // }
+    // ll wr=0,empr=0;
+    // for(int i=x+1;i<n;++i){
+    //     if(s[i]=='#')wr++;
+    //     else empr++;
+    // }
+    // int days=0;
+    // while(1){
+    //     days++;
+    //     if(wl<=wr){
+    //         if(empl>0)wl++,empl--;
+    //         else if(empr>0)wr++,empr--;
+    //     }
+    //     else{
+    //         if(empr>0)wr++,empr--;
+    //         else if(empl>0)wl++,empl--;
+    //     }
+    //     if(wl==0||wr==0)break;
+    //     if(wl<=wr)wl--;
+    //     else wr--;
+    // }
+    // cout<<days<<endl;
+    ll l=x;
+    ll r=x;
+    while(l>=0 && s[l]=='.') l--;
+    while(r<n && s[r]=='.') r++;
+    ll ans=max(min(x,n-r),min(l+1,n-x-1))+1;
+    cout<<ans<<endl;
     
 }
+
 
 signed main() {
     fast();

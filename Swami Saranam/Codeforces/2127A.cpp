@@ -30,10 +30,6 @@ const int NUM = 1e6 + 5;
 const int N = 1e7 + 5;  
 #define DEBUG(x) cerr << #x << ": " << x << '\n'
 vector<int> fact, invfact, power, sieve, lp, primes;
-vector<vector<pair<ll,ll>>> adj;
-vector<vector<ll>> adj_unweighted;
-vector<ll> dist;
-vector<bool> visited;
 
 int mod_pow(int a, int b, int m = mod) {
     int res = 1;
@@ -99,60 +95,33 @@ int lcm(int a, int b) {
     return (a / gcd(a, b)) * b;
 }
 
-void init_graph_weighted(ll n) {
-    adj.assign(n + 1, {});
-    dist.assign(n + 1, INF);
-    visited.assign(n + 1, false);
-}
-
-void dfs(ll u) {
-    visited[u] = true;
-    for (ll v : adj_unweighted[u]) {
-        if (!visited[v]) dfs(v);
-    }
-}
-
-void bfs(ll start) {
-    queue<ll> q;
-    dist.assign(sz(adj_unweighted), INF);
-    visited.assign(sz(adj_unweighted), false);
-    dist[start] = 0;
-    visited[start] = true;
-    q.push(start);
-    while (!q.empty()) {
-        ll u = q.front();
-        q.pop();
-        for (ll v : adj_unweighted[u]) {
-            if (!visited[v]) {
-                visited[v] = true;
-                dist[v] = dist[u] + 1;
-                q.push(v);
-            }
-        }
-    }
-}
-
-void dijkstra(ll start) {
-    dist.assign(sz(adj), INF);
-    dist[start] = 0;
-    priority_queue<pair<ll,ll>, vector<pair<ll,ll>>, greater<pair<ll,ll>>> pq;
-    pq.push({0, start});
-    while (!pq.empty()) {
-        auto [d, u] = pq.top();
-        pq.pop();
-        if (d != dist[u]) continue;
-        for (auto [v, w] : adj[u]) {
-            if (dist[u] + w < dist[v]) {
-                dist[v] = dist[u] + w;
-                pq.push({dist[v], v});
-            }
-        }
-    }
-}
 void solve() {
-    
+    ll n;
+    cin>>n;
+    iv(v,n);
+    bool flag=true;
+    ll prev=-1;
+    for(int i=0;i<n;i++){
+        if(v[i]==-1) continue;
+        else{
+            prev=v[i];
+            break;
+        } 
+    }
+    if(prev==-1) yes;
+    else if(prev==0) no;
+    else{
+        for(int i=0;i<n;i++){
+            if(v[i]==-1) continue;
+            else if(v[i]!=prev) {
+                flag=false;
+                break;
+            }
+        }
+        if(flag) yes;
+        else no;
+    }
 }
-
 signed main() {
     fast();
     int t = 1;
