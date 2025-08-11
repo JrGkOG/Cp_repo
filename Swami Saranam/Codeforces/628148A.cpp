@@ -150,8 +150,7 @@ void dijkstra(ll start) {
     }
 }
 void solve() {
-    ll x;
-    l
+    
 }
 
 signed main() {

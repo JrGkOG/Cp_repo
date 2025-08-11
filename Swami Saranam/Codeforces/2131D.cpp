@@ -153,76 +153,105 @@ void dijkstra(ll start) {
 // 1 2
 // 2 3
 // 2 4
-void dfsLeaves(int u,int p,vector<vector<int>>& adj,vector<int>& degree,vector<int>& leaves){
-    if(degree[u]==1&&u!=1){
-        leaves[u]=1;
-        return;
-    }
-    leaves[u]=0;
-    for(int v:adj[u]){
-        if(v!=p){
-            dfsLeaves(v,u,adj,degree,leaves);
-            leaves[u]+=leaves[v];
-        }
-    }
-    if(u!=1&&leaves[u]==0) leaves[u]=1;
-}
+// void dfsLeaves(int u,int p,vector<vector<int>>& adj,vector<int>& degree,vector<int>& leaves){
+//     if(degree[u]==1&&u!=1){
+//         leaves[u]=1;
+//         return;
+//     }
+//     leaves[u]=0;
+//     for(int v:adj[u]){
+//         if(v!=p){
+//             dfsLeaves(v,u,adj,degree,leaves);
+//             leaves[u]+=leaves[v];
+//         }
+//     }
+//     if(u!=1&&leaves[u]==0) leaves[u]=1;
+// }
 
-void dfsCostDown(int u,int p,vector<vector<int>>& adj,vector<int>& degree,vector<int>& leaves,vector<ll>& costDown){
-    costDown[u]=0;
-    for(int v:adj[u]){
-        if(v!=p){
-            dfsCostDown(v,u,adj,degree,leaves,costDown);
-            if(degree[v]>1) costDown[u]+=leaves[v];
-        }
-    }
-}
+// void dfsCostDown(int u,int p,vector<vector<int>>& adj,vector<int>& degree,vector<int>& leaves,vector<ll>& costDown){
+//     costDown[u]=0;
+//     for(int v:adj[u]){
+//         if(v!=p){
+//             dfsCostDown(v,u,adj,degree,leaves,costDown);
+//             if(degree[v]>1) costDown[u]+=leaves[v];
+//         }
+//     }
+// }
 
-void dfsReroot(int u,int p,int totalLeaves,vector<vector<int>>& adj,vector<int>& degree,vector<int>& leaves,vector<ll>& costDown,vector<ll>& ans){
-    ll upCostContribution=0;
-    if(p!=0){
-        ll upLeaves=totalLeaves-leaves[u];
-        if(degree[p]>1) upCostContribution=upLeaves;
-        ans[u]=costDown[u]+upCostContribution;
-    }
-    for(int v:adj[u]){
-        if(v!=p) dfsReroot(v,u,totalLeaves,adj,degree,leaves,costDown,ans);
-    }
-}
+// void dfsReroot(int u,int p,int totalLeaves,vector<vector<int>>& adj,vector<int>& degree,vector<int>& leaves,vector<ll>& costDown,vector<ll>& ans){
+//     ll upCostContribution=0;
+//     if(p!=0){
+//         ll upLeaves=totalLeaves-leaves[u];
+//         if(degree[p]>1) upCostContribution=upLeaves;
+//         ans[u]=costDown[u]+upCostContribution;
+//     }
+//     for(int v:adj[u]){
+//         if(v!=p) dfsReroot(v,u,totalLeaves,adj,degree,leaves,costDown,ans);
+//     }
+// }
+
+// void solve(){
+//     int n;
+//     cin>>n;
+//     vector<vector<int>> adj(n+1);
+//     vector<int> degree(n+1,0);
+//     for(int i=0;i<n-1;++i){
+//         int u,v;
+//         cin>>u>>v;
+//         adj[u].push_back(v);
+//         adj[v].push_back(u);
+//         degree[u]++;
+//         degree[v]++;
+//     }
+//     if(n<=2){
+//         cout<<0<<endl;
+//         return;
+//     }
+//     vector<int> leaves(n+1);
+//     vector<ll> costDown(n+1);
+//     vector<ll> ans(n+1);
+//     dfsLeaves(1,0,adj,degree,leaves);
+//     dfsCostDown(1,0,adj,degree,leaves,costDown);
+//     ans[1]=costDown[1];
+//     for(int v:adj[1]){
+//         dfsReroot(v,1,leaves[1],adj,degree,leaves,costDown,ans);
+//     }
+//     ll minOps=ans[1];
+//     for(int i=2;i<=n;++i){
+//         minOps=min(minOps,ans[i]);
+//     }
+//     cout<<minOps<<endl;
+//
 
 void solve(){
     int n;
     cin>>n;
-    vector<vector<int>> adj(n+1);
-    vector<int> degree(n+1,0);
-    for(int i=0;i<n-1;++i){
-        int u,v;
-        cin>>u>>v;
+    vector<vector<int>>adj(n+1);
+    vector<int>degree(n+1,0);
+    vector<int>leafNeighborCount(n+1,0);
+    for(int i=0;i<n-1;i++){
+        int u,v;cin>>u>>v;
         adj[u].push_back(v);
         adj[v].push_back(u);
-        degree[u]++;
-        degree[v]++;
+        degree[u]++;degree[v]++;
     }
     if(n<=2){
         cout<<0<<endl;
         return;
     }
-    vector<int> leaves(n+1);
-    vector<ll> costDown(n+1);
-    vector<ll> ans(n+1);
-    dfsLeaves(1,0,adj,degree,leaves);
-    dfsCostDown(1,0,adj,degree,leaves,costDown);
-    ans[1]=costDown[1];
-    for(int v:adj[1]){
-        dfsReroot(v,1,leaves[1],adj,degree,leaves,costDown,ans);
+    int totalLeaves=0;
+    for(int i=1;i<=n;i++){
+        if(degree[i]==1){
+            totalLeaves++;
+            for(int it:adj[i])leafNeighborCount[it]++;
+        }
     }
-    ll minOps=ans[1];
-    for(int i=2;i<=n;++i){
-        minOps=min(minOps,ans[i]);
+    int mini=INT_MAX;
+    for(int i=1;i<=n;i++){
+        if(leafNeighborCount[i]>0)mini=min(mini,totalLeaves-leafNeighborCount[i]);
     }
-    cout<<minOps<<endl;
+    cout<<mini<<endl;
 }
-
 
 signed main() {
     fast();
