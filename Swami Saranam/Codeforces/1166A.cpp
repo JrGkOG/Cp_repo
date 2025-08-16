@@ -150,51 +150,7 @@ void dijkstra(ll start) {
     }
 }
 void solve() {
-    ll n, m, k;
-    cin >> n >> m >> k;
-
-    vector<string> v(n);
-    ll tg = 0;
-
-    for (int i = 0; i < n; ++i) {
-        cin >> v[i];
-        for (char c : v[i]) {
-            if (c == 'g') tg++;
-        }
-    }
-    vector<vector<ll>> pref2D(n,vector<ll>(m,0));
-    for(ll i=0;i<n;i++){
-        for(ll j=0;j<m;j++){
-            pref2D[i][j] = (v[i][j]=='g'? 1:0);
-            ll up = (i>0? pref2D[i-1][j]:0);
-            ll left = (j>0? pref2D[i][j-1]:0);
-            ll diag = (i>0 and j>0 ? pref2D[i-1][j-1] : 0);
-            pref2D[i][j] += up+left-diag;
-        }
-    }
-    ll maxi = 0;
-    for (ll i = 0; i < n; ++i) {
-        for (ll j = 0; j < m; ++j) {
-            if (v[i][j] == '.') {
-                ll a,b,c,d;
-                a = max(0LL,i-k+1);
-                b = min(i+k-1,n-1);
-                c = max(0LL,j-k+1); 
-                d = min(m-1,j+k-1);
-                
-                ll left,up, diag,main ;
-                left = (c>0? pref2D[b][c-1]:0);
-                up = (a>0? pref2D[a-1][d]:0);
-                diag = (a>0 and c>0 ? pref2D[a-1][c-1] : 0);
-                main = pref2D[b][d];
-                
-                ll cntg = main -left - up + diag;
-                maxi = max(maxi, tg - cntg);
-            }
-        }
-    }
-
-    cout << maxi << endl;
+    
 }
 
 signed main() {
