@@ -34,7 +34,6 @@ vector<vector<pair<ll,ll>>> adj;
 vector<vector<ll>> adj_unweighted;
 vector<ll> dist;
 vector<bool> visited;
-
 int mod_pow(int a, int b, int m = mod) {
     int res = 1;
     a %= m;
@@ -150,13 +149,29 @@ void dijkstra(ll start) {
     }
 }
 void solve() {
-    
+    int n;
+    cin>>n;
+    vector<int > v1(n),v2(n);
+    for(int i=0;i<n;i++) cin>>v1[i];
+    for(int i=0;i<n;i++) cin>>v2[i];
+    int modi=998244353;
+    sort(v2.begin(),v2.end());
+    vector<pair<ll,int>> val(n);
+    for(int i=0;i<n;i++){
+        val[i].first=(i+1)*1ll*(n-i)*v1[i];
+        val[i].second=i;
+    }
+    sort(val.rbegin(),val.rend());
+    int ans=0;
+    for(int i=0;i<n;i++){
+        ans = (ans + (val[i].first % modi * 1ll * v2[i]) % modi) % modi;
+    }
+    cout<<ans<<endl;
 }
 
 signed main() {
     fast();
     int t = 1;
-    cin >> t;
     while (t--) solve();
     return 0;
 }
