@@ -181,19 +181,16 @@ void solve() {
                 b = min(i+k-1,n-1);
                 c = max(0LL,j-k+1); 
                 d = min(m-1,j+k-1);
-                
                 ll left,up, diag,main ;
                 left = (c>0? pref2D[b][c-1]:0);
                 up = (a>0? pref2D[a-1][d]:0);
                 diag = (a>0 and c>0 ? pref2D[a-1][c-1] : 0);
                 main = pref2D[b][d];
-                
                 ll cntg = main -left - up + diag;
                 maxi = max(maxi, tg - cntg);
             }
         }
     }
-
     cout << maxi << endl;
 }
 
