@@ -149,71 +149,24 @@ void dijkstra(ll start) {
         }
     }
 }
-int log_a_to_base_b(int a, int b)
-{
-    return log2(a) / log2(b);
-}
-// properly solve everything
-// read the question more than 2 times 
-// check edge cases
-// solve in paper first then submit 
 void solve() {
-    ll a, b, c;
-    cin >> a >> b >> c;
-    if (a != c - 1)
-    {
-        cout << -1 << endl;
-        return;
-    }
-    ll h = 0;
-    ll p = 1, q = 0;
-    ll k = 0;
-    while (a)
-    {
-        k++;
-        a--;
-        q += 2;
-        if (k == p)
-        {
-            h++;
-            k = 0;
-            p = q;
-            q = 0;
+    ll n;
+    cin >> n;
+    ll ans=0;
+    ll x=0;
+    ll temp=1;
+    while (n>0) {
+        ll digit=n%3;
+        if (digit>0){
+            ll cost=temp*3;
+            if (x > 0) cost += x*(temp/3);
+            ans+= digit * cost;
         }
+        n /= 3;
+        temp *= 3;
+        x++;
     }
-    while (b)
-    {
-        k++;
-        b--;
-        q++;
-        if (k == p)
-        {
-            h++;
-            k = 0;
-            p = q;
-            q = 0;
-        }   
-    }
-    while (c)
-    {
-        k++;
-        c--;
-        if (k == p)
-        {
-            h++;
-            k = 0;
-            p = q;
-            q = 0;
-        }
-    }
-    if (p != 0)
-    {
-        cout << -1 << endl;
-    }
-    else
-    {
-        cout << h - 1 << endl;
-    }
+    cout<<ans<<endl;
 }
 
 signed main() {

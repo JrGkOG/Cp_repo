@@ -149,75 +149,64 @@ void dijkstra(ll start) {
         }
     }
 }
-int log_a_to_base_b(int a, int b)
-{
-    return log2(a) / log2(b);
+
+ll nums[40];
+void pre(){
+    nums[0]=1;
+    for(int i=1;i<25;i++){
+        if(nums[i-1]>inf/3){
+            nums[i]=inf;
+        }
+        else{
+            nums[i]=nums[i-1]*3;
+        }
+    }
 }
-// properly solve everything
-// read the question more than 2 times 
-// check edge cases
-// solve in paper first then submit 
-void solve() {
-    ll a, b, c;
-    cin >> a >> b >> c;
-    if (a != c - 1)
-    {
-        cout << -1 << endl;
+
+ll cost(ll x){
+    if(x==0) return 3;
+    return nums[x+1]+ (x*nums[x-1]);
+}
+
+void solve(){
+    ll n,k;
+    cin>>n>>k;
+    vector<ll> cnt(40,0);
+    ll ones=0;
+    ll temp=n;
+    ll maxi=0;
+    for(int i=0;i<40 && temp>0;i++){
+        cnt[i]=temp%3;
+        ones+=cnt[i];
+        temp/=3;
+        if(cnt[i]>0) maxi=i;
+    }
+    if(ones>k){
+        cout<<-1<<endl;
         return;
     }
-    ll h = 0;
-    ll p = 1, q = 0;
-    ll k = 0;
-    while (a)
-    {
-        k++;
-        a--;
-        q += 2;
-        if (k == p)
-        {
-            h++;
-            k = 0;
-            p = q;
-            q = 0;
+    ll ans=0;
+    for(int i=0;i<=maxi;i++){
+        if(cnt[i]>0){
+            ans+=cnt[i]*cost(i);
         }
     }
-    while (b)
-    {
-        k++;
-        b--;
-        q++;
-        if (k == p)
-        {
-            h++;
-            k = 0;
-            p = q;
-            q = 0;
-        }   
-    }
-    while (c)
-    {
-        k++;
-        c--;
-        if (k == p)
-        {
-            h++;
-            k = 0;
-            p = q;
-            q = 0;
+    ll tr=(k-ones)/2;
+    for(int i=maxi;i>=1 && tr>0;i--){
+        ll t=min(tr,cnt[i]);
+        if(t>0){
+            ans-=t*nums[i-1];
+            cnt[i]-=t;
+            cnt[i-1]+=3*t;
+            tr-=t;
         }
     }
-    if (p != 0)
-    {
-        cout << -1 << endl;
-    }
-    else
-    {
-        cout << h - 1 << endl;
-    }
+    cout<<ans<<endl;
 }
 
 signed main() {
     fast();
+    pre();
     int t = 1;
     cin >> t;
     while (t--) solve();
