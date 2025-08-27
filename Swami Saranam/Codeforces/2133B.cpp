@@ -106,26 +106,22 @@ ll lcm(ll a, ll b) {
 void solve() {
     ll n;
     cin>>n;
-    bool flag=true;
-    int temp=-1;
-    for(int i=0;i<n;i++){
-        int num;
-        cin>>num;
-        if(num!=-1 && temp==-1){
-            temp=num;
+    iv(nums,n);
+    sort(nums.begin(),nums.end());
+    if(n%2==0){
+        ll ans=0;
+        for(int i=0;i<n-1;i+=2){
+            ans+=max(nums[i],nums[i+1]);
         }
-        else if(num!=-1 && temp!=-1){
-            if(temp==num) continue;
-            else flag=false;
+        cout<<ans<<endl;
+    }
+    else{
+        ll ans=nums[0];
+        for(int i=1;i<n-1;i+=2){
+            ans+=max(nums[i],nums[i+1]);
         }
+        cout<<ans<<endl;
     }
-    if(temp==0){
-        no;
-    }
-    else if(flag==false){
-        no;
-    }
-    else yes;
 }
 signed main() {
     fast();

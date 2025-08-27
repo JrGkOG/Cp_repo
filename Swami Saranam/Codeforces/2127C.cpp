@@ -104,29 +104,36 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve() {
-    ll n;
-    cin>>n;
-    bool flag=true;
-    int temp=-1;
+    // 5 4
+    // 1 16 10 10 16
+    // 3 2 2 15 15
+    // 1 16 10 10 16
+    // 3 2  2 15 16 
+    
+    ll n,k;
+    cin>>n>>k;
+    iv(a,n);
+    iv(b,n);
+    ll ans=0;
+    vector<pair<int,int>>nums;
     for(int i=0;i<n;i++){
-        int num;
-        cin>>num;
-        if(num!=-1 && temp==-1){
-            temp=num;
+        if(b[i]<a[i]) swap(b[i],a[i]);
+        ans+=b[i]-a[i];
+        nums.push_back({a[i],b[i]});
+    }
+    sort(nums.begin(),nums.end());
+    for(int i=1;i<n;i++){
+        if(nums[i].first <= nums[i-1].second){
+            cout<<ans<<endl;
+            return;
         }
-        else if(num!=-1 && temp!=-1){
-            if(temp==num) continue;
-            else flag=false;
-        }
     }
-    if(temp==0){
-        no;
+    int mini=INT_MAX;
+    for(int i=1;i<n;i++){
+        mini=min(mini,nums[i].first-nums[i-1].second);
     }
-    else if(flag==false){
-        no;
-    }
-    else yes;
-}
+    cout<<ans+2*mini<<endl;
+} 
 signed main() {
     fast();
     ll t = 1;

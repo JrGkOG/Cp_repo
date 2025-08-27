@@ -103,30 +103,50 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve() {
-    ll n;
-    cin>>n;
-    bool flag=true;
-    int temp=-1;
+
+void solve(){
+    ll n,k;
+    cin>>n>>k;
+    iv(a,n);
+    ll prime=-1;
+    if(k%2!=0){
+        prime=2;
+    }
+    else if(k%3!=0){
+        prime=3;
+    }
+    else if(k%5!=0){
+        prime=5;
+    }
+    else{
+        for(ll i=7;i<100;i+=2){
+            bool flag=true;
+            for(ll j=3;j*j<=i;j+=2){
+                if(i%j==0){
+                    flag=false;
+                    break;
+                }
+            }
+            if(flag && k%i!=0){
+                prime=i;
+                break;
+            }
+        }
+    }
     for(int i=0;i<n;i++){
-        int num;
-        cin>>num;
-        if(num!=-1 && temp==-1){
-            temp=num;
+        ll temp=-1;
+        for(ll j=0;j<prime;j++){
+            if((a[i]+j*k)%prime==0){
+                temp=j;
+                break;
+            }
         }
-        else if(num!=-1 && temp!=-1){
-            if(temp==num) continue;
-            else flag=false;
-        }
+        ll val=a[i]+temp*k;
+        cout<<val<<(i==n-1 ? "":" ");
     }
-    if(temp==0){
-        no;
-    }
-    else if(flag==false){
-        no;
-    }
-    else yes;
+    cout<<endl;
 }
+
 signed main() {
     fast();
     ll t = 1;

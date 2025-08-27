@@ -15,8 +15,8 @@ using namespace std;
 #define MOD (1000000007)
 #define INF 1000000000000000000LL // Infinity for ll
 #define mp make_pair
-#define yes cout<<"YES"<<endl;
-#define no cout<<"NO"<<endl;
+#define yes cout<<"YES\n"
+#define no cout<<"NO\n"
 #define pb push_back
 #define ppb pop_back
 #define mp make_pair
@@ -106,26 +106,14 @@ ll lcm(ll a, ll b) {
 void solve() {
     ll n;
     cin>>n;
-    bool flag=true;
-    int temp=-1;
+    set<int>nums;
     for(int i=0;i<n;i++){
         int num;
         cin>>num;
-        if(num!=-1 && temp==-1){
-            temp=num;
-        }
-        else if(num!=-1 && temp!=-1){
-            if(temp==num) continue;
-            else flag=false;
-        }
+        nums.insert(num);
     }
-    if(temp==0){
-        no;
-    }
-    else if(flag==false){
-        no;
-    }
-    else yes;
+    if(nums.size() < n)yes;
+    else no;
 }
 signed main() {
     fast();

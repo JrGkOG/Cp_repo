@@ -103,29 +103,57 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
+// check for cout mdarchod
+void find_abc(vector<vector<ll>>& adj, vector<ll>& deg, ll n, ll &a, ll &b, ll &c){
+    a=-1;
+    b=-1;
+    c=-1;
+    for(int i=1;i<=n;i++){
+        ll flag=false;
+        if(deg[i] > 2){
+            for(auto it:adj[i]){
+                if(deg[it]==1){
+                    b=i;
+                    c=it;
+                    flag=true;
+                    break;
+                }
+            }
+        }
+        if(flag) break;
+    }
+    for(auto it:adj[b]){
+        if(it!=c){
+            a=it;
+            break;
+        }
+    }
+}
+
 void solve() {
     ll n;
     cin>>n;
-    bool flag=true;
-    int temp=-1;
-    for(int i=0;i<n;i++){
-        int num;
-        cin>>num;
-        if(num!=-1 && temp==-1){
-            temp=num;
-        }
-        else if(num!=-1 && temp!=-1){
-            if(temp==num) continue;
-            else flag=false;
-        }
+    vector<vector<ll>>adj(n+1);
+    vector<ll>deg(n+1,0);
+    for(int i=0;i<n-1;i++){
+        ll u,v;
+        cin>>u>>v;
+        adj[u].push_back(v);
+        adj[v].push_back(u);
+        deg[u]++;
+        deg[v]++;
     }
-    if(temp==0){
-        no;
+    ll maxi=0;
+    for(int i=1;i<=n;i++){
+        maxi=max(deg[i],maxi);
     }
-    else if(flag==false){
-        no;
+    if(maxi <=2) {
+        cout<<-1<<endl;
+        return;
     }
-    else yes;
+    ll a,b,c;
+    find_abc(adj,deg,n,a,b,c);
+    cout<<a<<" "<<b<<" "<<c<<endl;
 }
 signed main() {
     fast();

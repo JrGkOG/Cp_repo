@@ -103,30 +103,65 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve() {
-    ll n;
+
+void solve(){
+    int n;
     cin>>n;
-    bool flag=true;
-    int temp=-1;
-    for(int i=0;i<n;i++){
-        int num;
-        cin>>num;
-        if(num!=-1 && temp==-1){
-            temp=num;
+    vector<int>d(n+1);
+    for(int i=1;i<=n;++i){
+        cout<<"? "<<i<<" "<<n;
+        for(int j=1;j<=n;++j) cout<<" "<<j;
+        cout<<endl;
+        int x;
+        cin>>x;
+        if(x==-1)return;
+        d[i]=x;
+    }
+    int maxi=0,src=-1;
+    for(int i=1;i<=n;++i){
+        if(d[i]>maxi){
+            maxi=d[i];
+            src=i;
         }
-        else if(num!=-1 && temp!=-1){
-            if(temp==num) continue;
-            else flag=false;
+    }
+    vector<int>nodes;
+    nodes.push_back(src);
+    vector<bool>vis(n+1,false);
+    vis[src]=true;
+    int curr=src;
+    while(nodes.size()<maxi){
+        int need=d[curr]-1;
+        if(need<=0)break;
+        vector<int>temp;
+        for(int i=1;i<=n;++i){
+            if(!vis[i]&&d[i]==need)temp.push_back(i);
         }
+        if(temp.empty())break;
+        int l=0,h=temp.size()-1,nxtIdx=0;
+        while(l<=h){
+            int mid=l+(h-l)/2;
+            cout<<"? "<<curr<<" "<<(mid+2)<<" "<<curr;
+            for(int i=0;i<=mid;++i)cout<<" "<<temp[i];
+            cout<<endl;
+            int val;
+            cin>>val;
+            if(val==-1)return;
+            if(val>1){
+                nxtIdx=mid;
+                h=mid-1;
+            }
+            else l=mid+1;
+        }
+        int next=temp[nxtIdx];
+        nodes.push_back(next);
+        vis[next]=true;
+        curr=next;
     }
-    if(temp==0){
-        no;
-    }
-    else if(flag==false){
-        no;
-    }
-    else yes;
+    cout<<"! "<<nodes.size();
+    for(int x:nodes)cout<<" "<<x;
+    cout<<endl;
 }
+
 signed main() {
     fast();
     ll t = 1;

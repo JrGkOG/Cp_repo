@@ -103,29 +103,36 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve() {
+void solve(){
     ll n;
     cin>>n;
-    bool flag=true;
-    int temp=-1;
-    for(int i=0;i<n;i++){
-        int num;
-        cin>>num;
-        if(num!=-1 && temp==-1){
-            temp=num;
+    iv(arr,n);
+    ll ans=0;
+    ll pre=0;
+    ll k1=0;
+    ll k2=0;
+    for(ll i=1;i<=n;i++){
+        ll val=arr[i-1];
+        if(i%2==1){
+            pre-=val;
         }
-        else if(num!=-1 && temp!=-1){
-            if(temp==num) continue;
-            else flag=false;
+        else{
+            pre+=val;
         }
+        ll d=pre+ans;
+        if(i>=2){
+            ll maxi=k2;
+            if(d<maxi){
+                ll diff=maxi-d;
+                ans+=diff;
+                d+=diff;
+            }
+        }
+        ll curr=max(k1,d);
+        k2=k1;
+        k1=curr;
     }
-    if(temp==0){
-        no;
-    }
-    else if(flag==false){
-        no;
-    }
-    else yes;
+    cout<<ans<<endl;
 }
 signed main() {
     fast();
