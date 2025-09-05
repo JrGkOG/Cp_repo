@@ -30,6 +30,7 @@ const ll NUM = 1e6 + 5;
 const ll N = 1e7 + 5;  
 #define DEBUG(x) cerr << #x << ": " << x << '\n'
 vector<ll> fact, invfact, power, sieve, lp, primes;
+vector<vector<pair<ll,ll>>> adj;
 vector<vector<ll>> adj_unweighted;
 vector<ll> dist;
 vector<bool> visited;
@@ -102,58 +103,26 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-// check for cout mdarchod
-vector<vector<int>> adj;
-vector<int> lev, par;
-void dfs(int x, int p) {
-    par[x] = p;
-    for (auto i : adj[x]) {
-        if (i != p) {
-            lev[i] = lev[x] + 1;
-            dfs(i, x);
-        }
-    }
-}
-void solve(){
+void solve() {
     int n;
-    cin >> n;
-    adj.assign(n + 1, vector<int>(0));
-    for (int i = 0; i < n - 1; i++) {
-        int u, v;
-        cin >> u >> v;
-        adj[u].push_back(v);
-        adj[v].push_back(u);
-    }
-    lev.assign(n + 1, 0);
-    par.assign(n + 1, -1);
-    dfs(1, -1);
-    int j = max_element(lev.begin(), lev.end()) - lev.begin();
-    lev.assign(n + 1, 0);
-    par.assign(n + 1, -1);
-    dfs(j, -1); 
-    int k = max_element(lev.begin(), lev.end()) - lev.begin();
-    int prev = -1;
-    while (k != -1 && adj[k].size() <= 2) {
-        prev = k;
-        k = par[k];
-    } 
-    if (k == -1) {
-        cout << "-1\n";
-        return;
-    }
-    int b = k, a = par[k], c;
-    for (auto i : adj[k]) {
-        if (i != a && i != prev) {
-            c = i;
-            break;
-        }
-    }
-    cout << a << ' ' << b << ' ' << c << '\n';
+    cin>>n;
+    string s;
+    cin>>s;
+
+    vector<int>a,b;
+    for(int i=0;i<2*n;i++)if(s[i]=='A')a.push_back(i);else b.push_back(i);
+
+    ll costA=0;
+    for(int i=0;i<n;i++)costA+=abs(a[i]-(2*i));
+
+    ll costB=0;
+    for(int i=0;i<n;i++)costB+=abs(b[i]-(2*i));
+
+    cout<<min(costA,costB)<<endl;
 }
 signed main() {
     fast();
     ll t = 1;
-    cin >> t;
     while (t--) solve();
     return 0;
 }

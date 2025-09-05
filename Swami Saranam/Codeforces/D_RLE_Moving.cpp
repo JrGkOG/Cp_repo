@@ -30,6 +30,7 @@ const ll NUM = 1e6 + 5;
 const ll N = 1e7 + 5;  
 #define DEBUG(x) cerr << #x << ": " << x << '\n'
 vector<ll> fact, invfact, power, sieve, lp, primes;
+vector<vector<pair<ll,ll>>> adj;
 vector<vector<ll>> adj_unweighted;
 vector<ll> dist;
 vector<bool> visited;
@@ -102,58 +103,69 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-// check for cout mdarchod
-vector<vector<int>> adj;
-vector<int> lev, par;
-void dfs(int x, int p) {
-    par[x] = p;
-    for (auto i : adj[x]) {
-        if (i != p) {
-            lev[i] = lev[x] + 1;
-            dfs(i, x);
-        }
-    }
-}
 void solve(){
-    int n;
-    cin >> n;
-    adj.assign(n + 1, vector<int>(0));
-    for (int i = 0; i < n - 1; i++) {
-        int u, v;
-        cin >> u >> v;
-        adj[u].push_back(v);
-        adj[v].push_back(u);
+    ll rt,ct,ra,ca;
+    cin >> rt >> ct >> ra >> ca;
+
+    ll n;
+    ll m,l;
+    cin >> n >> m >> l;
+
+    vector<pair<char,ll>> s(m);
+    for(ll i=0;i<m;i++) {
+        cin >> s[i].first >> s[i].second;
     }
-    lev.assign(n + 1, 0);
-    par.assign(n + 1, -1);
-    dfs(1, -1);
-    int j = max_element(lev.begin(), lev.end()) - lev.begin();
-    lev.assign(n + 1, 0);
-    par.assign(n + 1, -1);
-    dfs(j, -1); 
-    int k = max_element(lev.begin(), lev.end()) - lev.begin();
-    int prev = -1;
-    while (k != -1 && adj[k].size() <= 2) {
-        prev = k;
-        k = par[k];
-    } 
-    if (k == -1) {
-        cout << "-1\n";
-        return;
+
+    vector<pair<char,ll>> t(l);
+    for(ll i=0;i<l;i++) {
+        cin >> t[i].first >> t[i].second;
     }
-    int b = k, a = par[k], c;
-    for (auto i : adj[k]) {
-        if (i != a && i != prev) {
-            c = i;
-            break;
+
+    map<char,pair<ll,ll>> dir = {{'U',{-1,0}},{'D',{1,0}},{'L',{0,-1}},{'R',{0,1}}};
+
+    ll dr=rt-ra,dc=ct-ca;
+    ll ans=0;
+
+    ll si=0,ti=0;
+    ll sr=s[0].second,tr=t[0].second;
+
+    while(si<m && ti<l) {
+        ll steps=min(sr,tr);
+        auto [sr1,sc1]=dir[s[si].first];
+        auto [tr1,tc1]=dir[t[ti].first];
+        ll vr=sr1-tr1,vc=sc1-tc1;
+        if(vr==0 && vc==0) {
+            if(dr==0 && dc==0) ans+=steps;
+        } else {
+            ll k=-1;
+            if(vr!=0) {
+                if(dr%vr==0) k=-dr/vr;
+            } else if(vc!=0) {
+                if(dc%vc==0) k=-dc/vc;
+            }
+            if(k>0 && k<=steps) {
+                if(dr+k*vr==0 && dc+k*vc==0) ans++;
+            }
+        }
+        dr+=steps*vr;
+        dc+=steps*vc;
+        sr-=steps;
+        if(sr==0) {
+            si++;
+            if(si<m) sr=s[si].second;
+        }
+        tr-=steps;
+        if(tr==0) {
+            ti++;
+            if(ti<l) tr=t[ti].second;
         }
     }
-    cout << a << ' ' << b << ' ' << c << '\n';
+    cout<<ans<<endl;
 }
 signed main() {
     fast();
     ll t = 1;
-    cin >> t;
+
     while (t--) solve();
     return 0;
 }

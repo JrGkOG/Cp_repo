@@ -15,8 +15,8 @@ using namespace std;
 #define MOD (1000000007)
 #define INF 1000000000000000000LL // Infinity for ll
 #define mp make_pair
-#define yes cout<<"YES"<<endl;
-#define no cout<<"NO"<<endl;
+#define yes cout<<"YES\n"
+#define no cout<<"NO\n"
 #define pb push_back
 #define ppb pop_back
 #define mp make_pair
@@ -30,6 +30,7 @@ const ll NUM = 1e6 + 5;
 const ll N = 1e7 + 5;  
 #define DEBUG(x) cerr << #x << ": " << x << '\n'
 vector<ll> fact, invfact, power, sieve, lp, primes;
+vector<vector<pair<ll,ll>>> adj;
 vector<vector<ll>> adj_unweighted;
 vector<ll> dist;
 vector<bool> visited;
@@ -102,53 +103,16 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-// check for cout mdarchod
-vector<vector<int>> adj;
-vector<int> lev, par;
-void dfs(int x, int p) {
-    par[x] = p;
-    for (auto i : adj[x]) {
-        if (i != p) {
-            lev[i] = lev[x] + 1;
-            dfs(i, x);
-        }
-    }
-}
-void solve(){
-    int n;
-    cin >> n;
-    adj.assign(n + 1, vector<int>(0));
-    for (int i = 0; i < n - 1; i++) {
-        int u, v;
-        cin >> u >> v;
-        adj[u].push_back(v);
-        adj[v].push_back(u);
-    }
-    lev.assign(n + 1, 0);
-    par.assign(n + 1, -1);
-    dfs(1, -1);
-    int j = max_element(lev.begin(), lev.end()) - lev.begin();
-    lev.assign(n + 1, 0);
-    par.assign(n + 1, -1);
-    dfs(j, -1); 
-    int k = max_element(lev.begin(), lev.end()) - lev.begin();
-    int prev = -1;
-    while (k != -1 && adj[k].size() <= 2) {
-        prev = k;
-        k = par[k];
-    } 
-    if (k == -1) {
-        cout << "-1\n";
-        return;
-    }
-    int b = k, a = par[k], c;
-    for (auto i : adj[k]) {
-        if (i != a && i != prev) {
-            c = i;
-            break;
-        }
-    }
-    cout << a << ' ' << b << ' ' << c << '\n';
+void solve() {
+    ll a,b,c,d;
+    cin>>a>>b>>c>>d;
+    bool flag=true;
+    if(a<0 || b<0) flag=false;
+    else if(max(a,b) > 2*(min(a,b)+1)) flag=false;
+    if((c-a)<0 || (d-b)<0) flag=false;
+    else if(max(c-a,d-b) > 2*(min(c-a,d-b)+1)) flag=false;
+    if(flag) yes;
+    else no;
 }
 signed main() {
     fast();

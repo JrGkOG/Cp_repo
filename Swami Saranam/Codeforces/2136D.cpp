@@ -30,6 +30,7 @@ const ll NUM = 1e6 + 5;
 const ll N = 1e7 + 5;  
 #define DEBUG(x) cerr << #x << ": " << x << '\n'
 vector<ll> fact, invfact, power, sieve, lp, primes;
+vector<vector<pair<ll,ll>>> adj;
 vector<vector<ll>> adj_unweighted;
 vector<ll> dist;
 vector<bool> visited;
@@ -102,53 +103,57 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-// check for cout mdarchod
-vector<vector<int>> adj;
-vector<int> lev, par;
-void dfs(int x, int p) {
-    par[x] = p;
-    for (auto i : adj[x]) {
-        if (i != p) {
-            lev[i] = lev[x] + 1;
-            dfs(i, x);
-        }
-    }
+void up(ll k){
+    cout<<"? U "<<k<<endl; 
 }
-void solve(){
-    int n;
-    cin >> n;
-    adj.assign(n + 1, vector<int>(0));
-    for (int i = 0; i < n - 1; i++) {
-        int u, v;
-        cin >> u >> v;
-        adj[u].push_back(v);
-        adj[v].push_back(u);
+void down(ll k){
+    cout<<"? D "<<k<<endl;
+}
+void right(ll k){
+    cout<<"? R "<<k<<endl;
+}
+void left(ll k){
+    cout<<"? L "<<k<<endl;
+}
+void solve() {
+    ll n;
+    cin>>n;
+    vector<pair<ll,ll>>points;
+    for(int i=0;i<n;i++){
+        ll x,y;
+        cin>>x>>y;
+        points.push_back({x,y});
     }
-    lev.assign(n + 1, 0);
-    par.assign(n + 1, -1);
-    dfs(1, -1);
-    int j = max_element(lev.begin(), lev.end()) - lev.begin();
-    lev.assign(n + 1, 0);
-    par.assign(n + 1, -1);
-    dfs(j, -1); 
-    int k = max_element(lev.begin(), lev.end()) - lev.begin();
-    int prev = -1;
-    while (k != -1 && adj[k].size() <= 2) {
-        prev = k;
-        k = par[k];
-    } 
-    if (k == -1) {
-        cout << "-1\n";
-        return;
+    ll maxi1=INT_MIN;
+    ll maxi2=INT_MIN;
+    for(auto it:points){
+        maxi1=max(maxi1,it.first+it.second);
+        maxi2=max(maxi2,it.first-it.second);
     }
-    int b = k, a = par[k], c;
-    for (auto i : adj[k]) {
-        if (i != a && i != prev) {
-            c = i;
-            break;
-        }
-    }
-    cout << a << ' ' << b << ' ' << c << '\n';
+    ll dist1=0;
+    ll k=1e9;
+    right(k);
+    cin>>dist1;
+    right(k);
+    cin>>dist1;
+    up(k);
+    cin>>dist1;
+    up(k);
+    cin>>dist1;
+    ll top=dist1-4*k+maxi1;
+    ll dist2=0;
+    down(k);
+    cin>>dist2;
+    down(k);
+    cin>>dist2;
+    down(k);
+    cin>>dist2;
+    down(k);
+    cin>>dist2;
+    ll bot=dist2-4*k+maxi2;
+    ll x=(top+bot)/2;
+    ll y=(top-bot)/2;
+    cout<<"! "<<x<<" "<<y<<endl;
 }
 signed main() {
     fast();
