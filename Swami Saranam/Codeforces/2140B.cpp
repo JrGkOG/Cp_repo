@@ -117,15 +117,19 @@ bool check(int x, int y) {
     return (num % (x + y) == 0);
 }
 void solve() {
-    ll x;
-    cin>>x;
-    cout<<2*x<<endl;r
-    if(check(x,2*x)==false) cout<<"oombi"<<endl;
+    // ll x;
+    // cin>>x;
+    // cout<<2*x<<endl;
+    // if(check(x,2*x)==false) cout<<"oombi"<<endl;
+    int x,y;
+    string s;
+    cin>>x>>s>>y;
+    cout<<"-"<<s<<"-"<<endl;
+
 }
 signed main() {
     fast();
     ll t = 1;
-    cin >> t;
     while (t--) solve();
     return 0;
 }
