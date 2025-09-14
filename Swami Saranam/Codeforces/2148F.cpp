@@ -103,66 +103,101 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve() {
-   int n;
-    cin >> n;
-    vector<pair<ll,ll>> segments(n);
-    
-    for (int i = 0; i < n; i++) {
-        cin >> segments[i].first >> segments[i].second;
+bool lexo(vector<int>a,vector<int>b,int start){
+    int n=min(a.size(),b.size());
+    for(int i=start;i<n;i++){
+        if(a[i]<b[i]) return true;
+        if(a[i]>b[i]) return false;
     }
-
-    ll total = 0;
-
-    while (!segments.empty()) {
-        if (segments.size() == 1) {
-            total += segments[0].second - segments[0].first;
-            break;
+    return a.size()<b.size();
+}
+void solve() {
+    int n;
+    cin>>n;
+    vector<vector<int>>v(n);
+    int maxi=0;
+    int index=0;
+    for(int i=0;i<n;i++){
+        int k;
+        cin>>k;
+        v[i].resize(k);
+        for(int j=0;j<k;j++){
+            cin>>v[i][j];
         }
-
-        int maxYIdx = max_element(segments.begin(), segments.end(),
-                                  [](auto &a, auto &b) { return a.second < b.second; }) - segments.begin();
-        ll xj = segments[maxYIdx].first;
-        ll yj = segments[maxYIdx].second;
-
-        int minXIdx = min_element(segments.begin(), segments.end(),
-                                  [](auto &a, auto &b) { return a.first < b.first; }) - segments.begin();
-        ll xi = segments[minXIdx].first;
-        ll yi = segments[minXIdx].second;
-
-        if (maxYIdx == minXIdx) {
-            ll bestX = LLONG_MAX;
-            int bestIdx = -1;
-            for (int i = 0; i < (int)segments.size(); i++) {
-                if (i != maxYIdx && segments[i].first < bestX) {
-                    bestX = segments[i].first;
-                    bestIdx = i;
+        if(k>maxi){
+            maxi=k;
+            index=i;
+        }
+    }
+    vector<int> ans;
+    // // fucking sorting is not wroking 
+    // // ll temp=0;
+    // // for(ll i=0;i<maxi;i++){
+    // //     while(temp<n && v[temp].size()<=i)temp++;
+    // //     if(temp==n) break;
+    // //     ans.push_back(v[temp][i]);
+    // // }
+    // // for(auto it:ans){
+    // //     cout<<it<<" ";
+    // // }
+    // // cout<<endl;
+    // // vector<int>nums;
+    // // for(int i=0;i<n;i++){
+    // //     int temp=-1;
+    // //     for(int j=0;j<n;j++){
+    // //         if(!used[j] && (temp==-1 || lexo(v[j],v[temp])))temp=j;
+    // //     }
+    // //     nums.push_back(temp);
+    // //     used[temp]=true;
+    // // }
+    // // int temp=0;
+    // // for(int i=0;i<maxi;i++){
+    // //     while(temp<n && v[nums[temp]].size()<=i)temp++;
+    // //     if(temp==n) break;
+    // //     ans.push_back(v[nums[temp]][i]);
+    // // }
+    int start=0;
+    while(start<n){
+        int temp=-1;
+        for(int i=0;i<n;i++){
+            if(v[i].size()<=start) continue;
+            else{
+                if(temp==-1 || lexo(v[i],v[start],start)){
+                    temp=i;
                 }
             }
-            if (bestIdx == -1) {
-                total += yi - xi;
-                break;
+        }
+        if(temp==-1) break;
+        else{
+            for(int j=start;j<v[temp].size();j++){
+                ans.push_back(v[temp][j]);
             }
-            minXIdx = bestIdx;
-            xi = segments[minXIdx].first;
-            yi = segments[minXIdx].second;
         }
-
-        total += (yj - xj) + (yi - xi) + (yj - xi);
-
-        if (maxYIdx > minXIdx) {
-            segments.erase(segments.begin() + maxYIdx);
-            segments.erase(segments.begin() + minXIdx);
-        } else {
-            segments.erase(segments.begin() + minXIdx);
-            segments.erase(segments.begin() + maxYIdx);
-        }
+        start=v[temp].size();
     }
-    cout << total <<endl;
+    vector<int>maximumArr=v[index];
+    for(int i=start;i<maximumArr.size();i++){
+        ans.push_back(maximumArr[i]);
+    }
+    for(auto it:ans){
+        cout<<it<<" ";
+    }
+    cout<<endl;
+    // sort(v.rbegin(),v.rend());
+    // for(int i=0;i<v.size();i++){
+    //     for(int j=0;j<v[i].size();j++){
+    //         cout<<v[i][j]<<" ";
+    //     }
+    //     cout<<endl;
+    // }
 }
+// 3
+// 5 2 4 3 1 3
+// 7 7 6 5 4 4 2 1
+// 4 2 4 2 1
 signed main() {
     fast();
-    ll t = 1;
+    int t = 1;
     cin >> t;
     while (t--) solve();
     return 0;

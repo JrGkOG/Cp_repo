@@ -104,61 +104,26 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve() {
-   int n;
-    cin >> n;
-    vector<pair<ll,ll>> segments(n);
-    
-    for (int i = 0; i < n; i++) {
-        cin >> segments[i].first >> segments[i].second;
+    ll n;
+    cin>>n;
+    iv(v,n);
+    sort(v.rbegin(),v.rend());
+    ll even=0;
+    ll odd=0;
+    vector<ll>odds;
+    for(ll i=0;i<v.size();i++){
+        if(v[i]%2!=0)odds.push_back(v[i]); 
+        else even+=v[i];
     }
-
-    ll total = 0;
-
-    while (!segments.empty()) {
-        if (segments.size() == 1) {
-            total += segments[0].second - segments[0].first;
-            break;
+    if(odds.size()==0) cout<<0<<endl;
+    else {
+        ll ans=even;
+        ll maxi=(odds.size()+1)/2;
+        for(ll i=0;i<maxi;i++){
+            ans+=odds[i];
         }
-
-        int maxYIdx = max_element(segments.begin(), segments.end(),
-                                  [](auto &a, auto &b) { return a.second < b.second; }) - segments.begin();
-        ll xj = segments[maxYIdx].first;
-        ll yj = segments[maxYIdx].second;
-
-        int minXIdx = min_element(segments.begin(), segments.end(),
-                                  [](auto &a, auto &b) { return a.first < b.first; }) - segments.begin();
-        ll xi = segments[minXIdx].first;
-        ll yi = segments[minXIdx].second;
-
-        if (maxYIdx == minXIdx) {
-            ll bestX = LLONG_MAX;
-            int bestIdx = -1;
-            for (int i = 0; i < (int)segments.size(); i++) {
-                if (i != maxYIdx && segments[i].first < bestX) {
-                    bestX = segments[i].first;
-                    bestIdx = i;
-                }
-            }
-            if (bestIdx == -1) {
-                total += yi - xi;
-                break;
-            }
-            minXIdx = bestIdx;
-            xi = segments[minXIdx].first;
-            yi = segments[minXIdx].second;
-        }
-
-        total += (yj - xj) + (yi - xi) + (yj - xi);
-
-        if (maxYIdx > minXIdx) {
-            segments.erase(segments.begin() + maxYIdx);
-            segments.erase(segments.begin() + minXIdx);
-        } else {
-            segments.erase(segments.begin() + minXIdx);
-            segments.erase(segments.begin() + maxYIdx);
-        }
+        cout<<ans<<endl;
     }
-    cout << total <<endl;
 }
 signed main() {
     fast();
