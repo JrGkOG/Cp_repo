@@ -105,12 +105,39 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve() {
-    
+    while(1){
+        int n;
+        cin>>n;
+        if(n==0){
+            return;
+        }
+        vector<int>nums(n);
+        for(int i=0;i<n;i++){
+            cin>>nums[i];
+        }
+        if(nums[0]==nums[n-1]){
+            cout<<"Yes"<<endl;
+            vector<vector<int>>ans(n,vector<int>(n,0));
+            for (int i = 0; i < n; i++){
+                ans[n - 1][i] = nums[i];
+                ans[i][0] = nums[i];
+                ans[0][i] = nums[n - 1 - i];
+                ans[i][n - 1] = nums[n - 1 - i];
+            }
+            for(int i=0;i<n;i++){
+                for(int j=0;j<n;j++){
+                    cout<<ans[i][j]<<(j==n ? "":" ");
+                }
+                cout<<endl;
+            }
+        }
+        else{
+            cout<<"No"<<endl;
+        }
+    }
 }
 signed main() {
     fast();
-    ll t = 1;
-    cin >> t;
-    while (t--) solve();
+    solve();
     return 0;
 }

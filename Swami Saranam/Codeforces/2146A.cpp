@@ -105,7 +105,21 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve() {
-    
+    ll n; 
+    cin >> n;
+    map<int,int> mp;
+    for (int i = 0; i < n; i++) {
+        int num; cin >> num;
+        mp[num]++;
+    }
+    vector<int> freqs;
+    for (auto &p : mp) freqs.push_back(p.second);
+    sort(freqs.rbegin(), freqs.rend());
+    int ans = 0;
+    for (int i = 0; i < freqs.size(); i++) {
+        ans = max(ans, (i+1) * freqs[i]);
+    }
+    cout<<ans<<endl;
 }
 signed main() {
     fast();

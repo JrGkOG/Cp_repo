@@ -104,13 +104,86 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
+
 void solve() {
+    int n,k,q;
+    cin>>n>>k>>q;
+
+    vector<pair<int,int>> t(n);
+    int tot=0;
+    for(int i=0;i<n;i++){
+        cin>>t[i].first>>t[i].second;
+        tot+=t[i].second;
+    }
+
+    map<int,vector<pair<int,int>>> qd;
+    int mxD=0;
+    for(int i=0;i<q;i++){
+        int d,y;
+        cin>>d>>y;
+        qd[d].push_back({y-1,i});
+        mxD=max(mxD,d);
+    }
     
+    vector<pair<int,int>> ans(q);
+    int back=0;
+    bool stop=false;
+
+    for(int day=1;day<=mxD&&!stop;day++){
+        int lst=t[n-1].first;
+        if(tot>k&&back>=lst){
+            for(auto&[qdv,qs]:qd){
+                if(qdv>=day){
+                    int diff=qdv-day;
+                    int curB=back+diff*(tot-k);
+                    for(auto&qu:qs){
+                        int ti=qu.first,qi=qu.second;
+                        int fin=curB;
+                        for(int i=0;i<=ti;i++) fin+=t[i].second;
+                        int fD=qdv+(fin-1)/k;
+                        int fH=(fin-1)%k+1;
+                        ans[qi]={fD,fH};
+                    }
+                }
+            }
+            stop=true;
+            break;
+        }
+
+        int curF=back;
+        if(qd.count(day)){
+            for(int i=0;i<n;i++){
+                int arr=t[i].first-1;
+                curF=max(curF,arr)+t[i].second;
+            }
+            for(auto&qu:qd[day]){
+                int ti=qu.first,qi=qu.second;
+                int tmp=back;
+                for(int i=0;i<=ti;i++){
+                    tmp=max(tmp,t[i].first-1)+t[i].second;
+                }
+                int fD=day+(tmp-1)/k;
+                int fH=(tmp-1)%k+1;
+                ans[qi]={fD,fH};
+            }
+        }else{
+            for(int i=0;i<n;i++){
+                int arr=t[i].first-1;
+                curF=max(curF,arr)+t[i].second;
+            }
+        }
+        back=max(0LL,curF-k);
+    }
+
+    for(int i=0;i<q;i++){
+        cout<<ans[i].first<<" "<<ans[i].second<<"\n";
+    }
 }
 signed main() {
     fast();
-    ll t = 1;
+    int t = 1;
     cin >> t;
     while (t--) solve();
     return 0;
 }
+// 

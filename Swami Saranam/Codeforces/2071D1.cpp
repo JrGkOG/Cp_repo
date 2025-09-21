@@ -4,15 +4,15 @@ using namespace std;
 #define fast()                        \
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);   
+#define int long long
 #define ll long long
-#define int long long 
-#define f(i, n) for (ll i = 0; i < n; i++)
+// #define f(i, n) for (ll i = 0; i < n; i++)
 #define ia(a, n) \
     ll a[n];     \
     f(i, n) cin >> a[i]
-#define iv(v, n)     \
-    vector<ll> v(n); \
-    f(i, n) cin >> v[i]
+// #define iv(v, n)     \
+//     vector<ll> v(n); \
+//     f(i, n) cin >> v[i]
 #define MOD (1000000007)
 #define INF 1000000000000000000LL // Infinity for ll
 #define mp make_pair
@@ -105,7 +105,36 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve() {
+    int n, l, r; cin >> n >> l >> r;
     
+    vector <int> a(2 * n + 1), p(2 * n + 1);
+    for (int i = 1; i <= n; i++){
+        cin >> a[i];
+        p[i] = p[i - 1] ^ a[i];
+    }
+    for (int i = n + 1; i <= 2 * n; i++){
+        a[i] = p[i / 2];
+        p[i] = p[i - 1] ^ a[i];
+    }
+    
+    auto f =  [&](auto self, int x) -> int{
+        if (x <= 2 * n){
+            return a[x];
+        }
+        
+        if (x % 4 == 2 || x % 4 == 3){
+            // a[2m] = a[2m + 1]
+            // if n even include additional 
+            int ans = p[n + (n % 2 == 0)];
+            return ans;
+        }
+        
+        // subtract 2 and send below? 
+        int ans = self(self, x - 2) ^ self(self, x / 2);
+        return ans;
+    };
+    
+    cout << f(f, l) << "\n";
 }
 signed main() {
     fast();

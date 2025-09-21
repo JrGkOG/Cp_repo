@@ -5,7 +5,6 @@ using namespace std;
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);   
 #define ll long long
-#define int long long 
 #define f(i, n) for (ll i = 0; i < n; i++)
 #define ia(a, n) \
     ll a[n];     \
@@ -104,9 +103,72 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve() {
-    
+bool checkCondition(vector<int>arr,int n){
+    unordered_map<int,vector<int>> pos;
+    for(int i=0;i<arr.size();i++) pos[arr[i]].push_back(i);
+    for(int x=1;x<=n;x++){
+        if(pos[x].size()!=2) return false;
+        int dist=abs(pos[x][1]-pos[x][0]);
+        if(dist%x!=0) return false;
+    }
+    return true;
 }
+void solve() {
+    int n;
+    cin>>n;
+    vector<int> arr(2*n,0);
+    // // vector<bool> used(2*n,false);
+    // // for(int i=n;i>=1;i--){
+    // //     for(int j=2*n-1-i;j>=0;--j){
+    // //         if(!used[j]&&!used[j+i]){
+    // //             ans[j]=i;
+    // //             ans[j+i]=i;
+    // //             used[j]=true;
+    // //             used[j+i]=true;
+    // //             break;
+    // //         }
+    // //     }
+    // // }
+    // // for(int i=0;i<n*2;i++){
+    // //     if(ans[i]==0) ans[i]=1;
+    // //     cout<<ans[i]<<" ";
+    // // }
+    // set<int> empt;
+    // for(int i=0;i<2*n;i++) empt.insert(i);
+    // for(int i=0;i<n;i++){
+    //     arr[i]=n-i;
+    //     empt.erase(i);
+    // }
+    // for(int k=n;k>=1;k--){
+    //     int first=n-k;
+    //     for(int cnd=first+k;cnd<2*n;cnd+=k){
+    //         if(empt.count(cnd)){
+    //             arr[cnd]=k;
+    //             empt.erase(cnd);
+    //             break;
+    //         }
+    //     }
+    // }
+    // // if(!checkCondition(arr,n))cout<<"NO"<<endl;
+    // for(int &x:arr) cout<<x<<" ";
+    // cout<<endl;
+    int te=n;
+    for(int i=0;i<n;i++){
+        arr[i]=te;
+        te--;
+    }
+    arr[n]=n;
+    int temp=1;
+    for(int i=n+1;i<2*n;i++){
+        arr[i]=temp;
+        temp++;
+    }
+    for(auto it:arr){
+        cout<<it<<" ";
+    }
+    cout<<endl;
+}
+
 signed main() {
     fast();
     ll t = 1;

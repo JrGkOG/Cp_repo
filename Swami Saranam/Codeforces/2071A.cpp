@@ -5,7 +5,6 @@ using namespace std;
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);   
 #define ll long long
-#define int long long 
 #define f(i, n) for (ll i = 0; i < n; i++)
 #define ia(a, n) \
     ll a[n];     \
@@ -105,7 +104,10 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve() {
-    
+    ll n;
+    cin>>n;
+    if((n)%3==1) yes
+    else no
 }
 signed main() {
     fast();

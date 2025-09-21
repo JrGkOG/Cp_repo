@@ -105,7 +105,51 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve() {
-    
+    int n,m;
+    cin>>n>>m;
+    vector<vector<int>> sets(n);
+    vector<int> numCount(m+1,0);
+    vector<int>lastSet(m+1,-1);
+    vector<int>vis(m,0);
+    for(int i=0;i<n;i++){
+        int k;
+        cin>>k;
+        sets[i].resize(k);
+        for(int j=0;j<k;j++){
+            cin>>sets[i][j];
+            numCount[sets[i][j]]++;
+            vis[sets[i][j]-1]=1;
+            lastSet[sets[i][j]]=i;
+        }
+    }
+    for(int i=0;i<m;i++){
+        if(vis[i]==0){
+            no
+            return;
+        }
+    }
+    vector<int> optional;
+    vector<bool> mustInclude(n,false);
+    for(int num=1;num<=m;num++) if(numCount[num]==1) mustInclude[lastSet[num]]=true;
+    for(int i=0;i<n;i++) if(!mustInclude[i]) optional.push_back(i);
+
+    int removable=0;
+    vector<int> uniqueCount(n,0);
+    for(int i=0;i<n;i++){
+        for(int x:sets[i]){
+            if(numCount[x]==1) uniqueCount[i]++;
+        }
+    }
+    for(int i:optional){
+        if(uniqueCount[i]==0){
+            removable++;
+            if(removable>=2){
+                yes
+                return;
+            }
+        }
+    }
+    no
 }
 signed main() {
     fast();

@@ -34,7 +34,7 @@ vector<ll> fact, invfact, power, sieve, lp, primes;
 vector<vector<pair<ll,ll>>> adj;
 vector<vector<ll>> adj_unweighted;
 vector<ll> dist;
-vector<bool> visited;
+vector<bool> vis;
 
 ll mod_pow(ll a, ll b, ll m = mod) {
     ll res = 1;
@@ -105,12 +105,59 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve() {
-    
+    int n;
+    while (cin >> n && n != 0) {
+        int a, b, d;
+        cin >> a >> b >> d;
+        set<pair<int, int>> obs;
+        for (int i = 0; i < n; i++) {
+            int x, y;
+            cin >> x >> y;
+            obs.insert({x, y});
+        }
+        int cx = a, cy = b;
+        int dir = 0;
+        int dx[] = {1, 0, -1, 0};
+        int dy[] = {0, 1, 0, -1};
+        vector<vector<vector<int>>> vis(101, vector<vector<int>>(101, vector<int>(4, -1)));
+        int dist = 0;
+        while (d > 0) {
+            if (cx < 0 || cx > 100 || cy < 0 || cy > 100) {
+                cx += dx[dir] * d;
+                cy += dy[dir] * d;
+                d = 0;
+                break;
+            }
+            if (vis[cx][cy][dir] != -1) {
+                int cycle_len = dist - vis[cx][cy][dir];
+                if (cycle_len > 0) {
+                    d %= cycle_len;
+                    if (d == 0) break;
+                }
+            }
+            vis[cx][cy][dir] = dist;
+
+            int nx = cx + dx[dir];
+            int ny = cy + dy[dir];
+            bool flag = false;
+            if (nx >= 0 && nx <= 100 && ny >= 0 && ny <= 100) {
+                if (obs.count({nx, ny})) flag = true;
+            }
+            if (flag)dir = (dir + 1) % 4;
+            else {
+                cx = nx;
+                cy = ny;
+                d--;
+                dist++;
+            }
+        }
+        cout << cx << " " << cy << "\n";
+    }
 }
 signed main() {
     fast();
-    ll t = 1;
-    cin >> t;
-    while (t--) solve();
+    // ll t = 1;
+    // cin >> t;
+    solve();
     return 0;
 }

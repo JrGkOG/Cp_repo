@@ -5,7 +5,7 @@ using namespace std;
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);   
 #define ll long long
-#define int long long 
+#define int long long
 #define f(i, n) for (ll i = 0; i < n; i++)
 #define ia(a, n) \
     ll a[n];     \
@@ -34,7 +34,7 @@ vector<ll> fact, invfact, power, sieve, lp, primes;
 vector<vector<pair<ll,ll>>> adj;
 vector<vector<ll>> adj_unweighted;
 vector<ll> dist;
-vector<bool> visited;
+vector<bool> vis;
 
 ll mod_pow(ll a, ll b, ll m = mod) {
     ll res = 1;
@@ -104,9 +104,63 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve() {
-    
+bool processChain(int m, vector<int>& nums, vector<bool>& canll, vector<bool>& canlr, vector<bool>& vis) {
+    for(int i=0;i<m;++i){
+        if(!vis[i]){
+            vector<int> chain;
+            int clr=i;
+            while(clr<m){
+                chain.push_back(clr);
+                vis[clr]=true;
+                if(clr+1<m&&nums[clr+1]==nums[clr]+2) clr++;
+                else break;
+            }
+            if(chain.empty()) continue;
+            bool leftp=canll[chain[0]];
+            bool leftr=canlr[chain[0]];
+            if(!leftp&&!leftr) return false;
+            for(int j=1;j<chain.size();++j){
+                int curr=chain[j];
+                bool currl=canll[curr];
+                bool currR=canlr[curr];
+                if(leftr) currl=true;
+                if(!leftp){
+                    if(!currl) return false;
+                    currR=false;
+                }
+                if(!currl&&!currR) return false;
+                leftp=currl;
+                leftr=currR;
+            }
+        }
+    }
+    return true;
 }
+void solve() {
+    // hopefully this shit gets accpeted 
+    int n;
+    cin>>n;
+    string pots;
+    cin>>pots;
+    vector<int> nums;
+    for(int i=0;i<n;++i) if(pots[i]=='0') nums.push_back(i);
+    if(nums.empty()){
+        yes
+    }
+    else{
+        int m=nums.size();
+        vector<bool> canll(m,false), canlr(m,false), vis(m,false);
+        for(int i=0;i<m;++i){
+            int pidx=nums[i];
+            if(pidx==0||pots[pidx-1]=='0'||(pidx>=2&&pots[pidx-2]=='0')) canll[i]=true;
+            if(pidx==n-1||pots[pidx+1]=='0'||(pidx<=n-3&&pots[pidx+2]=='0')) canlr[i]=true;
+        }
+        bool flag=processChain(m,nums,canll,canlr,vis);
+        if(flag) yes
+        else no
+    }
+}
+
 signed main() {
     fast();
     ll t = 1;

@@ -105,7 +105,48 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve() {
-    
+    int n;
+    cin>>n;
+    string s;
+    cin>>s;
+    vector<int>ones;
+    ones.pb(0);
+    for(int i=0;i<n;i++){
+        if(s[i]=='1'){
+            ones.pb(i+1);
+        }
+    }
+    ones.pb(n+1);
+    bool flag=true;
+    for(int i=1;i<ones.size();i++){
+        if(ones[i]-ones[i-1]==2){
+            flag=false;
+            break;
+        }
+    }
+    if(flag==false){
+        no
+        return;
+    }
+    else{
+        vector<int>ans(n+1);
+        for(int i=1;i<ones.size();i++){
+            int st=ones[i-1]+1;
+            int end=ones[i]-1;
+            if(st<=end){
+                for(int j=st;j<end;j++){
+                    ans[j]=j+1;
+                }
+                ans[end]=st;
+            }
+            if(i<ones.size()-1) ans[ones[i]]=ones[i];
+        }
+        yes
+        for(int i=1;i<ans.size();i++){
+            cout<<ans[i]<<" ";
+        }
+        cout<<endl;
+    }
 }
 signed main() {
     fast();

@@ -104,13 +104,104 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve() {
-    
+int getClosestMirror(int x, vector<int>& arr) {
+    if (arr.empty()) return -1;
+    int m = 0;
+    while ((1 << (m + 1)) <= x) m++;
+    int i = x - (1 << m);
+    int target = (1 << m) - i - 1;
+    int closest = arr[0];
+    int minDiff = abs(arr[0] - target);
+    for (int num : arr) {
+        int diff = abs(num - target);
+        if (diff < minDiff) {
+            minDiff = diff;
+            closest = num;
+        }
+    }
+    auto it = find(arr.begin(), arr.end(), closest);
+    if (it != arr.end()) arr.erase(it);
+    return closest;
 }
-signed main() {
+void solve2() {
+    int l,r;
+    cin>>l>>r;
+    int n=r-l+1;
+    int templ=l;
+    int tempr=r;
+    vector<int>nums1(n);
+    vector<int>nums2(n);
+    int maxi=0;
+    vector<int>avail;
+    for(int i=l;i<=r;i++){
+        avail.pb(i);
+    }
+    for(int i=0;i<n;i++){
+        nums1[i]=templ;
+        nums2[i]=templ;
+        templ++;
+        maxi+=nums1[i]+nums2[i];
+    }
+    // so we need to minimuze the bitwaise and between two arrays 
+    vector<int>tempb=avail;
+    reverse(tempb.begin(),tempb.end());
+    // for(int i=0;i<n;i++){
+    //     maxi+=2*tempb[i];
+    // }
+    stack<int>ans;
+    for(int b:tempb){
+        int possible=getClosestMirror(b,avail);
+        maxi-=(b&possible);
+        ans.push(possible);
+    }
+    cout<<maxi<<endl;
+    while(!ans.empty()){
+        cout<<ans.top()<<" ";
+        ans.pop();
+    }
+    cout<<endl;
+}
+void optim(int l,int r,vector<int>&ans){
+    if (r == -1) {
+		return;
+	}
+	if (r == 0) {
+		ans[0] = 0;
+		return;
+	}
+	ll x =(log2(r));
+	ll p = (1LL << x) - 1;
+	ll rem = r - p;
+	for (ll i = 0; i < rem; i++) {
+		ans[i + p + 1] = p - i;
+	}
+	ll pos = p - rem + 1;
+	for (ll i = pos; i <= p; i++) {
+		ans[i] = r - (i - pos);
+	}
+	optim(l, pos - 1,ans);
+}
+void solve(){
+    int l,r;
+    cin>>l>>r;
+    int n=r-l+1;
+    vector<int>ans(n,-1);
+    optim(l,r,ans);
+    int value=0;
+    for(int i=0;i<n;i++){
+        value += i|ans[i];
+    }
+    cout<<value<<endl;
+    for(auto it:ans){
+        cout<<it<<" ";
+    }
+    cout<<endl;
+
+}
+signed main(){
     fast();
-    ll t = 1;
-    cin >> t;
-    while (t--) solve();
+    ll t=1;
+    cin>>t;
+    while(t--)solve();
     return 0;
 }

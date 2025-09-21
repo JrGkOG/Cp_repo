@@ -5,7 +5,6 @@ using namespace std;
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);   
 #define ll long long
-#define int long long 
 #define f(i, n) for (ll i = 0; i < n; i++)
 #define ia(a, n) \
     ll a[n];     \
@@ -104,8 +103,29 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
+
 void solve() {
-    
+    auto check =[&](int k){
+        int j=sqrt((int64_t)k * (k+1)/2);
+        return ((int64_t)j*j != (int64_t)k * (k+1)/2);
+    };
+    int n;
+    cin>>n;
+    if(!check(n)){
+        cout<<-1<<endl;
+        return;
+    }
+    vector<int>ans(n+1);
+    for(int i=1;i<=n;i++)ans[i]=i;
+    int j=0;
+    for(int i=1;i<=n;i++){
+        while((int64_t)j*j < (int64_t)i * (i+1)/2) j++;
+        if((int64_t)j*j == (int64_t)i * (i+1)/2){
+            swap(ans[i],ans[i+1]);
+        }
+        cout<<ans[i]<<" ";
+    }
+    cout<<endl;
 }
 signed main() {
     fast();
