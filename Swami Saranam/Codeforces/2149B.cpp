@@ -105,19 +105,15 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve() {
-    int n,j,k;
-    cin>>n>>j>>k;
+    int n;
+    cin>>n;
     iv(v,n);
-    int maxi=0;
-    for(int i=0;i<v.size();i++)maxi=max(maxi,v[i]);
-    int temp=v[j-1];
-    if(temp==maxi){
-        cout<<"YES"<<endl;
+    sort(v.begin(),v.end());
+    int maxi=INT_MIN;
+    for(int i=0;i<n;i+=2){
+        maxi=max(maxi,abs(v[i]-v[i+1]));
     }
-    else{
-        if(k==1) cout<<"NO"<<endl;
-        else cout<<"YES"<<endl;
-    }
+    cout<<maxi<<endl;
 }
 signed main() {
     fast();

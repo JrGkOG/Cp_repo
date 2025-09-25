@@ -104,20 +104,31 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve() {
-    int n,j,k;
-    cin>>n>>j>>k;
-    iv(v,n);
-    int maxi=0;
-    for(int i=0;i<v.size();i++)maxi=max(maxi,v[i]);
-    int temp=v[j-1];
-    if(temp==maxi){
-        cout<<"YES"<<endl;
+int ans(int val,int n,string s){
+    vector<int>pos;
+    char temp='a';
+    if(val==0) temp='b';
+    for(int i=0;i<n;i++){
+        if(s[i]==temp)pos.pb(i);
     }
+    if(pos.size()<=1) return 0;
     else{
-        if(k==1) cout<<"NO"<<endl;
-        else cout<<"YES"<<endl;
+        vector<int>ans;
+        for(int i=0;i<pos.size();i++)ans.pb(pos[i]-i);
+        int mid=ans[ans.size()/2];
+        int total=0;
+        for(int i=0;i<ans.size();i++)total+=abs(ans[i]-mid);
+        return total;
     }
+}
+void solve() {
+    int n;
+    cin>>n;
+    string s;
+    cin>>s;
+    int a=ans(1,n,s);
+    int b=ans(0,n,s);
+    cout<<min(a,b)<<endl;
 }
 signed main() {
     fast();

@@ -105,19 +105,41 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve() {
-    int n,j,k;
-    cin>>n>>j>>k;
-    iv(v,n);
-    int maxi=0;
-    for(int i=0;i<v.size();i++)maxi=max(maxi,v[i]);
-    int temp=v[j-1];
-    if(temp==maxi){
-        cout<<"YES"<<endl;
+    // int n,k;
+    // cin>>n>>k;
+    // iv(v,n);
+    // set<int>s(v.begin(),v.end());
+    // if(k==0){
+    //     int ans=count(v.begin(),v.end(),0);
+    //     cout<<ans<<endl;
+    // }
+    // else{
+    //     int missing=0;
+    //     for(int i=0;i<k;i++){
+    //         if(!(s.count(i)))missing++;
+    //     }
+    //     int temp=count(v.begin(),v.end(),k);
+    //     cout<<max(missing,temp)<<endl;
+    // }
+    int a,b;
+    cin>>a>>b;
+    vector<int> hash(a+1,0);
+    vector<int> vec(a);
+    int cnt=0;
+    for(int i=0;i<a;i++){
+        cin>>vec[i];
+        hash[vec[i]]++;
+        if(b==vec[i])cnt++;
     }
-    else{
-        if(k==1) cout<<"NO"<<endl;
-        else cout<<"YES"<<endl;
+    int cnt1=0;
+    //int maxi=0;
+    for(int i=0;i<b;i++){
+       //if(hash[i]>1)maxi=max(maxi,hash[i]);
+       if(hash[i]==0){
+            cnt1++;
+       }
     }
+    cout<<max(cnt1,cnt)<<endl;
 }
 signed main() {
     fast();

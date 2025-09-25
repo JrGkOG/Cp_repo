@@ -94,16 +94,17 @@ int gcd(int a, int b) {
 int lcm(int a, int b) {
     return (a / gcd(a, b)) * b;
 }
-
 void solve() {
     ll n;
     cin>>n;
-    vector<int> cnt(4);
-    for(int i=0; i<n; i++)
-        cnt[i % 4]++;
-    cout << (cnt[0] == cnt[3] && cnt[1] == cnt[2] ? "Bob" : "Alice") << '\n';
+    vector<int>count(4);
+    for(int i=0;i<n;i++){
+        int temp=i%4;
+        count[temp]++;
+    }
+    if(count[0]==count[3] && count[1]==count[3]) cout<<"Bob"<<endl;
+    else cout<<"Alice"<<endl;
 }
-
 signed main() {
     fast();
     int t = 1;

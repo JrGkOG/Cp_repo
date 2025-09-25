@@ -6,6 +6,7 @@ using namespace std;
     cin.tie(NULL);   
 #define ll long long
 #define int long long 
+#define ld long double
 #define f(i, n) for (ll i = 0; i < n; i++)
 #define ia(a, n) \
     ll a[n];     \
@@ -104,24 +105,87 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve() {
-    int n,j,k;
-    cin>>n>>j>>k;
-    iv(v,n);
-    int maxi=0;
-    for(int i=0;i<v.size();i++)maxi=max(maxi,v[i]);
-    int temp=v[j-1];
-    if(temp==maxi){
-        cout<<"YES"<<endl;
-    }
-    else{
-        if(k==1) cout<<"NO"<<endl;
-        else cout<<"YES"<<endl;
+vector<int>pre;
+void compute(){
+    int sum=0;
+    for(int i=1;i<=200000;i++){
+        sum+=i;
+        pre.pb(sum);
     }
 }
+int kfind(int h){
+    auto it = upper_bound(pre.begin(),pre.end(),h-1);
+    return it-pre.begin();
+}
+void solve() {
+    int h,d;
+    cin>>h>>d;
+    // ld dis= (8*(h-1))+1.0;
+    // int k=kfind(h);
+    // // if(dis>=0) k=(-1+sqrt(dis))/2.0;
+    // // if(k>=d)cout<<d<<endl;
+    // if(k>=d){
+    //     cout<<d<<endl;
+    // }
+    // else{
+    //     int ans=k;
+    //     h-=(k*(k+1))/2;
+    //     d-=k;
+    //     while(d>0){
+    //         ans++;
+    //         h++;
+    //         // dis=(8*(h-1))+1.0;
+    //         k=kfind(h);
+    //         // if(dis>=0) k=(-1+sqrt(dis))/2.0;
+    //         if(k<=1){
+    //             if(d>0) ans+=(2*d-1);
+    //             break;
+    //         }
+    //         if(k>=d){
+    //             ans+=d;
+    //             break;
+    //         }
+    //         ans+=k;
+    //         h-=(k*(k+1))/2;
+    //         d-=k;
+    //     }
+    //     cout<<ans<<endl;
+    int total=(d)*(d+1)/2;
+    if(h>total){
+        cout<<d<<endl;
+    }
+    else{
+        int mini=d;
+        int maxi=LLONG_MAX;
+        int ans=maxi;
+        while(mini<=maxi){
+            int temp=(mini+maxi)/2;
+            if(temp<d){
+                mini=temp+1;
+                continue;
+            }
+            int r=temp-d;
+            int p=r+1;
+            int q=d/p;
+            int rem=d%p;
+            int q1=(q+1)*(q+2)/2;
+            int q2=q*(q+1)/2;
+            int total2=rem*q1+(p-rem)*q2;
+            if(h+r>total2){
+                ans=temp;
+                maxi=temp-1;
+            }else{
+                mini=temp+1;
+            }
+        }
+        cout<<ans<<endl;    
+    }
+}
+
 signed main() {
     fast();
     ll t = 1;
+    // compute();
     cin >> t;
     while (t--) solve();
     return 0;
