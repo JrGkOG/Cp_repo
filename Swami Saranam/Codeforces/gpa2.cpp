@@ -18,87 +18,114 @@ void computeSubject(string name,
                     vector<Component> quizzes,
                     vector<Component> labs,
                     Component case_study,
-                    double endsem_out, double endsem_to) {
+                    double endsem_out, double endsem_to,
+                    bool isTOC=false) 
+{
     double total = 0;
 
-    // midsem
-    if (midsem >= 0)
-        total += convert(midsem, midsem_out, midsem_to);
-
-    // quizzes
-    for (auto &q : quizzes)
-        total += convert(q.score, q.out_of, q.to);
-
-    // labs
-    for (auto &l : labs)
-        total += convert(l.score, l.out_of, l.to);
-
-    // case study
-    if (case_study.to > 0)
-        total += convert(case_study.score, case_study.out_of, case_study.to);
-
-    double current = total;
-    double needed = max(0.0, 85.0 - current);
-
     cout << "\n--- " << name << " ---\n";
-    cout << "Current = " << current << " / " << (100 - endsem_to) << endl;
 
+    // Midsem
+    if (midsem >= 0) {
+        double midsem_conv = convert(midsem, midsem_out, midsem_to);
+        total += midsem_conv;
+        cout << "Midsem: " << midsem << " / " << midsem_out
+             << " → " << midsem_conv << " / " << midsem_to << endl;
+    }
+
+    // Quizzes
+    double quiz_total = 0, quiz_max = 0;
+    for (auto &q : quizzes) {
+        double val = convert(q.score, q.out_of, q.to);
+        cout << "Quiz: " << q.score << " / " << q.out_of
+             << " → " << val << " / " << q.to << endl;
+        quiz_total += val;
+        quiz_max += q.to;
+    }
+    total += quiz_total;
+
+    // Labs
+    double lab_total = 0, lab_max = 0;
+    for (auto &l : labs) {
+        double val = convert(l.score, l.out_of, l.to);
+        cout << "Lab: " << l.score << " / " << l.out_of
+             << " → " << val << " / " << l.to << endl;
+        lab_total += val;
+        lab_max += l.to;
+    }
+    total += lab_total;
+
+    // Case Study
+    if (case_study.to > 0) {
+        double cs_conv = convert(case_study.score, case_study.out_of, case_study.to);
+        total += cs_conv;
+        cout << "Case Study: " << case_study.score << " / " << case_study.out_of
+             << " → " << cs_conv << " / " << case_study.to << endl;
+    }
+
+    // Total before Endsem
+    int base_total = isTOC ? 50 : 70;
+    cout << "Total (without Endsem): " << total << " / " << base_total << endl;
+
+    // Requirement for 85
+    double needed = max(0.0, 85.0 - total);
     if (needed > endsem_to) {
-        cout<<current+endsem_to<<endl;
-        cout << "❌ Not possible, even full endsem won't reach 85.\n";
+        cout << "❌ Even full endsem won't reach 85.\n";
     } else {
         double required_raw = (needed / endsem_to) * endsem_out;
-        cout << "Need at least " << needed << " more → "<< required_raw << "/" << endsem_out << " in endsem.\n";
+        cout << "Need " << needed << " more → " << required_raw
+             << " / " << endsem_out << " in endsem.\n";
     }
 }
 
 int main() {
-    // Embedded
-    computeSubject("Embedded Systems",19, 50, 20, // midsem pending
-                   {{5,10,5}, {20,20,5}}, // quizzes full-1
-                   {{23,25,10}, {23,25,15}}, // labs full-1
-                   {48,50,15}, // case study full-2
-                   50, 30); // endsem
+    // Embedded Systems
+    computeSubject("Embedded Systems",
+                   26, 50, 20,
+                   {{5,10,5}, {20,20,5}},
+                   {{23,25,10}, {25,25,15}},
+                   {50,50,15},
+                   50, 30);
 
-    // CN
+    // Computer Networks
     computeSubject("Computer Networks",
-                   22, 50, 20, // midsem received
-                   {{38,40,10}}, // quizzes full-1
-                   {{9,10,10}, {25,25,15}}, // labs (one given, one full-1)
-                   {50,50,15}, // case study full-2
-                   50, 30); // endsem
+                   22, 50, 20,
+                   {{38,40,10}, {10,10,10}},
+                   {{9,10,10}, {9,10,10}},
+                   {50,50,10},
+                   50, 30);
 
-    // TOC
-    computeSubject("TOC",
-                   22, 50, 20, // midsem
-                   {{9,10,5}, {10,10,5}, {6,10,5}}, // quizzes
-                   {}, // no labs
-                   {15,15,15}, // no case study
-                   100, 50); // endsem
+    // Theory of Computation (TOC uses /50 total instead of /70)
+    computeSubject("Theory of Computation",
+                   19, 50, 20,
+                   {{9,10,5}, {10,10,5}, {6,10,5}},
+                   {},
+                   {14,15,15},
+                   100, 50, true);
 
-    // ML
+    // Machine Learning
     computeSubject("Machine Learning",
-                   21, 50, 20, // midsem
-                   {{20,20,5}, {19,20,5}}, // quizzes full-1
-                   {{35,40,10}, {39,40,15}, {39,40,15}}, // labs
-                   {0,0,0}, // no case study
-                   50, 30); // endsem
+                   21, 50, 20,
+                   {{20,20,5}, {20,20,5}},
+                   {{35,40,10}, {30,30,15}, {28,30,15}},
+                   {0,0,0},
+                   50, 30);
 
     // NLP
-    computeSubject("NLP",20, 50, 20, // midsem pending
-                   {{8,10,5}, {10,10,5}}, // quizzes (given + full-1)
-                   {{15,15,15}, {10,10,10}}, // labs full-1
-                   {14,15,15}, // case study full-2
+    computeSubject("Natural Language Processing",
+                   24, 50, 20,
+                   {{8,10,5}, {10,10,5}},
+                   {{15,15,15}, {10,10,10}},
+                   {14,15,15},
                    50, 30);
-    // quantum
-    computeSubject("qantum computing",40, 50, 20, // midsem pending
-                   {{10,10,5}, {10,10,5}}, // quizzes (given + full-1)
-                   {{15,15,15}, {10,10,10}}, // labs full-1
-                   {13,15,15}, // case study full-2
+
+    // Quantum Computing
+    computeSubject("Quantum Computing",
+                   40, 50, 20,
+                   {{10,10,5}, {10,10,5}},
+                   {{15,15,15}, {10,10,10}},
+                   {13,15,15},
                    50, 30);
-                    // endsem
 
     return 0;
 }
-
-// dude calculate maximum marks i can get 
