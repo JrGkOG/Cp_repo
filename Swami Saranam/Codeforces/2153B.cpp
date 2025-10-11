@@ -105,8 +105,10 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve() {
-    int n;cin>>n;
-    cout<<2*n-2<<endl;
+    int x,y,z;
+    cin>>x>>y>>z;
+    if((((x&y)|z)==z ) && (((x&z)|y)==y) &&(((y&z)|x)==x))yes
+    else no
 }
 signed main() {
     fast();

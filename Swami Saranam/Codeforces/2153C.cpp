@@ -104,14 +104,98 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve() {
-    int n;cin>>n;
-    cout<<2*n-2<<endl;
+int symCost(vector<int> &odds){
+    int k=(int)odds.size();
+    if(k<=2) return 0;
+    sort(odds.begin(),odds.end());
+    int cost=0;
+    int upto=k-2;
+    for(int i=0;i<upto;i++){
+        cost+=odds[i];
+    }
+    return cost;
 }
-signed main() {
+vector<pair<int,int>> makeGrp(map<int,int> &freq){
+    vector<pair<int,int>> grp;
+    for(map<int,int>::iterator it=freq.begin();it!=freq.end();++it){
+        int len=it->first;
+        int cnt=it->second;
+        grp.push_back(make_pair(len,cnt));
+    }
+    sort(grp.begin(),grp.end(),[](pair<int,int> a,pair<int,int> b){
+        return a.first>b.first;
+    });
+    return grp;
+}
+vector<int> getOdds(vector<pair<int,int>> &grp){
+    vector<int> odds;
+    for(int i=0;i<(int)grp.size();i++){
+        int len=grp[i].first;
+        int cnt=grp[i].second;
+        if(cnt%2==1){
+            odds.push_back(len);
+        }
+    }
+    return odds;
+}
+int bestAns(int totalSum,int totalCnt,vector<pair<int,int>> &grp,vector<int> &odds){
+    int extra=symCost(odds);
+    int curSum=totalSum;
+    int curCnt=totalCnt;
+    int idx=0;
+    int oddCnt=(int)odds.size();
+    int ans=0;
+    while(idx<=(int)grp.size()){
+        int valid=curSum-extra;
+        int big=0;
+        if(idx<(int)grp.size()){
+            big=grp[idx].first;
+        }
+        int left=curCnt;
+        if(oddCnt>2){
+            left=left-(oddCnt-2);
+        }
+        if(left>=3 && valid>2*big){
+            ans=valid;
+            break;
+        }
+        if(idx==(int)grp.size()){
+            break;
+        }
+        int len=grp[idx].first;
+        int cnt=grp[idx].second;
+        curSum=curSum-(len*cnt);
+        curCnt=curCnt-cnt;
+        if(cnt%2==1){
+            if(oddCnt>2){
+                extra=extra-odds[oddCnt-3];
+            }
+            oddCnt=oddCnt-1;
+        }
+        idx=idx+1;
+    }
+    return ans;
+}
+void solve(){
+    int n;
+    cin>>n;
+    map<int,int> freq;
+    int totalSum=0;
+    for(int i=0;i<n;i++){
+        int val;
+        cin>>val;
+        freq[val]=freq[val]+1;
+        totalSum=totalSum+val;
+    }
+    vector<pair<int,int>> grp=makeGrp(freq);
+    vector<int> odds=getOdds(grp);
+    int res=bestAns(totalSum,n,grp,odds);
+    cout<<res<<endl;
+}
+signed main(){
     fast();
-    ll t = 1;
-    cin >> t;
-    while (t--) solve();
+    int t;
+    cin>>t;
+    while(t--)solve();
     return 0;
 }
