@@ -1,0 +1,67 @@
+Date,Day,Week,Book,Chapter/Topic,What to Study,Task Type,Time (hrs),YouTube Resource,Notes to Refer,Status
+Nov 15,Friday,Week 1,Hands-On ML,Ch 1: ML Landscape,Read Ch1 Setup Python env Install scikit-learn,Reading+Setup,1.5,Andrew Ng ML Intro,GeeksForGeeks ML Basics,Pending
+Nov 16,Saturday,Week 1,Hands-On ML,Ch 2: End-to-End Project,Read Ch2 Part 1 Housing price dataset exploration,Reading+Code,2,Ken Jee Data Science Project,Fast.ai Practical ML,Pending
+Nov 17,Sunday,Week 1,Hands-On ML,Ch 2: End-to-End Project,Read Ch2 Part 2 Data preprocessing pipeline,Reading+Code,2,StatQuest Data Preprocessing,TowardsAI preprocessing,Pending
+Nov 18,Monday,Week 1,Hands-On ML,Ch 3: Classification,Read Ch3 MNIST dataset Binary classifiers,Reading+Code,1.5,3Blue1Brown Neural Nets,GeeksForGeeks Classification,Pending
+Nov 19,Tuesday,Week 1,Hands-On ML,Ch 3: Classification,Performance measures Confusion matrix ROC curves,Reading+Practice,1.5,StatQuest ROC Curves,Fast.ai metrics,Pending
+Nov 20,Wednesday,Week 1,Hands-On ML,Ch 4: Training Models,Linear regression Gradient descent,Reading+Code,1.5,Andrew Ng Gradient Descent,TowardsAI optimization,Pending
+Nov 21,Thursday,Week 1,Hands-On ML,Ch 4: Training Models,Regularization Logistic regression,Reading+Code,1.5,StatQuest Regularization,GeeksForGeeks logistic reg,Pending
+Nov 22,Friday,Week 2,Hands-On ML,Ch 5: SVM,Linear SVM Nonlinear SVM Kernel trick,Reading+Practice,2,Andrew Ng SVM,Fast.ai SVM notes,Pending
+Nov 23,Saturday,Week 2,Hands-On ML,Ch 6: Decision Trees,Decision trees CART algorithm Gini/Entropy,Reading+Code,2,StatQuest Decision Trees,TowardsAI decision trees,Pending
+Nov 24,Sunday,Week 2,Hands-On ML,Ch 7: Ensemble Learning,Voting classifiers Bagging Pasting,Reading+Code,2,Krish Naik Ensemble,GeeksForGeeks ensemble,Pending
+Nov 25,Monday,Week 2,Hands-On ML,Ch 7: Ensemble Learning,Random Forests Boosting AdaBoost,Reading+Code,1.5,StatQuest Random Forests,Fast.ai random forests,Pending
+Nov 26,Tuesday,Week 2,Hands-On ML,Ch 8: Dimensionality,PCA Kernel PCA LLE,Reading+Practice,1.5,StatQuest PCA,TowardsAI dimensionality,Pending
+Nov 27,Wednesday,Week 2,Hands-On ML,Ch 9: Unsupervised Learning,K-Means DBSCAN Hierarchical clustering,Reading+Code,1.5,Krish Naik Clustering,GeeksForGeeks clustering,Pending
+Nov 28,Thursday,Week 2,Hands-On ML,Ch 10: Intro to ANN,Perceptrons MLPs with Keras,Reading+Code,1.5,3Blue1Brown Neural Nets,DeepLearning.AI basics,Pending
+Nov 29,Friday,Week 3,Hands-On ML,Ch 10: ANN with Keras,Training deep neural nets Fine-tuning,Reading+Code,2,Sentdex Keras Tutorial,Fast.ai neural nets,Pending
+Nov 30,Saturday,Week 3,Hands-On ML,Ch 11: Training DNNs,Vanishing/exploding gradients Batch normalization,Reading+Code,2,Andrew Ng DNN Training,DeepLearning.AI optimization,Pending
+Dec 1,Sunday,Week 3,Hands-On ML,Ch 11: Training DNNs,Transfer learning Optimizers Adam RMSprop,Reading+Practice,2,StatQuest Optimizers,Fast.ai transfer learning,Pending
+Dec 2,Monday,Week 3,Hands-On ML,Ch 12: Custom Models,Custom layers losses metrics with TensorFlow,Reading+Code,1.5,TensorFlow Tutorials,TowardsAI custom models,Pending
+Dec 3,Tuesday,Week 3,Hands-On ML,Ch 13: Data Loading,TensorFlow Data API TFRecord format,Reading+Code,1.5,TensorFlow Data Pipeline,GeeksForGeeks TF Data,Pending
+Dec 4,Wednesday,Week 4,Hands-On ML,Ch 14: CNNs,Convolutional layers Pooling CNN architectures,Reading+Code,1.5,3Blue1Brown CNNs,DeepLearning.AI CNNs,Pending
+Dec 5,Thursday,Week 4,Hands-On ML,Ch 14: CNNs,ResNet Inception Transfer learning with CNNs,Reading+Practice,1.5,Sentdex CNN Tutorial,Fast.ai CNNs,Pending
+Dec 6,Friday,Week 4,Hands-On ML,Ch 15: RNNs & CNNs,RNNs LSTM GRU Time series prediction,Reading+Code,2,Andrew Ng RNNs,TowardsAI seq models,Pending
+Dec 7,Saturday,Week 4,Hands-On ML,Ch 16: NLP with RNNs,Text generation Sentiment analysis Embeddings,Reading+Code,2,HuggingFace NLP Course,GeeksForGeeks NLP,Pending
+Dec 8,Sunday,Week 4,Hands-On ML,Ch 16: Transformers,Attention mechanism Transformer architecture,Reading+Practice,2,Jay Alammar Transformers,Fast.ai transformers,Pending
+Dec 9,Monday,Week 4,Hands-On ML,Review Week,Revise Ch 1-10 Code exercises Mini project,Review+Project,1.5,Review YouTube playlists,Notion revision notes,Pending
+Dec 10,Tuesday,Week 5,Hands-On ML,Ch 17: Autoencoders,Autoencoders VAEs Denoising autoencoders,Reading+Code,1.5,Lex Fridman Autoencoders,DeepLearning.AI VAE,Pending
+Dec 11,Wednesday,Week 5,Hands-On ML,Ch 17: GANs,Generative Adversarial Networks DCGAN,Reading+Code,1.5,Two Minute Papers GANs,TowardsAI GANs,Pending
+Dec 12,Thursday,Week 5,Hands-On ML,Ch 18: Reinforcement Learning,Q-Learning Policy gradients DQN,Reading+Practice,1.5,DeepMind RL Course,GeeksForGeeks RL,Pending
+Dec 13,Friday,Week 5,Hands-On ML,Ch 19: Training at Scale,Distributed training Model parallelism,Reading+Code,2,TensorFlow Distributed,Fast.ai scaling,Pending
+Dec 14,Saturday,Week 5,Hands-On ML,Final Review,Complete book Final project ideas Setup portfolio,Project+Review,2,Portfolio building tips,GitHub project templates,Pending
+Dec 15,Sunday,Week 6,AI Engineering,Ch 1: What is AI Eng,AI Engineering overview MLOps intro,Reading,2,Chip Huyen MLOps,TowardsAI ML Engineering,Pending
+Dec 16,Monday,Week 6,AI Engineering,Ch 2: Data Engineering,Data pipelines ETL Feature stores,Reading+Practice,1.5,Airflow Tutorial,GeeksForGeeks data eng,Pending
+Dec 17,Tuesday,Week 6,AI Engineering,Ch 3: Model Development,Experiment tracking Model versioning,Reading+Code,1.5,MLflow Tutorial,WandB documentation,Pending
+Dec 18,Wednesday,Week 6,AI Engineering,Ch 4: Model Training,Hyperparameter tuning AutoML,Reading+Practice,1.5,Optuna Tutorial,Fast.ai AutoML,Pending
+Dec 19,Thursday,Week 6,AI Engineering,Ch 5: Model Deployment,Model serving APIs Docker containers,Reading+Code,1.5,Docker for ML,Kubernetes ML docs,Pending
+Dec 20,Friday,Week 7,AI Engineering,Ch 6: Model Monitoring,Drift detection Monitoring dashboards,Reading+Practice,2,Evident AI Monitoring,MLOps monitoring guide,Pending
+Dec 21,Saturday,Week 7,AI Engineering,Ch 7: CI/CD for ML,CI/CD pipelines GitHub Actions Testing,Reading+Code,2,GitHub Actions ML,MLOps best practices,Pending
+Dec 22,Sunday,Week 7,AI Engineering,Ch 8: Infrastructure,Cloud platforms AWS/GCP Cost optimization,Reading+Practice,2,AWS SageMaker,GCP AI Platform,Pending
+Dec 23,Monday,Week 7,AI Engineering,Ch 9: LLM Systems,LLM deployment Prompt engineering,Reading+Code,1.5,OpenAI API Tutorial,LangChain documentation,Pending
+Dec 24,Tuesday,Week 7,AI Engineering,Ch 10: Vector DBs,Vector databases Embeddings RAG systems,Reading+Practice,1.5,Pinecone Tutorial,Chroma DB documentation,Pending
+Dec 25,Wednesday,Week 7,AI Engineering,Review & Project,AI Eng review Build mini MLOps project,Project,1.5,MLOps project ideas,Portfolio examples,Pending
+Dec 26,Thursday,Week 8,Generative DL,Ch 1: GenAI Intro,Generative modeling overview VAE intro,Reading,1.5,Lex Fridman GenAI,OpenAI research blog,Pending
+Dec 27,Friday,Week 8,Generative DL,Ch 2: Deep Learning,DL fundamentals for GenAI Keras advanced,Reading+Code,2,Keras advanced tutorials,Fast.ai deep learning,Pending
+Dec 28,Saturday,Week 8,Generative DL,Ch 3: VAEs,Variational Autoencoders deep dive,Reading+Code,2,Arxiv Insights VAE,DeepLearning.AI VAE,Pending
+Dec 29,Sunday,Week 8,Generative DL,Ch 4: GANs,GAN architectures Training GANs StyleGAN,Reading+Code,2,Two Minute Papers GANs,GAN Lab interactive,Pending
+Dec 30,Monday,Week 8,Generative DL,Ch 5: Autoregressive,PixelCNN WaveNet Autoregressive models,Reading+Practice,1.5,DeepMind Autoregressive,Arxiv paper reviews,Pending
+Dec 31,Tuesday,Week 8,Generative DL,Ch 6: Normalizing Flows,Flow-based models Glow RealNVP,Reading+Code,1.5,Yannic Kilcher Flows,Paper with code,Pending
+Jan 1,Wednesday,Week 9,Generative DL,Ch 7: Energy Models,Energy-based models Score matching,Reading+Practice,1.5,Yann LeCun Energy,DeepLearning.AI energy,Pending
+Jan 2,Thursday,Week 9,Generative DL,Ch 8: Diffusion Models,DDPM DDIM Stable Diffusion intro,Reading+Code,1.5,HuggingFace Diffusers,Stability AI blog,Pending
+Jan 3,Friday,Week 9,Generative DL,Ch 9: Transformers for GenAI,GPT BERT T5 for generation,Reading+Code,2,Andrej Karpathy GPT,HuggingFace transformers,Pending
+Jan 4,Saturday,Week 9,Generative DL,Ch 10: Music Generation,Music Gen models MusicLM AudioCraft,Reading+Practice,2,Google Magenta,Meta AudioCraft docs,Pending
+Jan 5,Sunday,Week 9,Generative DL,Ch 11: Video Generation,Video diffusion Runway ML Video Gen,Reading+Code,2,Runway ML tutorials,Stability AI video,Pending
+Jan 6,Monday,Week 10,Generative DL,Ch 12: World Models,World models Game AI RL+GenAI,Reading+Practice,1.5,DeepMind World Models,OpenAI world models,Pending
+Jan 7,Tuesday,Week 10,Generative DL,Review & Project,GenDL review Build GenAI mini project,Project,1.5,GenAI project ideas,GitHub GenAI repos,Pending
+Jan 8,Wednesday,Week 10,Prob ML Advanced,Ch 1: Intro to Prob ML,Probabilistic thinking Bayesian inference intro,Reading,1.5,3Blue1Brown Bayes,TowardsAI Bayesian ML,Pending
+Jan 9,Thursday,Week 10,Prob ML Advanced,Ch 2: Probability Review,Probability distributions Conjugate priors,Reading+Practice,1.5,StatQuest Distributions,GeeksForGeeks probability,Pending
+Jan 10,Friday,Week 10,Prob ML Advanced,Ch 3: Bayesian Stats,Bayesian inference MCMC Gibbs sampling,Reading+Code,2,Ben Lambert Bayesian,PyMC documentation,Pending
+Jan 11,Saturday,Week 11,Prob ML Advanced,Ch 4: Graphical Models,Bayesian networks Markov networks,Reading+Practice,2,Koller Graphical Models,PGM Coursera notes,Pending
+Jan 12,Sunday,Week 11,Prob ML Advanced,Ch 5: Latent Variable Models,EM algorithm GMMs Factor analysis,Reading+Code,2,StatQuest EM Algorithm,Scikit-learn GMM,Pending
+Jan 13,Monday,Week 11,Prob ML Advanced,Ch 6: Kernel Methods,Gaussian processes Kernel trick SVMs revisited,Reading+Code,1.5,Nando de Freitas GP,Scikit-learn GP,Pending
+Jan 14,Tuesday,Week 11,Prob ML Advanced,Ch 7: Sparse Models,LASSO Elastic net Sparse Bayesian learning,Reading+Practice,1.5,StatQuest LASSO,Scikit-learn regularization,Pending
+Jan 15,Wednesday,Week 11,Prob ML Advanced,Ch 8: Variational Inference,Variational Bayes ELBO Mean-field approximation,Reading+Code,1.5,David Blei VI,Pyro VI documentation,Pending
+Jan 16,Thursday,Week 11,Prob ML Advanced,Ch 9: Monte Carlo Methods,MCMC Metropolis-Hastings HMC,Reading+Practice,1.5,Richard McElreath MCMC,Stan documentation,Pending
+Jan 17,Friday,Week 12,Prob ML Advanced,Ch 10: Deep Generative,VAEs deep dive Normalizing flows advanced,Reading+Code,2,Arxiv Insights Deep Gen,PyTorch VAE examples,Pending
+Jan 18,Saturday,Week 12,Prob ML Advanced,Ch 11: Bayesian DL,Bayesian neural networks Uncertainty quantification,Reading+Code,2,Yarin Gal Bayesian DL,TensorFlow Probability,Pending
+Jan 19,Sunday,Week 12,Prob ML Advanced,Ch 12: Causal Inference,Causal graphical models Do-calculus,Reading+Practice,2,Judea Pearl lectures

@@ -76,13 +76,27 @@ void computeSubject(string name,
         cout << "Need " << needed << " more → " << required_raw
              << " / " << endsem_out << " in endsem.\n";
     }
+
+    // Take Endsem Input
+    double endsem_score;
+    cout << "Enter your Endsem score (" << endsem_out << "): ";
+    cin >> endsem_score;
+
+    double endsem_conv = convert(endsem_score, endsem_out, endsem_to);
+    total += endsem_conv;
+
+    cout << "Endsem: " << endsem_score << " / " << endsem_out
+         << " → " << endsem_conv << " / " << endsem_to << endl;
+
+    // Final total
+    cout << "Final Total: " << total << " / " << (base_total + endsem_to) << endl;
 }
 
 int main() {
     // Embedded Systems
     computeSubject("Embedded Systems",
                    26, 50, 20,
-                   {{5,10,5}, {20,20,5}},
+                   {{5,10,5}, {9,10,5}},
                    {{23,25,10}, {25,25,15}},
                    {50,50,15},
                    50, 30);
@@ -90,15 +104,15 @@ int main() {
     // Computer Networks
     computeSubject("Computer Networks",
                    22, 50, 20,
-                   {{38,40,10}, {10,10,10}},
+                   {{38,40,10}, {8,10,10}},
                    {{9,10,10}, {9,10,10}},
-                   {50,50,10},
+                   {8,10,10},
                    50, 30);
 
     // Theory of Computation (TOC uses /50 total instead of /70)
     computeSubject("Theory of Computation",
                    19, 50, 20,
-                   {{9,10,5}, {10,10,5}, {6,10,5}},
+                   {{9,10,5}, {5,10,5}, {6,10,5}},
                    {},
                    {14,15,15},
                    100, 50, true);
@@ -106,17 +120,17 @@ int main() {
     // Machine Learning
     computeSubject("Machine Learning",
                    21, 50, 20,
-                   {{20,20,5}, {20,20,5}},
-                   {{35,40,10}, {30,30,15}, {28,30,15}},
+                   {{20,20,5}, {19,20,5}},
+                   {{35,40,10}, {30,30,15}, {29,30,15}},
                    {0,0,0},
                    50, 30);
 
     // NLP
     computeSubject("Natural Language Processing",
                    24, 50, 20,
-                   {{8,10,5}, {10,10,5}},
+                   {{10,10,5}, {10,10,5}},
                    {{15,15,15}, {10,10,10}},
-                   {15,15,15},
+                   {14,15,15},
                    50, 30);
 
     // Quantum Computing
