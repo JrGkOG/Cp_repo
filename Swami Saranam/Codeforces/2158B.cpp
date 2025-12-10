@@ -104,33 +104,67 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
+// void solve(){
+//     int n;cin>>n;
+//     iv(v,2*n);
+//     map<int,int>mp;
+//     for(auto x:v)mp[x]++;
+//     int odd=0,even=0;
+//     for(auto &p:mp){
+//         if(p.second%2)odd++;
+//         else even++;
+//     }
+//     vector<int>pre(even+1);
+//     for(int i=0;i<=even;i++)pre[i]=(n-i)%2;
+//     int ans=odd;
+//     int m=min(even,n);  
+//     for(int i=m;i>=0;i--){
+//         int L=max(0LL,odd+i-n);
+//         int R=min(odd,n-i);
+//         if(L>R)continue;
+//         int need=pre[i];
+//         if((L%2)==need){
+//             ans=odd+2*i;
+//             break;
+//         }
+//         if(L+1<=R&&((L+1)%2)==need){
+//             ans=odd+2*i;
+//             break;
+//         }
+//     }
+//     cout<<ans<<endl;
+// }
 void solve(){
     int n;cin>>n;
-    iv(v,2*n);
     map<int,int>mp;
-    for(auto x:v)mp[x]++;
-    int odd=0,even=0;
-    for(auto &p:mp){
-        if(p.second%2)odd++;
-        else even++;
+    for(int i=0;i<2*n;i++){
+        int num;cin>>num;
+        mp[num]++;
     }
-    vector<int>pre(even+1);
-    for(int i=0;i<=even;i++)pre[i]=(n-i)%2;
+    int odd=0;
+    int even1=0;
+    int even2=0;
+    for(auto it:mp){
+        int num=it.first;
+        int feq=it.second;
+        if(feq%2!=0){
+            odd++;
+        }
+        else if((feq/2) & 1){
+            even2++;
+        }
+        else{
+            even1++;
+        }
+    }
     int ans=odd;
-    int m=min(even,n);  
-    for(int i=m;i>=0;i--){
-        int L=max(0LL,odd+i-n);
-        int R=min(odd,n-i);
-        if(L>R)continue;
-        int need=pre[i];
-        if((L%2)==need){
-            ans=odd+2*i;
-            break;
-        }
-        if(L+1<=R&&((L+1)%2)==need){
-            ans=odd+2*i;
-            break;
-        }
+    ans+=even2*2;
+    if(even1 & 1){
+        if(odd>0)ans+=(even1)*2;
+        else ans+=(even1-1)*2;
+    }
+    else{
+        ans+=(even1)*2;
     }
     cout<<ans<<endl;
 }
