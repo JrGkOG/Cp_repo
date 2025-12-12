@@ -104,8 +104,7 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve() {
-    ll n;
-    cin>>n;
+    int n; cin>>n;
     iv(nums,n);
     sort(nums.begin(),nums.end());
     if(n%2==0){
