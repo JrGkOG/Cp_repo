@@ -1,203 +1,56 @@
-// karthik solving bois
 #include <bits/stdc++.h>
 using namespace std;
-#define fast()                        \
-    ios_base::sync_with_stdio(false); \
-    cin.tie(NULL);   
-#define ll long long
-#define int long long 
-#define f(i, n) for (ll i = 0; i < n; i++)
-#define ia(a, n) \
-    ll a[n];     \
-    f(i, n) cin >> a[i]
-#define iv(v, n)     \
-    vector<ll> v(n); \
-    f(i, n) cin >> v[i]
-#define MOD (1000000007)
-#define INF 1000000000000000000LL // Infinity for ll
-#define mp make_pair
-#define yes cout<<"YES"<<endl;
-#define no cout<<"NO"<<endl;
-#define pb push_back
-#define ppb pop_back
-#define mp make_pair
-#define ff first
-#define ss second
-#define all(x) x.begin(), x.end()
-#define sz(x) (ll)(x).size()
-const ll inf = 1e18;
-// fking hell bro
-const ll mod = 998244353;
-const ll NUM = 1e6 + 5; 
-const ll N = 1e7 + 5;  
-#define DEBUG(x) cerr << #x << ": " << x << '\n'
-vector<ll> fact, invfact, power, sieve, lp, primes;
-// vector<vector<pair<ll,ll>>> adj;
-vector<vector<ll>> adj_unweighted;
-vector<ll> dist;
-vector<bool> visited;
-
-ll mod_pow(ll a, ll b, ll m = mod) {
-    ll res = 1;
-    a %= m;
-    while (b) {
-        if (b & 1) res = (res * a) % m;
-        a = (a * a) % m;
-        b >>= 1;
+int64_t f(int64_t u,int64_t v,vector<int64_t>dp,vector<int>&node2,int64_t vl,int64_t m){
+    int64_t c=0;
+    if(dp[vl]!=-1){
+        c=dp[vl];
     }
-    return res;
-}
-ll mod_inv(ll a, ll m = mod) {
-    return mod_pow(a, m - 2, m);
-}
-ll mod_div(ll a, ll b, ll m = mod) {
-    return (a % m * mod_inv(b, m)) % m;
-}
-void init_factorials(ll max_n = NUM) {
-    fact.resize(max_n);
-    invfact.resize(max_n);
-    fact[0] = invfact[0] = 1;
-    for (ll i = 1; i < max_n; i++)
-        fact[i] = (fact[i - 1] * i) % mod;
-    invfact[max_n - 1] = mod_inv(fact[max_n - 1]);
-    for (ll i = max_n - 2; i >= 1; i--)
-        invfact[i] = (invfact[i + 1] * (i + 1)) % mod;
-}
-ll combination(ll n, ll k) {
-    if (k > n || k < 0) return 0;
-    return fact[n] * invfact[k] % mod * invfact[n - k] % mod;
-}
-void init_powers(ll x, ll max_n = NUM) {
-    power.resize(max_n);
-    power[0] = 1;
-    for (ll i = 1; i < max_n; i++)
-        power[i] = (power[i - 1] * x) % mod;
-}
-void calc_sieve(ll max_n = NUM) {
-    sieve.assign(max_n + 1, 0);
-    for (ll i = 2; i <= max_n; ++i) {
-        if (!sieve[i]) {
-            for (ll j = i; j <= max_n; j += i)
-                if (!sieve[j]) sieve[j] = i;
-        }
-    }
-}
-void linear_sieve(ll max_n = N) {
-    lp.assign(max_n + 1, 0);
-    for (ll i = 2; i <= max_n; ++i) {
-        if (lp[i] == 0) {
-            lp[i] = i;
-            primes.pb(i);
-        }
-        for (ll j = 0; j < sz(primes) && primes[j] <= lp[i] && i * primes[j] <= max_n; ++j)
-            lp[i * primes[j]] = primes[j];
-    }
-}
-
-ll gcd(ll a, ll b) {
-    return b ? gcd(b, a % b) : a;
-}
-ll lcm(ll a, ll b) {
-    return (a / gcd(a, b)) * b;
-}
-// thalivare check and write in your note first 
-// dont bullshit 
-// think propelry 
-// solve fast 
-// check for cin>>t if that needed or just one testcase 
-vector<int>a;
-vector<int>v;
-vector<int>u;
-vector<int>dp;
-vector<vector<pair<int,int>>> adj;
-
-int modadd(int a,int b){
-    a%=mod;
-    b%=mod;
-    int r=a+b;
-    if(r>=mod) r-=mod;
-    return r;
-}
-
-bool cmpfirst(const pair<int,int> &x,const pair<int,int> &y){
-    return x.first < y.first;
-}
-
-void solve(){
-    int n,m;cin>>n>>m;
-
-    vector<int>a(n+1);
-    for(int i=1;i<=n;i++) cin>>a[i];
-
-    vector<int>v(m),u(m);
-    vector<int>dp(m,1);
-
-    vector<vector<pair<int,int>>> adj(n+1);
-
-    vector<pair<int,pair<int,int>>> edges; 
-
-    for(int i=0;i<m;i++){
-        cin>>v[i]>>u[i];
-
-        int sum=a[v[i]]+a[u[i]];
-
-        edges.push_back({sum, {i, u[i]}});
-
-        adj[v[i]].push_back({a[u[i]],i});
-    }
-
-    for(int i=0;i<=n;i++){
-        sort(adj[i].begin(),adj[i].end(),cmpfirst);
-    }
-
-    sort(edges.begin(),edges.end());
-
-    map<int,vector<pair<int,int>>> groups;
-
-    for(auto &p:edges){
-        int sum=p.first;
-        int e=p.second.first;
-        int from=p.second.second;
-        groups[sum].push_back({e,from});
-    }
-
-    for(auto &g:groups){
-        int sum=g.first;
-        auto &vec=g.second;
-
-        map<int,int> tempdp;
-
-        for(auto &p:vec){
-            int e=p.first;
-            int node=p.second;
-            tempdp[node] = modadd(tempdp[node], dp[e]);
-        }
-
-        for(auto &pr:tempdp){
-            int node=pr.first;
-            int val=pr.second;
-
-            for(auto &nx:adj[node]){
-                if(nx.first == sum){
-                    int nxt_edge = nx.second;
-                    dp[nxt_edge] = modadd(dp[nxt_edge], val);
-                }
+    else{
+        for(int64_t i=0;i<m;i++){
+            if(node2[i]==vl){
+                c++;
             }
         }
     }
-
-    int totalans=0;
-    for(int i=0;i<m;i++){
-        totalans=modadd(totalans,dp[i]);
+    if(c==0){
+        return 0;
     }
-    cout<<totalans<<endl;
+    return dp[vl]=c+f(v,vl,dp,node2,v+vl,m);
 }
-
-
-signed main() {
-    fast();
-    ll t = 1;
-    cin >> t;
-    while (t--) solve();
-    return 0;
+int main() {
+    int64_t t;
+    cin>>t;
+    while(t--){
+        int64_t n,m;
+        cin>>n>>m;
+        vector<int64_t>v(n);
+        int64_t mx=INT_MIN;
+        for(int64_t i=0;i<n;i++){
+            cin>>v[i];
+            mx=max(mx,v[i]);
+        }
+        vector<vector<int64_t>>adj;
+        adj.resize(n+1);
+        vector<vector<int>>str(m+1,vector<int>(2,0));
+        vector<int>node2;
+        for(int64_t i=0;i<m;i++){
+            int64_t u,v;
+            cin>>u>>v;
+            adj[u].push_back(v);
+            str[i][0]=u;
+            str[i][1]=v;
+            node2.push_back(v);
+        }
+        vector<int64_t>dp(n*mx+1,-1);
+        int64_t c=0;
+        for(int64_t i=0;i<m;i++){
+            int64_t u=str[i][0];
+            for(auto it:adj[u]){
+              c++;
+              int64_t x=f(v[u-1],v[it-1],dp,node2,v[u-1]+v[it-1],m);
+              c+=x;
+            }
+        }
+        cout<<c<<endl;;
+    }
 }
