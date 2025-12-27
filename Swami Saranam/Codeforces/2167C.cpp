@@ -104,48 +104,32 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve(){
-    int n,k;
-    cin>>n>>k;
+void solve() {
+    int n;cin>>n;
+    iv(v,n);
+    int o=0;
+    int e=0;
 
-    vector<int> l(n),r(n),real(n);
-    for(int i=0;i<n;i++){
-        cin>>l[i]>>r[i]>>real[i];
+    for(int i=0;i<n;i++){    
+        if(v[i]%2==0) e++;
+        else o++;
     }
-
-    vector<int> ord(n);
-    for(int i=0;i<n;i++) ord[i]=i;
-
-    sort(ord.begin(),ord.end(),[&](int i,int j){
-        return l[i]<l[j];
-    });
-
-    priority_queue<int> pq;
-    int coins=k;
-    int ptr=0;
-
-    while(true){
-        while(ptr<n && l[ord[ptr]]<=coins){
-            int id=ord[ptr];
-            if(coins<=r[id]){
-                pq.push(real[id]);
-            }
-            ptr++;
+    if(e==0 || o==0){
+        for(int i=0;i<n;i++){
+            cout<<v[i]<<" ";
         }
-
-        if(pq.empty()) break;
-
-        int bestReal=pq.top();
-        pq.pop();
-
-        if(bestReal<=coins) break;
-
-        coins=bestReal;
+        cout<<endl;
     }
-
-    cout<<coins<<endl;
+    else{
+        sort(v.begin(),v.end());
+        if(e>=1 && o>=1){
+            for(int i=0;i<n;i++){
+            cout<<v[i]<<" ";
+            }
+            cout<<endl;
+        }
+    }
 }
-
 signed main() {
     fast();
     ll t = 1;

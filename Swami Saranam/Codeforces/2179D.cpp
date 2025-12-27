@@ -104,48 +104,50 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve(){
-    int n,k;
-    cin>>n>>k;
-
-    vector<int> l(n),r(n),real(n);
-    for(int i=0;i<n;i++){
-        cin>>l[i]>>r[i]>>real[i];
+void solve() {
+    int n;cin>>n;
+    // for(int )
+    // vector<int>odd;
+    // vector<int>even;
+    // sort(odd.rbegin(),odd.rend());
+    // sort(even.begin(),even.end());
+    // for(int i=0;i<odd.size();i++){
+    //     cout<<odd[i]<<" ";
+    // }
+    // for(int i=0;i<odd.size();i++){
+    //     cout<<even[i]<<" ";
+    // }
+    // cout<<endl;
+    if(n==1){
+        cout<<1<<" "<<0<<endl;
+        return;
     }
+    else{
+        vector<int>init={1,0};
+        for(int i=2;i<=n;i++){
+            vector<int>curr;
+            // 3*2+1=7
+            // 3 11
+            // 7 111
+            // 15 is 1111
 
-    vector<int> ord(n);
-    for(int i=0;i<n;i++) ord[i]=i;
-
-    sort(ord.begin(),ord.end(),[&](int i,int j){
-        return l[i]<l[j];
-    });
-
-    priority_queue<int> pq;
-    int coins=k;
-    int ptr=0;
-
-    while(true){
-        while(ptr<n && l[ord[ptr]]<=coins){
-            int id=ord[ptr];
-            if(coins<=r[id]){
-                pq.push(real[id]);
+            //7 *2+1=15
+            for(int j=0;j<init.size();j++){
+                curr.push_back(2*init[j]+1);
             }
-            ptr++;
+            //
+            int maxi=pow(2,i);
+            for(int k=0;k<maxi;k+=2){
+                curr.push_back(k);
+            }
+            init=curr;
         }
-
-        if(pq.empty()) break;
-
-        int bestReal=pq.top();
-        pq.pop();
-
-        if(bestReal<=coins) break;
-
-        coins=bestReal;
+        for(int i=0;i<init.size();i++){
+            cout<<init[i]<<" ";
+        }
+        cout<<endl;
     }
-
-    cout<<coins<<endl;
 }
-
 signed main() {
     fast();
     ll t = 1;

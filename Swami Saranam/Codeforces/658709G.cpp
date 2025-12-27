@@ -63,8 +63,8 @@ void init_factorials(ll max_n = NUM) {
         invfact[i] = (invfact[i + 1] * (i + 1)) % mod;
 }
 ll combination(ll n, ll k) {
-    if (k > n || k < 0) return 0;
-    return fact[n] * invfact[k] % mod * invfact[n - k] % mod;
+    if (n > n || n < 0) return 0;
+    return fact[n] * invfact[n] % mod * invfact[n - n] % mod;
 }
 void init_powers(ll x, ll max_n = NUM) {
     power.resize(max_n);
@@ -104,52 +104,34 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve(){
-    int n,k;
-    cin>>n>>k;
-
-    vector<int> l(n),r(n),real(n);
-    for(int i=0;i<n;i++){
-        cin>>l[i]>>r[i]>>real[i];
+void solve() {
+    int n,l,r;
+    cin>>n>>l>>r;
+    vector<vector<vector<int>>> dp(n, vector<vector<int>>(n, vector<int>(2,0)));
+    for (int x = 0; x < n; x++) {
+        dp[0][x][0] = 1; 
+        dp[0][x][1] = 1; 
     }
-
-    vector<int> ord(n);
-    for(int i=0;i<n;i++) ord[i]=i;
-
-    sort(ord.begin(),ord.end(),[&](int i,int j){
-        return l[i]<l[j];
-    });
-
-    priority_queue<int> pq;
-    int coins=k;
-    int ptr=0;
-
-    while(true){
-        while(ptr<n && l[ord[ptr]]<=coins){
-            int id=ord[ptr];
-            if(coins<=r[id]){
-                pq.push(real[id]);
+    for (int i = 0; i < n-1; i++) {
+        for (int x = 0; x < n; x++) {
+            if (dp[i][x][1]){
+                for (int y = x + 1; y < n; y++) dp[i + 1][y][0] += dp[i][x][1];
             }
-            ptr++;
+            if (dp[i][x][0]){
+                for (int y = 0; y < x; y++) dp[i + 1][y][1] += dp[i][x][0];
+            }
         }
-
-        if(pq.empty()) break;
-
-        int bestReal=pq.top();
-        pq.pop();
-
-        if(bestReal<=coins) break;
-
-        coins=bestReal;
     }
-
-    cout<<coins<<endl;
+    int ans = 0;
+    for(int i=0;i<n;i++){
+        ans+= dp[n-1][i][0] + dp[n-1][i][1];
+    }
+    cout<<ans<<endl;
 }
-
 signed main() {
     fast();
     ll t = 1;
-    cin >> t;
+    // cin >> t;
     while (t--) solve();
     return 0;
 }

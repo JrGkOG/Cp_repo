@@ -104,48 +104,52 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve(){
-    int n,k;
-    cin>>n>>k;
-
-    vector<int> l(n),r(n),real(n);
-    for(int i=0;i<n;i++){
-        cin>>l[i]>>r[i]>>real[i];
-    }
-
-    vector<int> ord(n);
-    for(int i=0;i<n;i++) ord[i]=i;
-
-    sort(ord.begin(),ord.end(),[&](int i,int j){
-        return l[i]<l[j];
-    });
-
-    priority_queue<int> pq;
-    int coins=k;
-    int ptr=0;
-
-    while(true){
-        while(ptr<n && l[ord[ptr]]<=coins){
-            int id=ord[ptr];
-            if(coins<=r[id]){
-                pq.push(real[id]);
-            }
-            ptr++;
+void solve() {
+    int n,x,y;
+    cin>>n>>x>>y;
+    string s;cin>>s;
+    iv(p,n);
+    int xtotal=0;
+    int ytotal=0;
+    int ptotal=0;
+    for(int i=0;i<s.size();i++){
+        ptotal+=p[i];
+        int win=(p[i])/2 +1;
+        if(s[i]=='0'){
+            xtotal+=win;
         }
-
-        if(pq.empty()) break;
-
-        int bestReal=pq.top();
-        pq.pop();
-
-        if(bestReal<=coins) break;
-
-        coins=bestReal;
+        else{
+            ytotal+=win;
+        }
     }
-
-    cout<<coins<<endl;
+    if(ptotal > x+y) {
+        no
+        return;
+    }
+    if(ytotal>y || xtotal>x){
+        no
+        return;
+    }
+    else{
+        bool flag1=false;
+        bool flag2=false;
+        for(char c:s){
+            if(c=='0') flag1=true;
+            if(c=='1') flag2=true;
+        }
+        if(flag1 && flag2){
+            yes
+        }
+        else if(!flag2){
+            if(x>=y+n)yes
+            else no
+        }
+        else{
+            if(y>=x+n) yes
+            else no
+        }
+    }
 }
-
 signed main() {
     fast();
     ll t = 1;

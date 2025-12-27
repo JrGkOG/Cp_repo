@@ -104,48 +104,63 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve(){
-    int n,k;
-    cin>>n>>k;
-
-    vector<int> l(n),r(n),real(n);
-    for(int i=0;i<n;i++){
-        cin>>l[i]>>r[i]>>real[i];
+int sum(int idx, vector<int>& F){
+    int s = 0;
+    while(idx > 0){
+        s += F[idx];
+        idx -= idx & (-idx);
     }
-
-    vector<int> ord(n);
-    for(int i=0;i<n;i++) ord[i]=i;
-
-    sort(ord.begin(),ord.end(),[&](int i,int j){
-        return l[i]<l[j];
-    });
-
-    priority_queue<int> pq;
-    int coins=k;
-    int ptr=0;
-
-    while(true){
-        while(ptr<n && l[ord[ptr]]<=coins){
-            int id=ord[ptr];
-            if(coins<=r[id]){
-                pq.push(real[id]);
-            }
-            ptr++;
-        }
-
-        if(pq.empty()) break;
-
-        int bestReal=pq.top();
-        pq.pop();
-
-        if(bestReal<=coins) break;
-
-        coins=bestReal;
-    }
-
-    cout<<coins<<endl;
+    return s;
 }
 
+void add(int idx, int val, vector<int>& F){
+    while(idx < F.size()){
+        F[idx] += val;
+        idx += idx & (-idx);
+    }
+}
+
+void solve(){
+    int n;
+    cin >> n;
+
+    vector<int> a(n);
+    for(int i = 0; i < n; i++) cin >> a[i];
+
+    vector<int> comp = a;
+    sort(comp.begin(), comp.end());
+    comp.erase(unique(comp.begin(), comp.end()), comp.end());
+
+    auto getId = [&](int x){
+        return lower_bound(comp.begin(), comp.end(), x) - comp.begin() + 1;
+    };
+
+    int m = comp.size();
+
+    vector<int> prefixLarger(n), suffixLarger(n);
+    vector<int> F(m + 1, 0);
+
+    int seen = 0;
+    for(int i = 0; i < n; i++){
+        int id = getId(a[i]);
+        prefixLarger[i] = seen - sum(id, F);
+        add(id, 1, F);
+        seen++;
+    }
+
+    fill(F.begin(), F.end(), 0);
+    seen = 0;
+    for(int i = n - 1; i >= 0; i--){
+        int id = getId(a[i]);
+        suffixLarger[i] = seen - sum(id, F);
+        add(id, 1, F);
+        seen++;
+    }
+
+    for(int i = 0; i < n; i++){
+        cout << prefixLarger[i] << " " << suffixLarger[i] << "\n";
+    }
+}
 signed main() {
     fast();
     ll t = 1;

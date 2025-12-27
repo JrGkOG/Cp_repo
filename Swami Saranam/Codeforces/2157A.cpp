@@ -105,47 +105,19 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve(){
-    int n,k;
-    cin>>n>>k;
-
-    vector<int> l(n),r(n),real(n);
-    for(int i=0;i<n;i++){
-        cin>>l[i]>>r[i]>>real[i];
+    int n;cin>>n;
+    iv(v,n);
+    map<int,int> mp;
+    for(int x:v) mp[x]++;
+    int sum=0;
+    for(auto it:mp){
+        int x=it.first;
+        int c=it.second;
+        if(c<x) sum+=c;
+        else sum+=c-x;
     }
-
-    vector<int> ord(n);
-    for(int i=0;i<n;i++) ord[i]=i;
-
-    sort(ord.begin(),ord.end(),[&](int i,int j){
-        return l[i]<l[j];
-    });
-
-    priority_queue<int> pq;
-    int coins=k;
-    int ptr=0;
-
-    while(true){
-        while(ptr<n && l[ord[ptr]]<=coins){
-            int id=ord[ptr];
-            if(coins<=r[id]){
-                pq.push(real[id]);
-            }
-            ptr++;
-        }
-
-        if(pq.empty()) break;
-
-        int bestReal=pq.top();
-        pq.pop();
-
-        if(bestReal<=coins) break;
-
-        coins=bestReal;
-    }
-
-    cout<<coins<<endl;
+    cout<<sum<<endl;
 }
-
 signed main() {
     fast();
     ll t = 1;

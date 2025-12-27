@@ -105,51 +105,48 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve(){
-    int n,k;
-    cin>>n>>k;
-
-    vector<int> l(n),r(n),real(n);
-    for(int i=0;i<n;i++){
-        cin>>l[i]>>r[i]>>real[i];
-    }
-
-    vector<int> ord(n);
-    for(int i=0;i<n;i++) ord[i]=i;
-
-    sort(ord.begin(),ord.end(),[&](int i,int j){
-        return l[i]<l[j];
-    });
-
-    priority_queue<int> pq;
-    int coins=k;
-    int ptr=0;
-
-    while(true){
-        while(ptr<n && l[ord[ptr]]<=coins){
-            int id=ord[ptr];
-            if(coins<=r[id]){
-                pq.push(real[id]);
-            }
-            ptr++;
+    int n,m;
+    cin>>n>>m;
+    vector<vector<pair<int,int>>>adj(n+1);
+    for(int i=0;i<m;i++){
+        int u,v;
+        char c;
+        cin>>u>>v>>c;
+        if(c=='R'){
+            adj[u].pb({v,1});
+            adj[v].pb({u,1});
+        }else{
+            adj[u].pb({v,-1});
+            adj[v].pb({u,-1});
         }
-
-        if(pq.empty()) break;
-
-        int bestReal=pq.top();
-        pq.pop();
-
-        if(bestReal<=coins) break;
-
-        coins=bestReal;
     }
-
-    cout<<coins<<endl;
+    vector<vector<int>>dist(n+1,vector<int>(2*n+1,-1));
+    queue<pair<int,int>>q;
+    dist[1][n]=0;
+    q.push({1,n});
+    while(!q.empty()){
+        auto it=q.front();
+        int u=it.first;
+        int b=it.second;
+        q.pop();
+        for(auto p:adj[u]){
+            int v=p.first;
+            int nb=b+p.second;
+            if(nb<0||nb>2*n)continue;
+            if(dist[v][nb]!=-1)continue;
+            dist[v][nb]=dist[u][b]+1;
+            if(v==n && nb==n){
+                cout<<dist[v][nb]<<endl;
+                return;
+            }
+            q.push({v,nb});
+        }
+    }
+    cout<<-1<<endl;
 }
-
 signed main() {
     fast();
     ll t = 1;
-    cin >> t;
     while (t--) solve();
     return 0;
 }

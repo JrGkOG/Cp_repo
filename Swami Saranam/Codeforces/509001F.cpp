@@ -105,45 +105,25 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve(){
-    int n,k;
-    cin>>n>>k;
-
-    vector<int> l(n),r(n),real(n);
+    int n;cin>>n;
+    string s;cin>>s;
+    priority_queue<char,vector<char>,greater<char>> odd,even;
+    for(char c:s){
+        int v=c-'a'+1;
+        if(v&1) odd.push(c);
+        else even.push(c);
+    }
     for(int i=0;i<n;i++){
-        cin>>l[i]>>r[i]>>real[i];
-    }
-
-    vector<int> ord(n);
-    for(int i=0;i<n;i++) ord[i]=i;
-
-    sort(ord.begin(),ord.end(),[&](int i,int j){
-        return l[i]<l[j];
-    });
-
-    priority_queue<int> pq;
-    int coins=k;
-    int ptr=0;
-
-    while(true){
-        while(ptr<n && l[ord[ptr]]<=coins){
-            int id=ord[ptr];
-            if(coins<=r[id]){
-                pq.push(real[id]);
-            }
-            ptr++;
+        int v=s[i]-'a'+1;
+        if(v&1){
+            s[i]=odd.top();
+            odd.pop();
+        }else{
+            s[i]=even.top();
+            even.pop();
         }
-
-        if(pq.empty()) break;
-
-        int bestReal=pq.top();
-        pq.pop();
-
-        if(bestReal<=coins) break;
-
-        coins=bestReal;
     }
-
-    cout<<coins<<endl;
+    cout<<s<<endl;
 }
 
 signed main() {

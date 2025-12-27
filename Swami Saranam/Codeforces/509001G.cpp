@@ -16,8 +16,8 @@ using namespace std;
 #define MOD (1000000007)
 #define INF 1000000000000000000LL // Infinity for ll
 #define mp make_pair
-#define yes cout<<"YES"<<endl;
-#define no cout<<"NO"<<endl;
+#define yes cout<<"Yes"<<endl;
+#define no cout<<"No"<<endl;
 #define pb push_back
 #define ppb pop_back
 #define mp make_pair
@@ -105,45 +105,14 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve(){
-    int n,k;
-    cin>>n>>k;
+    int x1,y1,x2,y2;
+    cin>>x1>>y1>>x2>>y2;
 
-    vector<int> l(n),r(n),real(n);
-    for(int i=0;i<n;i++){
-        cin>>l[i]>>r[i]>>real[i];
+    if(x1==x2 || y1==y2 || abs(x1-x2)==abs(y1-y2)){
+        yes
+    }else{
+        no
     }
-
-    vector<int> ord(n);
-    for(int i=0;i<n;i++) ord[i]=i;
-
-    sort(ord.begin(),ord.end(),[&](int i,int j){
-        return l[i]<l[j];
-    });
-
-    priority_queue<int> pq;
-    int coins=k;
-    int ptr=0;
-
-    while(true){
-        while(ptr<n && l[ord[ptr]]<=coins){
-            int id=ord[ptr];
-            if(coins<=r[id]){
-                pq.push(real[id]);
-            }
-            ptr++;
-        }
-
-        if(pq.empty()) break;
-
-        int bestReal=pq.top();
-        pq.pop();
-
-        if(bestReal<=coins) break;
-
-        coins=bestReal;
-    }
-
-    cout<<coins<<endl;
 }
 
 signed main() {

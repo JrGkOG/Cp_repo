@@ -105,46 +105,44 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve(){
-    int n,k;
-    cin>>n>>k;
+    int n,q;
+    cin>>n>>q;
+    string s;cin>>s;
+    iv(queries,q);
 
-    vector<int> l(n),r(n),real(n);
+    vector<long long> temp(n);
     for(int i=0;i<n;i++){
-        cin>>l[i]>>r[i]>>real[i];
+        if(i==0){
+            if(s[i]=='A') temp[i]=2;
+            else temp[i]=1;
+        }else{
+            if(s[i]=='A') temp[i]=temp[i-1]*2;
+            else temp[i]=temp[i-1]+1;
+        }
     }
 
-    vector<int> ord(n);
-    for(int i=0;i<n;i++) ord[i]=i;
+    for(int i=0;i<q;i++){
+        long long a=queries[i];
+        long long ans=0;
 
-    sort(ord.begin(),ord.end(),[&](int i,int j){
-        return l[i]<l[j];
-    });
+        while(a>0){
+            int idx=upper_bound(temp.begin(),temp.end(),a)-temp.begin();
 
-    priority_queue<int> pq;
-    int coins=k;
-    int ptr=0;
-
-    while(true){
-        while(ptr<n && l[ord[ptr]]<=coins){
-            int id=ord[ptr];
-            if(coins<=r[id]){
-                pq.push(real[id]);
+            if(idx<n){
+                ans+=idx+1;
+                break;
+            }else{
+                a-=temp[n-1];
+                ans+=n;
             }
-            ptr++;
         }
 
-        if(pq.empty()) break;
-
-        int bestReal=pq.top();
-        pq.pop();
-
-        if(bestReal<=coins) break;
-
-        coins=bestReal;
-    }
-
-    cout<<coins<<endl;
+        cout<<ans<<"\n";
+    }   
 }
+
+
+
 
 signed main() {
     fast();

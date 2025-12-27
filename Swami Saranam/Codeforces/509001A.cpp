@@ -104,52 +104,51 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve(){
+void solve() {
     int n,k;
     cin>>n>>k;
-
-    vector<int> l(n),r(n),real(n);
+    vector<vector<int>> a(n,vector<int>(n));
     for(int i=0;i<n;i++){
-        cin>>l[i]>>r[i]>>real[i];
-    }
-
-    vector<int> ord(n);
-    for(int i=0;i<n;i++) ord[i]=i;
-
-    sort(ord.begin(),ord.end(),[&](int i,int j){
-        return l[i]<l[j];
-    });
-
-    priority_queue<int> pq;
-    int coins=k;
-    int ptr=0;
-
-    while(true){
-        while(ptr<n && l[ord[ptr]]<=coins){
-            int id=ord[ptr];
-            if(coins<=r[id]){
-                pq.push(real[id]);
-            }
-            ptr++;
+        for(int j=0;j<n;j++){
+            cin>>a[i][j];
         }
-
-        if(pq.empty()) break;
-
-        int bestReal=pq.top();
-        pq.pop();
-
-        if(bestReal<=coins) break;
-
-        coins=bestReal;
     }
-
-    cout<<coins<<endl;
+    int m=n-k+1;
+    vector<vector<int>> rowMin(n,vector<int>(m));
+    for(int i=0;i<n;i++){
+        vector<int> pref(n),suff(n);
+        for(int j=0;j<n;j++){
+            if(j%k==0) pref[j]=a[i][j];
+            else pref[j]=min(pref[j-1],a[i][j]);
+        }
+        for(int j=n-1;j>=0;j--){
+            if(j==n-1||(j+1)%k==0) suff[j]=a[i][j];
+            else suff[j]=min(suff[j+1],a[i][j]);
+        }
+        for(int j=0;j<m;j++){
+            rowMin[i][j]=min(suff[j],pref[j+k-1]);
+        }
+    }
+    int ans=0;
+    for(int j=0;j<m;j++){
+        vector<int> pref(n),suff(n);
+        for(int i=0;i<n;i++){
+            if(i%k==0) pref[i]=rowMin[i][j];
+            else pref[i]=min(pref[i-1],rowMin[i][j]);
+        }
+        for(int i=n-1;i>=0;i--){
+            if(i==n-1||(i+1)%k==0) suff[i]=rowMin[i][j];
+            else suff[i]=min(suff[i+1],rowMin[i][j]);
+        }
+        for(int i=0;i<m;i++){
+            ans=max(ans,min(suff[i],pref[i+k-1]));
+        }
+    }
+    cout<<ans<<endl;
 }
-
 signed main() {
     fast();
     ll t = 1;
-    cin >> t;
     while (t--) solve();
     return 0;
 }

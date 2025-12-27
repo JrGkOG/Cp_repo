@@ -104,52 +104,92 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve(){
-    int n,k;
-    cin>>n>>k;
+void first(){
+    int n, m;
+    cin >> n >> m;
 
-    vector<int> l(n),r(n),real(n);
-    for(int i=0;i<n;i++){
-        cin>>l[i]>>r[i]>>real[i];
+    vector<vector<int>> adj(n + 1);
+    for (int i = 0; i < m; i++) {
+        int a, b;
+        cin >> a >> b;
+        adj[a].push_back(b);
+        adj[b].push_back(a);
     }
 
-    vector<int> ord(n);
-    for(int i=0;i<n;i++) ord[i]=i;
+    vector<int> color(n + 1, -1);
+    queue<int> q;
 
-    sort(ord.begin(),ord.end(),[&](int i,int j){
-        return l[i]<l[j];
-    });
+    color[1] = 0; 
+    q.push(1);
 
-    priority_queue<int> pq;
-    int coins=k;
-    int ptr=0;
+    while (!q.empty()) {
+        int v = q.front();
+        q.pop();
 
-    while(true){
-        while(ptr<n && l[ord[ptr]]<=coins){
-            int id=ord[ptr];
-            if(coins<=r[id]){
-                pq.push(real[id]);
+        for (int u : adj[v]) {
+            if (color[u] == -1) {
+                color[u] = (color[v] + 1) % 3;
+                q.push(u);
             }
-            ptr++;
         }
-
-        if(pq.empty()) break;
-
-        int bestReal=pq.top();
-        pq.pop();
-
-        if(bestReal<=coins) break;
-
-        coins=bestReal;
     }
 
-    cout<<coins<<endl;
+    for (int i = 1; i <= n; i++) {
+        if (color[i] == 0) cout << 'r';
+        else if (color[i] == 1) cout << 'g';
+        else cout << 'b';
+    }
+    cout<<endl;
 }
+void solve() {
+    string type;
+    cin >> type;
+    if (type == "first") {
+        int t;cin>>t;
+        while(t--){
+            first();
+        }
+    }
+    else {
+        int t;cin>>t;
+        while (t--) {
+            ll q;
+            cin >> q;
+            while (q--) {
+                ll d;
+                cin >> d;
+                string s;
+                cin >> s;
 
+                bool r = false, g = false, b = false;
+                for (auto ch : s) {
+                    if (ch == 'r') r = true;
+                    else if (ch == 'g') g = true;
+                    else if (ch == 'b') b = true;
+                }
+
+                char target = ' ';
+                if (r && g) target = 'g';
+                else if (g && b) target = 'b';
+                else if (r && b) target = 'r';
+                else if (r) target = 'r';
+                else if (g) target = 'g';
+                else if (b) target = 'b';
+
+                for (ll i = 0; i < d; i++) {
+                    if (s[i] == target) {
+                        cout << i + 1 << endl;
+                        break;
+                    }
+                }
+            }
+        }
+    }
+}
 signed main() {
     fast();
     ll t = 1;
-    cin >> t;
+    // cin >> t;
     while (t--) solve();
     return 0;
 }

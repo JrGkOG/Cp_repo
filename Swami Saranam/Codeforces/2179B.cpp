@@ -104,46 +104,21 @@ ll lcm(ll a, ll b) {
 // think propelry 
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
-void solve(){
-    int n,k;
-    cin>>n>>k;
-
-    vector<int> l(n),r(n),real(n);
-    for(int i=0;i<n;i++){
-        cin>>l[i]>>r[i]>>real[i];
+void solve() {
+    int n;cin>>n;
+    iv(v,n);
+    int total=0;
+    for(int i=0;i<n-1;i++){
+        total+=abs(v[i]-v[i+1]);
     }
-
-    vector<int> ord(n);
-    for(int i=0;i<n;i++) ord[i]=i;
-
-    sort(ord.begin(),ord.end(),[&](int i,int j){
-        return l[i]<l[j];
-    });
-
-    priority_queue<int> pq;
-    int coins=k;
-    int ptr=0;
-
-    while(true){
-        while(ptr<n && l[ord[ptr]]<=coins){
-            int id=ord[ptr];
-            if(coins<=r[id]){
-                pq.push(real[id]);
-            }
-            ptr++;
-        }
-
-        if(pq.empty()) break;
-
-        int bestReal=pq.top();
-        pq.pop();
-
-        if(bestReal<=coins) break;
-
-        coins=bestReal;
+    int maxi=max(abs(v[0]-v[1]),abs(v[n-2]-v[n-1]));
+    for(int i=1;i<n-1;i++){
+        int curr=abs(v[i-1]-v[i]);
+        int temp = abs(v[i]-v[i+1]);
+        int loss=abs(v[i-1]-v[i+1]);
+        maxi=max(maxi,curr+temp-loss);
     }
-
-    cout<<coins<<endl;
+    cout<<total-maxi<<endl;
 }
 
 signed main() {
