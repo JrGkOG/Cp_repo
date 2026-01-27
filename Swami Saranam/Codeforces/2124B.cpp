@@ -2,36 +2,29 @@
 using namespace std;
 #define fast()                        \
     ios_base::sync_with_stdio(false); \
-    cin.tie(NULL);   
-#define ll long long
-#define f(i, n) for (ll i = 0; i < n; i++)
+    cin.tie(NULL);
+#define int long long
+#define f(i, n) for (int i = 0; i < (n); i++)
 #define ia(a, n) \
-    ll a[n];     \
+    int a[n];     \
     f(i, n) cin >> a[i]
 #define iv(v, n)     \
-    vector<ll> v(n); \
+    vector<int> v(n); \
     f(i, n) cin >> v[i]
 #define MOD (1000000007)
-#define INF 1000000000000000000LL // Infinity for ll
-#define mp make_pair
-#define nline '\n'
-#define yes cout << "YES\n"
-#define no cout << "NO\n"
+#define INF 1000000000000000000LL
+#define yes cout<<"YES"<<endl;
+#define no cout<<"NO"<<endl;
 #define pb push_back
 #define ppb pop_back
 #define mp make_pair
-#define ff first
-#define ss second
-#define all(x) x.begin(), x.end()
-#define sz(x) (int)(x).size()
-const int inf = 1e18;
-const int mod = 1e9 + 7;
 const int NUM = 1e6 + 5; 
 const int N = 1e7 + 5;  
+#define sor(v) sort(v.begin(), v.end())
+#define rsor(v) sort(v.begin(), v.end(), greater<>())
+#define rev(v) reverse(v.begin(), v.end())
 #define DEBUG(x) cerr << #x << ": " << x << '\n'
-vector<int> fact, invfact, power, sieve, lp, primes;
-
-int mod_pow(int a, int b, int m = mod) {
+int mod_pow(int a, int b, int m = MOD) {
     int res = 1;
     a %= m;
     while (b) {
@@ -41,62 +34,16 @@ int mod_pow(int a, int b, int m = mod) {
     }
     return res;
 }
-int mod_inv(int a, int m = mod) {
-    return mod_pow(a, m - 2, m);
-}
-int mod_div(int a, int b, int m = mod) {
-    return (a % m * mod_inv(b, m)) % m;
-}
-void init_factorials(int max_n = NUM) {
-    fact.resize(max_n);
-    invfact.resize(max_n);
-    fact[0] = invfact[0] = 1;
-    for (int i = 1; i < max_n; i++)
-        fact[i] = (fact[i - 1] * i) % mod;
-    invfact[max_n - 1] = mod_inv(fact[max_n - 1]);
-    for (int i = max_n - 2; i >= 1; i--)
-        invfact[i] = (invfact[i + 1] * (i + 1)) % mod;
-}
-int combination(int n, int k) {
-    if (k > n || k < 0) return 0;
-    return fact[n] * invfact[k] % mod * invfact[n - k] % mod;
-}
-void init_powers(int x, int max_n = NUM) {
-    power.resize(max_n);
-    power[0] = 1;
-    for (int i = 1; i < max_n; i++)
-        power[i] = (power[i - 1] * x) % mod;
-}
-void calc_sieve(int max_n = NUM) {
-    sieve.assign(max_n + 1, 0);
-    for (int i = 2; i <= max_n; ++i) {
-        if (!sieve[i]) {
-            for (int j = i; j <= max_n; j += i)
-                if (!sieve[j]) sieve[j] = i;
-        }
-    }
-}
-void linear_sieve(int max_n = N) {
-    lp.assign(max_n + 1, 0);
-    for (int i = 2; i <= max_n; ++i) {
-        if (lp[i] == 0) {
-            lp[i] = i;
-            primes.pb(i);
-        }
-        for (int j = 0; j < sz(primes) && primes[j] <= lp[i] && i * primes[j] <= max_n; ++j)
-            lp[i * primes[j]] = primes[j];
-    }
-}
-
 int gcd(int a, int b) {
     return b ? gcd(b, a % b) : a;
 }
 int lcm(int a, int b) {
     return (a / gcd(a, b)) * b;
 }
-ll getMinPrefix(vector<ll> arr) {
-    ll sum=0;
-    ll mini=LLONG_MAX;
+// muruga enna kapathu
+int getMinPrefix(vector<int> arr) {
+    int sum=0;
+    int mini=LLONG_MAX;
     for(int i=0;i<arr.size();i++){
         mini=min(arr[i],mini);
         sum+=mini;
@@ -104,13 +51,13 @@ ll getMinPrefix(vector<ll> arr) {
     return sum;
 }
 void solve() {
-    ll n;
+    int n;
     cin>>n;
     iv(a,n);
-    ll ans=getMinPrefix(a);
-    vector<ll> prefixSum(n);
-    ll mini=LLONG_MAX;
-    ll curr=0;
+    int ans=getMinPrefix(a);
+    vector<int> prefixSum(n);
+    int mini=LLONG_MAX;
+    int curr=0;
 
     for(int i=0;i<n;i++){
         mini=min(mini,a[i]);
@@ -121,12 +68,12 @@ void solve() {
     bool flag=true;
     for(int j=1;j<n;j++){
         if(j>1 && a[j-1]>=a[j-2]) flag=false;
-        ll cost=0;
+        int cost=0;
         if(!flag) cost=prefixSum[j-1];
         else{
-            ll minCost=LLONG_MAX;
+            int minCost=LLONG_MAX;
             for(int i=0;i<j;i++){
-                vector<ll> temp(a.begin(),a.begin()+j);
+                vector<int> temp(a.begin(),a.begin()+j);
                 temp[i]+=a[j];
                 minCost=min(minCost,getMinPrefix(temp));
             }
@@ -137,7 +84,7 @@ void solve() {
     cout<<ans<<endl;
 }
 void solve2(){
-    ll n;
+    int n;
     cin>>n;
     iv(v,n);
     cout<<min(2*v[0],v[0]+v[1])<<endl;
