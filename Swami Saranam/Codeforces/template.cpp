@@ -4,6 +4,7 @@ using namespace std;
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);
 #define int long long
+#define f(i, n) for (int i = 0; i < (n); i++)
 #define ia(a, n) \
     int a[n];     \
     f(i, n) cin >> a[i]
@@ -19,6 +20,9 @@ using namespace std;
 #define mp make_pair
 const int NUM = 1e6 + 5; 
 const int N = 1e7 + 5;  
+#define sor(v) sort(v.begin(), v.end())
+#define rsor(v) sort(v.begin(), v.end(), greater<>())
+#define rev(v) reverse(v.begin(), v.end())
 #define DEBUG(x) cerr << #x << ": " << x << '\n'
 int mod_pow(int a, int b, int m = MOD) {
     int res = 1;
