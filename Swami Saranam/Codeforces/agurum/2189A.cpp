@@ -42,12 +42,14 @@ int lcm(int a, int b) {
 }
 // muruga enna kapathu
 void solve() {
-    int n,r,c;
+    int n;
+    int r;
+    int c;
     cin>>n>>r>>c;
     iv(v,n);
-    if(r>c)swap(r,c);
-    int counter1=0;
+    if(c<r)swap(r,c);
     int counter2=0;
+    int counter1=0;
     for(int i=0;i<n;i++){ 
         if(v[i]<=r){
             counter1++;
