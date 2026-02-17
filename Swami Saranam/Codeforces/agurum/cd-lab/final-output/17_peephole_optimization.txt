@@ -1,0 +1,108 @@
+=========================================
+FILE: 17_peephole_optimization.c
+=========================================
+
+CURRENT DIRECTORY:
+/Users/meenakshiganesan/Karthik/KarthikProgramming/Cp_repo/Swami Saranam/Codeforces/agurum/cd-lab
+
+================ SOURCE CODE ================
+#include <stdio.h>
+
+int main()
+{
+    long long sum = 0;
+
+    for(int i = 0; i < 8000000; i++)
+    {
+        int val = 45;
+
+        val = val + 0;
+        val = val * 1;
+
+        sum = sum + val;
+    }
+
+    printf("Peephole sum: %lld\n", sum);
+
+    return 0;
+}
+
+================ OUTPUT BEFORE OPTIMIZATION (O0) ================
+Peephole sum: 360000000
+
+================ OUTPUT AFTER OPTIMIZATION (O3) ================
+Peephole sum: 360000000
+
+================ TIME BEFORE OPTIMIZATION ================
+Peephole sum: 360000000
+
+real	0m0.026s
+user	0m0.022s
+sys	0m0.002s
+
+================ TIME AFTER OPTIMIZATION ================
+Peephole sum: 360000000
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.001s
+
+================ ASSEMBLY DIFFERENCE ================
+8,10c8,10
+< 	sub	sp, sp, #48
+< 	stp	x29, x30, [sp, #32]             ; 16-byte Folded Spill
+< 	add	x29, sp, #32
+---
+> 	sub	sp, sp, #32
+> 	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+> 	add	x29, sp, #16
+14,47c14,17
+< 	stur	wzr, [x29, #-4]
+< 	str	xzr, [sp, #16]
+< 	str	wzr, [sp, #12]
+< 	b	LBB0_1
+< LBB0_1:                                 ; =>This Inner Loop Header: Depth=1
+< 	ldr	w8, [sp, #12]
+< 	mov	w9, #4608                       ; =0x1200
+< 	movk	w9, #122, lsl #16
+< 	subs	w8, w8, w9
+< 	b.ge	LBB0_4
+< 	b	LBB0_2
+< LBB0_2:                                 ;   in Loop: Header=BB0_1 Depth=1
+< 	mov	w8, #45                         ; =0x2d
+< 	str	w8, [sp, #8]
+< 	ldr	w8, [sp, #8]
+< 	add	w8, w8, #0
+< 	str	w8, [sp, #8]
+< 	ldr	w8, [sp, #8]
+< 	lsr	w8, w8, #0
+< 	str	w8, [sp, #8]
+< 	ldr	x8, [sp, #16]
+< 	ldrsw	x9, [sp, #8]
+< 	add	x8, x8, x9
+< 	str	x8, [sp, #16]
+< 	b	LBB0_3
+< LBB0_3:                                 ;   in Loop: Header=BB0_1 Depth=1
+< 	ldr	w8, [sp, #12]
+< 	add	w8, w8, #1
+< 	str	w8, [sp, #12]
+< 	b	LBB0_1
+< LBB0_4:
+< 	ldr	x8, [sp, #16]
+< 	mov	x9, sp
+< 	str	x8, [x9]
+---
+> 	mov	w8, #10752                      ; =0x2a00
+> 	movk	w8, #5493, lsl #16
+> 	str	x8, [sp]
+> Lloh0:
+48a19
+> Lloh1:
+52,53c23,24
+< 	ldp	x29, x30, [sp, #32]             ; 16-byte Folded Reload
+< 	add	sp, sp, #48
+---
+> 	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+> 	add	sp, sp, #32
+54a26
+> 	.loh AdrpAdd	Lloh0, Lloh1

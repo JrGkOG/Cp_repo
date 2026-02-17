@@ -1,0 +1,96 @@
+=========================================
+FILE: 12_loop_unrolling.c
+=========================================
+
+CURRENT DIRECTORY:
+/Users/meenakshiganesan/Karthik/KarthikProgramming/Cp_repo/Swami Saranam/Codeforces/agurum/cd-lab
+
+================ SOURCE CODE ================
+#include <stdio.h>
+
+int main()
+{
+    long long sum = 0;
+
+    for(int i = 0; i < 7500000; i++)
+    {
+        sum = sum + i;
+    }
+
+    printf("Unrolled sum: %lld\n", sum);
+
+    return 0;
+}
+
+================ OUTPUT BEFORE OPTIMIZATION (O0) ================
+Unrolled sum: 28124996250000
+
+================ OUTPUT AFTER OPTIMIZATION (O3) ================
+Unrolled sum: 28124996250000
+
+================ TIME BEFORE OPTIMIZATION ================
+Unrolled sum: 28124996250000
+
+real	0m0.024s
+user	0m0.020s
+sys	0m0.002s
+
+================ TIME AFTER OPTIMIZATION ================
+Unrolled sum: 28124996250000
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.001s
+
+================ ASSEMBLY DIFFERENCE ================
+8,10c8,10
+< 	sub	sp, sp, #48
+< 	stp	x29, x30, [sp, #32]             ; 16-byte Folded Spill
+< 	add	x29, sp, #32
+---
+> 	sub	sp, sp, #32
+> 	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+> 	add	x29, sp, #16
+14,39c14,18
+< 	stur	wzr, [x29, #-4]
+< 	str	xzr, [sp, #16]
+< 	str	wzr, [sp, #12]
+< 	b	LBB0_1
+< LBB0_1:                                 ; =>This Inner Loop Header: Depth=1
+< 	ldr	w8, [sp, #12]
+< 	mov	w9, #28896                      ; =0x70e0
+< 	movk	w9, #114, lsl #16
+< 	subs	w8, w8, w9
+< 	b.ge	LBB0_4
+< 	b	LBB0_2
+< LBB0_2:                                 ;   in Loop: Header=BB0_1 Depth=1
+< 	ldr	x8, [sp, #16]
+< 	ldrsw	x9, [sp, #12]
+< 	add	x8, x8, x9
+< 	str	x8, [sp, #16]
+< 	b	LBB0_3
+< LBB0_3:                                 ;   in Loop: Header=BB0_1 Depth=1
+< 	ldr	w8, [sp, #12]
+< 	add	w8, w8, #1
+< 	str	w8, [sp, #12]
+< 	b	LBB0_1
+< LBB0_4:
+< 	ldr	x8, [sp, #16]
+< 	mov	x9, sp
+< 	str	x8, [x9]
+---
+> 	mov	x8, #10640                      ; =0x2990
+> 	movk	x8, #23657, lsl #16
+> 	movk	x8, #6548, lsl #32
+> 	str	x8, [sp]
+> Lloh0:
+40a20
+> Lloh1:
+44,45c24,25
+< 	ldp	x29, x30, [sp, #32]             ; 16-byte Folded Reload
+< 	add	sp, sp, #48
+---
+> 	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+> 	add	sp, sp, #32
+46a27
+> 	.loh AdrpAdd	Lloh0, Lloh1

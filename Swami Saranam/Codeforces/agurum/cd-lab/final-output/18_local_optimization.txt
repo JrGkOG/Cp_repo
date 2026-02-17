@@ -1,0 +1,109 @@
+=========================================
+FILE: 18_local_optimization.c
+=========================================
+
+CURRENT DIRECTORY:
+/Users/meenakshiganesan/Karthik/KarthikProgramming/Cp_repo/Swami Saranam/Codeforces/agurum/cd-lab
+
+================ SOURCE CODE ================
+#include <stdio.h>
+
+int main()
+{
+    long long total = 0;
+
+    for(int i = 0; i < 8500000; i++)
+    {
+        int a = 16;
+        int b = 4;
+
+        int c = a + b;
+
+        total = total + c;
+    }
+
+    printf("Local total: %lld\n", total);
+
+    return 0;
+}
+
+
+================ OUTPUT BEFORE OPTIMIZATION (O0) ================
+Local total: 170000000
+
+================ OUTPUT AFTER OPTIMIZATION (O3) ================
+Local total: 170000000
+
+================ TIME BEFORE OPTIMIZATION ================
+Local total: 170000000
+
+real	0m0.021s
+user	0m0.018s
+sys	0m0.002s
+
+================ TIME AFTER OPTIMIZATION ================
+Local total: 170000000
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.001s
+
+================ ASSEMBLY DIFFERENCE ================
+8,10c8,10
+< 	sub	sp, sp, #64
+< 	stp	x29, x30, [sp, #48]             ; 16-byte Folded Spill
+< 	add	x29, sp, #48
+---
+> 	sub	sp, sp, #32
+> 	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+> 	add	x29, sp, #16
+14,47c14,17
+< 	stur	wzr, [x29, #-4]
+< 	stur	xzr, [x29, #-16]
+< 	stur	wzr, [x29, #-20]
+< 	b	LBB0_1
+< LBB0_1:                                 ; =>This Inner Loop Header: Depth=1
+< 	ldur	w8, [x29, #-20]
+< 	mov	w9, #45856                      ; =0xb320
+< 	movk	w9, #129, lsl #16
+< 	subs	w8, w8, w9
+< 	b.ge	LBB0_4
+< 	b	LBB0_2
+< LBB0_2:                                 ;   in Loop: Header=BB0_1 Depth=1
+< 	mov	w8, #16                         ; =0x10
+< 	str	w8, [sp, #24]
+< 	mov	w8, #4                          ; =0x4
+< 	str	w8, [sp, #20]
+< 	ldr	w8, [sp, #24]
+< 	ldr	w9, [sp, #20]
+< 	add	w8, w8, w9
+< 	str	w8, [sp, #16]
+< 	ldur	x8, [x29, #-16]
+< 	ldrsw	x9, [sp, #16]
+< 	add	x8, x8, x9
+< 	stur	x8, [x29, #-16]
+< 	b	LBB0_3
+< LBB0_3:                                 ;   in Loop: Header=BB0_1 Depth=1
+< 	ldur	w8, [x29, #-20]
+< 	add	w8, w8, #1
+< 	stur	w8, [x29, #-20]
+< 	b	LBB0_1
+< LBB0_4:
+< 	ldur	x8, [x29, #-16]
+< 	mov	x9, sp
+< 	str	x8, [x9]
+---
+> 	mov	w8, #65152                      ; =0xfe80
+> 	movk	w8, #2593, lsl #16
+> 	str	x8, [sp]
+> Lloh0:
+48a19
+> Lloh1:
+52,53c23,24
+< 	ldp	x29, x30, [sp, #48]             ; 16-byte Folded Reload
+< 	add	sp, sp, #64
+---
+> 	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+> 	add	sp, sp, #32
+54a26
+> 	.loh AdrpAdd	Lloh0, Lloh1

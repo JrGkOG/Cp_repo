@@ -1,0 +1,103 @@
+=========================================
+FILE: 19_global_optimization.c
+=========================================
+
+CURRENT DIRECTORY:
+/Users/meenakshiganesan/Karthik/KarthikProgramming/Cp_repo/Swami Saranam/Codeforces/agurum/cd-lab
+
+================ SOURCE CODE ================
+#include <stdio.h>
+
+int globalVal = 75;
+
+int main()
+{
+    long long sum = 0;
+
+    for(int i = 0; i < 9000000; i++)
+    {
+        sum = sum + globalVal;
+    }
+
+    printf("Global sum: %lld\n", sum);
+
+    return 0;
+}
+
+
+================ OUTPUT BEFORE OPTIMIZATION (O0) ================
+Global sum: 675000000
+
+================ OUTPUT AFTER OPTIMIZATION (O3) ================
+Global sum: 675000000
+
+================ TIME BEFORE OPTIMIZATION ================
+Global sum: 675000000
+
+real	0m0.014s
+user	0m0.012s
+sys	0m0.001s
+
+================ TIME AFTER OPTIMIZATION ================
+Global sum: 675000000
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.001s
+
+================ ASSEMBLY DIFFERENCE ================
+8,10c8,10
+< 	sub	sp, sp, #48
+< 	stp	x29, x30, [sp, #32]             ; 16-byte Folded Spill
+< 	add	x29, sp, #32
+---
+> 	sub	sp, sp, #32
+> 	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+> 	add	x29, sp, #16
+14,19c14,17
+< 	stur	wzr, [x29, #-4]
+< 	str	xzr, [sp, #16]
+< 	str	wzr, [sp, #12]
+< 	b	LBB0_1
+< LBB0_1:                                 ; =>This Inner Loop Header: Depth=1
+< 	ldr	w8, [sp, #12]
+---
+> Lloh0:
+> 	adrp	x8, _globalVal@PAGE
+> Lloh1:
+> 	ldrsw	x8, [x8, _globalVal@PAGEOFF]
+22,40c20,22
+< 	subs	w8, w8, w9
+< 	b.ge	LBB0_4
+< 	b	LBB0_2
+< LBB0_2:                                 ;   in Loop: Header=BB0_1 Depth=1
+< 	ldr	x8, [sp, #16]
+< 	adrp	x9, _globalVal@PAGE
+< 	ldrsw	x9, [x9, _globalVal@PAGEOFF]
+< 	add	x8, x8, x9
+< 	str	x8, [sp, #16]
+< 	b	LBB0_3
+< LBB0_3:                                 ;   in Loop: Header=BB0_1 Depth=1
+< 	ldr	w8, [sp, #12]
+< 	add	w8, w8, #1
+< 	str	w8, [sp, #12]
+< 	b	LBB0_1
+< LBB0_4:
+< 	ldr	x8, [sp, #16]
+< 	mov	x9, sp
+< 	str	x8, [x9]
+---
+> 	smull	x8, w8, w9
+> 	str	x8, [sp]
+> Lloh2:
+41a24
+> Lloh3:
+45,46c28,29
+< 	ldp	x29, x30, [sp, #32]             ; 16-byte Folded Reload
+< 	add	sp, sp, #48
+---
+> 	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+> 	add	sp, sp, #32
+47a31,32
+> 	.loh AdrpAdd	Lloh2, Lloh3
+> 	.loh AdrpLdr	Lloh0, Lloh1

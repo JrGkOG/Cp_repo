@@ -1,0 +1,130 @@
+=========================================
+FILE: 14_loop_fusion.c
+=========================================
+
+CURRENT DIRECTORY:
+/Users/meenakshiganesan/Karthik/KarthikProgramming/Cp_repo/Swami Saranam/Codeforces/agurum/cd-lab
+
+================ SOURCE CODE ================
+#include <stdio.h>
+
+int main()
+{
+    long long sum1 = 0;
+    long long sum2 = 0;
+
+    for(int i = 0; i < 6000000; i++)
+    {
+        sum1 = sum1 + i;
+    }
+
+    for(int i = 0; i < 6000000; i++)
+    {
+        sum2 = sum2 + i * 2;
+    }
+
+    printf("Fusion result: %lld %lld\n", sum1, sum2);
+
+    return 0;
+}
+
+================ OUTPUT BEFORE OPTIMIZATION (O0) ================
+Fusion result: 17999997000000 35999994000000
+
+================ OUTPUT AFTER OPTIMIZATION (O3) ================
+Fusion result: 17999997000000 35999994000000
+
+================ TIME BEFORE OPTIMIZATION ================
+Fusion result: 17999997000000 35999994000000
+
+real	0m0.031s
+user	0m0.027s
+sys	0m0.003s
+
+================ TIME AFTER OPTIMIZATION ================
+Fusion result: 17999997000000 35999994000000
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.001s
+
+================ ASSEMBLY DIFFERENCE ================
+8,10c8,10
+< 	sub	sp, sp, #64
+< 	stp	x29, x30, [sp, #48]             ; 16-byte Folded Spill
+< 	add	x29, sp, #48
+---
+> 	sub	sp, sp, #32
+> 	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+> 	add	x29, sp, #16
+14,64c14,21
+< 	stur	wzr, [x29, #-4]
+< 	stur	xzr, [x29, #-16]
+< 	str	xzr, [sp, #24]
+< 	str	wzr, [sp, #20]
+< 	b	LBB0_1
+< LBB0_1:                                 ; =>This Inner Loop Header: Depth=1
+< 	ldr	w8, [sp, #20]
+< 	mov	w9, #36224                      ; =0x8d80
+< 	movk	w9, #91, lsl #16
+< 	subs	w8, w8, w9
+< 	b.ge	LBB0_4
+< 	b	LBB0_2
+< LBB0_2:                                 ;   in Loop: Header=BB0_1 Depth=1
+< 	ldur	x8, [x29, #-16]
+< 	ldrsw	x9, [sp, #20]
+< 	add	x8, x8, x9
+< 	stur	x8, [x29, #-16]
+< 	b	LBB0_3
+< LBB0_3:                                 ;   in Loop: Header=BB0_1 Depth=1
+< 	ldr	w8, [sp, #20]
+< 	add	w8, w8, #1
+< 	str	w8, [sp, #20]
+< 	b	LBB0_1
+< LBB0_4:
+< 	str	wzr, [sp, #16]
+< 	b	LBB0_5
+< LBB0_5:                                 ; =>This Inner Loop Header: Depth=1
+< 	ldr	w8, [sp, #16]
+< 	mov	w9, #36224                      ; =0x8d80
+< 	movk	w9, #91, lsl #16
+< 	subs	w8, w8, w9
+< 	b.ge	LBB0_8
+< 	b	LBB0_6
+< LBB0_6:                                 ;   in Loop: Header=BB0_5 Depth=1
+< 	ldr	x8, [sp, #24]
+< 	ldr	w9, [sp, #16]
+< 	lsl	w9, w9, #1
+< 	add	x8, x8, w9, sxtw
+< 	str	x8, [sp, #24]
+< 	b	LBB0_7
+< LBB0_7:                                 ;   in Loop: Header=BB0_5 Depth=1
+< 	ldr	w8, [sp, #16]
+< 	add	w8, w8, #1
+< 	str	w8, [sp, #16]
+< 	b	LBB0_5
+< LBB0_8:
+< 	ldur	x10, [x29, #-16]
+< 	ldr	x8, [sp, #24]
+< 	mov	x9, sp
+< 	str	x10, [x9]
+< 	str	x8, [x9, #8]
+---
+> 	mov	x8, #45696                      ; =0xb280
+> 	movk	x8, #59098, lsl #16
+> 	movk	x8, #8381, lsl #32
+> 	mov	x9, #22848                      ; =0x5940
+> 	movk	x9, #62317, lsl #16
+> 	movk	x9, #4190, lsl #32
+> 	stp	x9, x8, [sp]
+> Lloh0:
+65a23
+> Lloh1:
+69,70c27,28
+< 	ldp	x29, x30, [sp, #48]             ; 16-byte Folded Reload
+< 	add	sp, sp, #64
+---
+> 	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+> 	add	sp, sp, #32
+71a30
+> 	.loh AdrpAdd	Lloh0, Lloh1

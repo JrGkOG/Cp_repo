@@ -1,0 +1,105 @@
+=========================================
+FILE: 11_induction_variable_elimination.c
+=========================================
+
+CURRENT DIRECTORY:
+/Users/meenakshiganesan/Karthik/KarthikProgramming/Cp_repo/Swami Saranam/Codeforces/agurum/cd-lab
+
+================ SOURCE CODE ================
+#include <stdio.h>
+
+int main()
+{
+    long long sum = 0;
+
+    int j = 0;
+
+    for(int i = 0; i < 7000000; i++)
+    {
+        j = i * 3;
+
+        sum = sum + j;
+    }
+
+    printf("Induction sum: %lld\n", sum);
+
+    return 0;
+}
+
+================ OUTPUT BEFORE OPTIMIZATION (O0) ================
+Induction sum: 73499989500000
+
+================ OUTPUT AFTER OPTIMIZATION (O3) ================
+Induction sum: 73499989500000
+
+================ TIME BEFORE OPTIMIZATION ================
+Induction sum: 73499989500000
+
+real	0m0.023s
+user	0m0.018s
+sys	0m0.002s
+
+================ TIME AFTER OPTIMIZATION ================
+Induction sum: 73499989500000
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.001s
+
+================ ASSEMBLY DIFFERENCE ================
+8,10c8,10
+< 	sub	sp, sp, #48
+< 	stp	x29, x30, [sp, #32]             ; 16-byte Folded Spill
+< 	add	x29, sp, #32
+---
+> 	sub	sp, sp, #32
+> 	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+> 	add	x29, sp, #16
+14,44c14,18
+< 	stur	wzr, [x29, #-4]
+< 	str	xzr, [sp, #16]
+< 	str	wzr, [sp, #12]
+< 	str	wzr, [sp, #8]
+< 	b	LBB0_1
+< LBB0_1:                                 ; =>This Inner Loop Header: Depth=1
+< 	ldr	w8, [sp, #8]
+< 	mov	w9, #53184                      ; =0xcfc0
+< 	movk	w9, #106, lsl #16
+< 	subs	w8, w8, w9
+< 	b.ge	LBB0_4
+< 	b	LBB0_2
+< LBB0_2:                                 ;   in Loop: Header=BB0_1 Depth=1
+< 	ldr	w8, [sp, #8]
+< 	mov	w9, #3                          ; =0x3
+< 	mul	w8, w8, w9
+< 	str	w8, [sp, #12]
+< 	ldr	x8, [sp, #16]
+< 	ldrsw	x9, [sp, #12]
+< 	add	x8, x8, x9
+< 	str	x8, [sp, #16]
+< 	b	LBB0_3
+< LBB0_3:                                 ;   in Loop: Header=BB0_1 Depth=1
+< 	ldr	w8, [sp, #8]
+< 	add	w8, w8, #1
+< 	str	w8, [sp, #8]
+< 	b	LBB0_1
+< LBB0_4:
+< 	ldr	x8, [sp, #16]
+< 	mov	x9, sp
+< 	str	x8, [x9]
+---
+> 	mov	x8, #57440                      ; =0xe060
+> 	movk	x8, #3267, lsl #16
+> 	movk	x8, #17113, lsl #32
+> 	str	x8, [sp]
+> Lloh0:
+45a20
+> Lloh1:
+49,50c24,25
+< 	ldp	x29, x30, [sp, #32]             ; 16-byte Folded Reload
+< 	add	sp, sp, #48
+---
+> 	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+> 	add	sp, sp, #32
+51a27
+> 	.loh AdrpAdd	Lloh0, Lloh1
