@@ -34,6 +34,7 @@ int mod_pow(int a, int b, int m = MOD) {
     }
     return res;
 }
+// solving these bro
 int gcd(int a, int b) {
     return b ? gcd(b, a % b) : a;
 }
