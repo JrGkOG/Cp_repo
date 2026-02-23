@@ -1,185 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FYP Research Timeline</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://www.gstatic.com/charts/loader.js"></script>
+<html>
+<head>
+    <title>Individual Contributions</title>
 
-    <script>
-      google.charts.load("current", { packages: ["gantt"] });
-      google.charts.setOnLoadCallback(drawChart);
+    <style>
 
-      function drawChart() {
-        const data = new google.visualization.DataTable();
-        data.addColumn("string", "Task ID");
-        data.addColumn("string", "Task Name");
-        data.addColumn("string", "Resource");
-        data.addColumn("date", "Start Date");
-        data.addColumn("date", "End Date");
-        data.addColumn("number", "Duration");
-        data.addColumn("number", "Percent Complete");
-        data.addColumn("string", "Dependencies");
-
-        function endMonth(y, m) {
-          return new Date(y, m + 1, 0);
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 40px;
         }
 
-        data.addRows([
-          ["T1","Problem Statement & Gap Analysis","Phase 1",new Date(2025,11,1),endMonth(2026,0),null,100,null],
-          ["T2","Literature Survey","Phase 1",new Date(2026,0,1),endMonth(2026,1),null,100,null],
-          ["T3","Framework Formalization","Phase 1",new Date(2026,1,1),endMonth(2026,2),null,100,null],
-          ["T4","Benchmark & Evaluation Protocol","Phase 1",new Date(2026,2,1),endMonth(2026,3),null,100,null],
-          ["T5","Experimental Configuration Matrix","Phase 2",new Date(2026,3,1),endMonth(2026,4),null,80,null],
-          ["T6","Baseline EA Runs","Phase 2",new Date(2026,4,1),endMonth(2026,5),null,0,null],
-          ["T7","LSH Implementation","Phase 3",new Date(2026,5,1),endMonth(2026,6),null,0,null],
-          ["T8","BIRCH Microcluster Construction","Phase 3",new Date(2026,6,1),endMonth(2026,7),null,0,null],
-          ["T9","DenStream Integration","Phase 3",new Date(2026,7,1),endMonth(2026,8),null,0,null],
-          ["T10","Archipelago-STN Construction","Phase 4",new Date(2026,8,1),endMonth(2026,9),null,0,null],
-          ["T11","Behavioral Distribution Extraction","Phase 4",new Date(2026,9,1),endMonth(2026,10),null,0,null],
-          ["T12","MMD Divergence Engine","Phase 4",new Date(2026,10,1),endMonth(2026,11),null,0,null],
-          ["T13","Process Clustering & Structural Analysis","Phase 5",new Date(2026,11,1),endMonth(2027,0),null,0,null],
-          ["T14","Large-Scale Experiments","Phase 5",new Date(2027,0,1),endMonth(2027,1),null,0,null],
-          ["T15","Validation & Sensitivity Analysis","Phase 6",new Date(2027,1,1),endMonth(2027,2),null,0,null],
-          ["T16","Behavioral Insight Extraction","Phase 6",new Date(2027,2,1),endMonth(2027,3),null,0,null],
-          ["T17","Final Documentation & Thesis","Phase 7",new Date(2027,3,1),endMonth(2027,3),null,0,null],
-        ]);
+        h2 {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #2f5597;
+        }
 
-        const chart = new google.visualization.Gantt(
-          document.getElementById("chart_div")
-        );
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0px;
+        }
 
-        chart.draw(data, {
-          height: 650,
-          gantt: {
-            barHeight: 20,
-            trackHeight: 35,
-            sortTasks: false,
-          },
-        });
-      }
+        th {
+            background-color: #2f5597;
+            color: white;
+            padding: 18px;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+        }
 
-      const tasks = [
-        {
-          name: "Problem Statement & Gap Analysis",
-          monthYear: "Dec 2025 – Jan 2026",
-          members: [
-            "Define distributed STN limitation",
-            "Formalize failure of time-based comparison",
-            "Draft core research hypothesis",
-            "Identify scalability constraints"
-          ],
-        },
-        {
-          name: "Literature Survey",
-          monthYear: "Jan – Feb 2026",
-          members: [
-            "Review STN foundational work",
-            "Review distributed EA theory",
-            "Review stream clustering methods",
-            "Review MMD & divergence measures"
-          ],
-        },
-        {
-          name: "Framework Formalization",
-          monthYear: "Feb – Mar 2026",
-          members: [
-            "Define island representation model",
-            "Define cluster abstraction",
-            "Formalize divergence function",
-            "Mathematical consistency validation"
-          ],
-        },
-        {
-          name: "Benchmark & Evaluation Protocol",
-          monthYear: "Mar – Apr 2026",
-          members: [
-            "Select benchmark functions",
-            "Define dimensionality levels",
-            "Define stopping criteria",
-            "Define evaluation metrics"
-          ],
-        },
-        {
-          name: "LSH Implementation",
-          monthYear: "Jun – Jul 2026",
-          members: [
-            "Implement hashing mechanism",
-            "Validate neighbor approximation",
-            "Profile computational cost",
-            "Stability testing"
-          ],
-        },
-        {
-          name: "MMD Divergence Engine",
-          monthYear: "Nov – Dec 2026",
-          members: [
-            "Implement kernel-based MMD",
-            "Integrate cluster weights",
-            "Build divergence matrix",
-            "Validate zero-divergence case"
-          ],
-        },
-        {
-          name: "Final Documentation & Thesis",
-          monthYear: "April 2027",
-          members: [
-            "Compile experimental results",
-            "Draft methodology chapter",
-            "Draft results discussion",
-            "Prepare publication manuscript"
-          ],
-        },
-      ];
+        td {
+            padding: 22px;
+            font-size: 17px;
+            font-weight: 500;
+            vertical-align: top;
+        }
 
-      window.addEventListener("DOMContentLoaded", () => {
-        const tbody = document.getElementById("taskTableBody");
+        /* Semester 6 — BLUE */
+        .sem6 td {
+            background-color: #d9e2f3;
+            color: #2f5597;
+        }
 
-        tasks.forEach((task) => {
-          const row = document.createElement("tr");
-          row.className = "bg-indigo-50 hover:bg-yellow-50 transition";
+        /* Semester 7 — ORANGE */
+        .sem7 td {
+            background-color: #fbe5d6;
+            color: #c55a11;
+        }
 
-          row.innerHTML = `
-            <td class="px-4 py-3 font-semibold text-indigo-900 border">${task.name}</td>
-            <td class="px-4 py-3 italic border">${task.monthYear}</td>
-            ${task.members.map(m => 
-              `<td class="px-4 py-3 border">${m}</td>`
-            ).join("")}
-          `;
-          tbody.appendChild(row);
-        });
-      });
-    </script>
-  </head>
+        /* Semester 8 — GREEN */
+        .sem8 td {
+            background-color: #e2efda;
+            color: #2e7d32;
+        }
 
-  <body class="bg-gray-100 font-sans p-6">
-    <div class="max-w-7xl mx-auto bg-white shadow rounded-lg p-6">
-      <h1 class="text-3xl font-extrabold text-center text-gray-900 mb-6">
-        Distributed STN Research Timeline
-      </h1>
+        /* Rounded block edges */
+        tr td:first-child {
+            border-radius: 8px 0 0 8px;
+        }
 
-      <div id="chart_div" class="mb-12 rounded border p-2 bg-white shadow"></div>
+        tr td:last-child {
+            border-radius: 0 8px 8px 0;
+        }
 
-      <h2 class="text-2xl font-semibold mb-4 text-center text-indigo-800">
-        Major Module Contributions
-      </h2>
+        .timeline {
+            text-align: center;
+            font-weight: 600;
+            white-space: nowrap;
+        }
 
-      <div class="overflow-x-auto">
-        <table class="min-w-full table-auto shadow-md rounded-lg overflow-hidden">
-          <thead class="bg-indigo-800 text-white text-sm font-semibold">
-            <tr>
-              <th class="px-4 py-3 text-left">Module</th>
-              <th class="px-4 py-3 text-left">Timeline</th>
-              <th class="px-4 py-3">Subtask 1</th>
-              <th class="px-4 py-3">Subtask 2</th>
-              <th class="px-4 py-3">Subtask 3</th>
-              <th class="px-4 py-3">Subtask 4</th>
-            </tr>
-          </thead>
-          <tbody id="taskTableBody" class="text-sm"></tbody>
-        </table>
-      </div>
-    </div>
-  </body>
+        .tbd {
+            text-align: center;
+            font-weight: 600;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h2>Individual Contributions</h2>
+
+<table>
+
+<tr>
+    <th>Task</th>
+    <th>Timeline</th>
+    <th>Adithya Menon</th>
+    <th>Yash Bardia</th>
+    <th>Karthik G</th>
+    <th>Sanjeev S</th>
+</tr>
+
+
+<!-- SEM 6 BLUE -->
+
+<tr class="sem6">
+    <td>Problem Statement Definition and Gap Analysis</td>
+    <td class="timeline">Dec 2025 – Jan 2026</td>
+    <td>Structured review of distributed EA explainability tools.</td>
+    <td>Formal system scope definition.</td>
+    <td>Evaluation metric formulation.</td>
+    <td>Documentation and synthesis.</td>
+</tr>
+
+<tr class="sem6">
+    <td>Literature Survey</td>
+    <td class="timeline">Dec 2025 – Feb 2026</td>
+    <td>Search Trajectory Network analysis.</td>
+    <td>Distributed EA convergence review.</td>
+    <td>Clustering scalability study.</td>
+    <td>Comparative synthesis preparation.</td>
+</tr>
+
+<tr class="sem6">
+    <td>Framework Research and Formalisation</td>
+    <td class="timeline">Feb 2026</td>
+    <td>Population state modeling.</td>
+    <td>Theoretical validation.</td>
+    <td>State representation design.</td>
+    <td>Mathematical framework drafting.</td>
+</tr>
+
+<tr class="sem6">
+    <td>Design System Architecture</td>
+    <td class="timeline">Mar 2026</td>
+    <td>Logging architecture design.</td>
+    <td>Module interaction mapping.</td>
+    <td>Pipeline orchestration design.</td>
+    <td>Visualization planning.</td>
+</tr>
+
+<tr class="sem6">
+    <td>Baseline Implementation of dEA</td>
+    <td class="timeline">Apr 2026</td>
+    <td colspan="4" class="tbd">TBD</td>
+</tr>
+
+<tr class="sem6">
+    <td>Asynchronous Logging Mechanism</td>
+    <td class="timeline">May 2026</td>
+    <td colspan="4" class="tbd">TBD</td>
+</tr>
+
+
+<!-- SEM 7 ORANGE -->
+
+<tr class="sem7">
+    <td>Pipeline Implementation (LSH + BIRCH + DenStream)</td>
+    <td class="timeline">Jun 2026 – Oct 2026</td>
+    <td colspan="4" class="tbd">TBD</td>
+</tr>
+
+<tr class="sem7">
+    <td>Graph Generation</td>
+    <td class="timeline">Aug 2026 – Nov 2026</td>
+    <td colspan="4" class="tbd">TBD</td>
+</tr>
+
+
+<!-- SEM 8 GREEN -->
+
+<tr class="sem8">
+    <td>Testing and Experiments with Multiple dEA</td>
+    <td class="timeline">Dec 2026 – Jan 2027</td>
+    <td colspan="4" class="tbd">TBD</td>
+</tr>
+
+<tr class="sem8">
+    <td>Validation and Comparison with Current SOTA</td>
+    <td class="timeline">Feb 2027 – Mar 2027</td>
+    <td colspan="4" class="tbd">TBD</td>
+</tr>
+
+<tr class="sem8">
+    <td>Research Paper Writing and Publication</td>
+    <td class="timeline">Jan 2027 – Apr 2027</td>
+    <td colspan="4" class="tbd">TBD</td>
+</tr>
+
+</table>
+
+</body>
 </html>
