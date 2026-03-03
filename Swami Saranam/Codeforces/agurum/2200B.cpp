@@ -44,9 +44,6 @@ int lcm(int a, int b) {
 void solve() {
     // 1 10 11 3 123 1 42
 
-    11
-    123
-    
 }
 signed main() {
     fast();

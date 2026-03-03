@@ -44,11 +44,14 @@ int lcm(int a, int b) {
 void solve() {
     int n;
     cin >> n;
-    string s[n];
-    string t;
-    for(int i = 0; i < n; i++) cin >> s[i];
-    for(int i = 0; i < n; i++) t = min(t+s[i], s[i]+t);
-    cout<<t<<endl;
+    string s, ans = "";
+    for (int i = 0; i < n; i++){
+        cin >> s;
+        string t = s + ans, u = ans + s;
+        if (t > u) ans = u;
+        else ans = t;
+    }
+    cout<<ans<<endl;
 }
 signed main() {
     fast();

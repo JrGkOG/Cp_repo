@@ -4,6 +4,7 @@ using namespace std;
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);
 #define int long long
+#define ll long long
 #define f(i, n) for (int i = 0; i < (n); i++)
 #define ia(a, n) \
     int a[n];     \
@@ -17,9 +18,9 @@ using namespace std;
 #define no cout<<"NO"<<endl;
 #define pb push_back
 #define ppb pop_back
-#define mp make_pair
+// #define mp make_pair
 const int NUM = 1e6 + 5; 
-const int N = 1e7 + 5;  
+// const int N = 1e7 + 5;  
 #define sor(v) sort(v.begin(), v.end())
 #define rsor(v) sort(v.begin(), v.end(), greater<>())
 #define rev(v) reverse(v.begin(), v.end())
@@ -41,16 +42,36 @@ int lcm(int a, int b) {
     return (a / gcd(a, b)) * b;
 }
 // muruga enna kapathu
+const int N=2000000;
+ 
+ll i,j,k,n,m,t;
+ll a[N+50],b[N+50],sima[N+50];
+ 
+map<ll,basic_string<ll> > mp;
 void solve() {
-    int l, a, b;
-    cin >> l >> a >> b;
-    int vis[l] = {0}, ans = 0;
-    while (!vis[a]){
-        ans = max (a, ans);
-        vis[a] = 1;
-        a = (a + b) % l;
+    cin>>n>>m>>i;
+    ll res=n;
+    for(i=1;i<=n;i++){cin>>a[i]; sima[i]=0;}
+    for(i=1;i<=m;i++)cin>>b[i];
+    sort(a+1,a+n+1); sort(b+1,b+m+1);
+    mp={};
+    j=0; b[0]=-1e18; b[m+1]=1e18;
+    for(i=1;i<=n;i++){
+        while(j<=m&&b[j+1]<a[i])j++;
+        mp[b[j]-a[i]]+=i; mp[b[j+1]-a[i]]+=i;
     }
-    cout<<ans<<endl;
+    string s; k=0;
+    cin>>s;
+    for(auto c:s){
+        if(c=='R')k++;
+        else k--;
+        for(auto i:mp[k]){
+            res-=!sima[i]; sima[i]=1;
+        }
+        mp[k]={};
+        cout<<res<<' ';
+    }
+    cout<<'\n';
 }
 signed main() {
     fast();
