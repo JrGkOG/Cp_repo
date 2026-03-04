@@ -104,11 +104,9 @@ ll lcm(ll a, ll b) {
 // solve fast 
 // check for cin>>t if that needed or just one testcase 
 void solve() {
-    int x,y,z;
-    string s;
-    cin>>x>>y>>z;
-    getline(cin,s);
-    cout<<s<<endl;
+  cout<<"hello"<<endl;
+  return 1;
+
 }
 signed main() {
     fast();
