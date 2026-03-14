@@ -42,22 +42,19 @@ int lcm(int a, int b) {
 }
 // muruga enna kapathu
 void solve() {
-    int n,c;
-    cin>>n>>c;
-    vector<int>vec;
-    for(int i=0;i<n;i++){
-        int num;
-        cin>>num;
-        if(num>c) continue;
-        else vec.push_back(num);
+    int n, x, y; cin >> n >> x >> y;
+    vector<int> a(n); for (int& x: a) cin >> x;
+    int wasteidx = 0;
+    for (int i = 0; i < n; i++) {
+        if (a[i] - a[i]/x * y > a[wasteidx] - a[wasteidx]/x * y) wasteidx = i;
     }
-    sort(vec.rbegin(),vec.rend());
-    int ans=0;
-    for(int i=0;i<vec.size();i++){
-        if(pow(2,ans)*vec[i] > c) continue;
-        else ans ++;
+    // cout << wasteidx << endl;
+    int ans = a[wasteidx];
+    for (int i = 0; i < n; i++) {
+        if (i == wasteidx) continue;
+        ans += (a[i]/x)*y;
     }
-    cout<<n-ans<<endl;
+    cout << ans << endl;
 }
 signed main() {
     fast();

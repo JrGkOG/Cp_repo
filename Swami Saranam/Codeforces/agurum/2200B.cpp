@@ -42,8 +42,10 @@ int lcm(int a, int b) {
 }
 // muruga enna kapathu
 void solve() {
-    // 1 10 11 3 123 1 42
-
+    int n;cin>>n;
+    iv(v,n);
+    int counter=0;
+    is_sorted(v.begin(),v.end()) ? cout<<n<<endl : cout<<1<<endl;
 }
 signed main() {
     fast();

@@ -40,24 +40,48 @@ int gcd(int a, int b) {
 int lcm(int a, int b) {
     return (a / gcd(a, b)) * b;
 }
+const int MAXN = 500005;
+int n, t[4*MAXN], arr[MAXN], ind[MAXN], ans;
+void build(int a[], int v, int tl, int tr) {
+    if (tl == tr) {
+        t[v] = a[tl];
+    } else {
+        int tm = (tl + tr) / 2;
+        build(a, v*2, tl, tm);
+        build(a, v*2+1, tm+1, tr);
+        t[v] = max (t[v*2], t[v*2+1]);
+    }
+}
+int maxx (int v, int tl, int tr, int l, int r) {
+    if (l > r) 
+        return 0;
+    if (l == tl && r == tr) {
+        return t[v];
+    }
+    int tm = (tl + tr) / 2;
+    return max (maxx(v*2, tl, tm, l, min(r, tm)), 
+                maxx(v*2+1, tm+1, tr, max(l, tm+1), r));
+}
+void rec (int l, int r, int tot){
+    int mm = maxx (1, 0, n - 1, l, r);
+    if (mm){
+        int p = ind[mm];
+        if (p < r) rec (p + 1, r, tot + 1);
+        if (p > l) rec (l, p - 1, tot + 1);
+        ans = max (ans, tot);
+    }
+}
 // muruga enna kapathu
 void solve() {
-    int n,c;
-    cin>>n>>c;
-    vector<int>vec;
-    for(int i=0;i<n;i++){
-        int num;
-        cin>>num;
-        if(num>c) continue;
-        else vec.push_back(num);
+    cin >> n;
+    for (int i = 0; i < n; i++){
+        cin >> arr[i];
+        ind[arr[i]] = i;
     }
-    sort(vec.rbegin(),vec.rend());
-    int ans=0;
-    for(int i=0;i<vec.size();i++){
-        if(pow(2,ans)*vec[i] > c) continue;
-        else ans ++;
-    }
-    cout<<n-ans<<endl;
+    ans = 0;
+    build (arr, 1, 0, n - 1);
+    rec (0, n - 1, 1);
+    cout << n - ans << '\n';
 }
 signed main() {
     fast();

@@ -41,23 +41,41 @@ int lcm(int a, int b) {
     return (a / gcd(a, b)) * b;
 }
 // muruga enna kapathu
-void solve() {
-    int n,c;
-    cin>>n>>c;
-    vector<int>vec;
+void solve(){
+    int n;
+    cin>>n;
+    string s;
+    cin>>s;
+
+    for(int i=1;i<n-1;i++){
+        if(s[i-1]=='1' && s[i+1]=='1'){
+            s[i]='1';
+        }
+    }
+
+    int ans1=0;
     for(int i=0;i<n;i++){
-        int num;
-        cin>>num;
-        if(num>c) continue;
-        else vec.push_back(num);
+        if(s[i]=='1') ans1++;
     }
-    sort(vec.rbegin(),vec.rend());
+
+    for(int i=1;i<n-1;i++){
+        if(s[i-1]=='1' && s[i+1]=='1'){
+            s[i]='0';
+        }
+    }
+
+    for(int i=1;i<n-1;i++){
+        if(s[i-1]=='1' && s[i+1]=='1'){
+            s[i]='0';
+        }
+    }
+
     int ans=0;
-    for(int i=0;i<vec.size();i++){
-        if(pow(2,ans)*vec[i] > c) continue;
-        else ans ++;
+    for(int i=0;i<n;i++){
+        if(s[i]=='1') ans++;
     }
-    cout<<n-ans<<endl;
+
+    cout<<ans<<" "<<ans1<<"\n";
 }
 signed main() {
     fast();
