@@ -42,12 +42,9 @@ int lcm(int a, int b) {
 }
 // muruga enna kapathu
 void solve() {
-    int n, m;
-    cin >> n >> m;
-    if (n > 2) cout<<2*m<<endl;
-    else if (n == 2) cout<<m<<endl;
-    else cout<<0<<endl;
-    // else i can do this ?
+    int n, x, a, b;
+    cin >> n >> x >> a >> b;
+    cout << min (n - 1, abs (a - b) + x) << '\n';
 }
 signed main() {
     fast();
