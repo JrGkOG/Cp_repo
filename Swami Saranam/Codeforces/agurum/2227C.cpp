@@ -42,19 +42,41 @@ int lcm(int a, int b) {
 }
 // muruga enna kapathu
 void solve() {
-    int n, x, a, b;
-    cin >> n >> x >> a >> b;
-    cout << min (n - 1, abs (a - b) + x) << '\n';
-
-    int x =3;
-    x=4;
-    x=5;
-
-
-}
-int int 
-int function(int abc,int variable,vecot<int>arr){
-
+    int n;cin>>n;
+    vector<int>nums;
+    vector<int>temp;
+    vector<int>two;
+    vector<int>thr;
+    for(int i=0;i<n;i++){
+        int num;cin>>num;
+        if(num%6==0){
+            nums.push_back(num);
+        }
+        else if(num%2==0){
+            two.pb(num);
+        }
+        else if(num%3==0){
+            thr.pb(num);
+        }
+        else temp.pb(num);
+    }
+    // }
+    // sort(nums.begin(),nums.end());
+    // sort(temp.begin(),temp.end());
+    // sort(two.begin(),two.end)
+    for(int i=0;i<nums.size();i++){
+        cout<<nums[i]<<" ";
+    }
+    for(int i=0;i<two.size();i++){
+        cout<<two[i]<<" ";
+    }
+    for(int i=0;i<temp.size();i++){
+        cout<<temp[i]<<" ";
+    }
+    for(int i=0;i<thr.size();i++){
+        cout<<thr[i]<<" ";
+    }
+    cout<<endl;
 }
 signed main() {
     fast();

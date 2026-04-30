@@ -42,19 +42,19 @@ int lcm(int a, int b) {
 }
 // muruga enna kapathu
 void solve() {
-    int n, x, a, b;
-    cin >> n >> x >> a >> b;
-    cout << min (n - 1, abs (a - b) + x) << '\n';
-
-    int x =3;
-    x=4;
-    x=5;
-
-
-}
-int int 
-int function(int abc,int variable,vecot<int>arr){
-
+    int n;cin>>n;
+    string s;
+    cin>>s;
+    int odd=0;
+    int even=0;
+    for(int i=0;i<n;i++){
+        if(s[i]==')'){
+            odd++;
+        }
+        else even++;
+    }
+    if(odd == even) yes
+    else no
 }
 signed main() {
     fast();

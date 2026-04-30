@@ -42,18 +42,13 @@ int lcm(int a, int b) {
 }
 // muruga enna kapathu
 void solve() {
-    int n, x, a, b;
-    cin >> n >> x >> a >> b;
-    cout << min (n - 1, abs (a - b) + x) << '\n';
-
-    int x =3;
-    x=4;
-    x=5;
-
-
-}
-int int 
-int function(int abc,int variable,vecot<int>arr){
+    int x,y;
+    cin>>x>>y;
+    int counter=0;
+    if(x%2==1) counter++;
+    if(y%2==1) counter++;
+    if(counter>1) no
+    else yes
 
 }
 signed main() {
